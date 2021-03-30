@@ -1,0 +1,1070 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Jason Wang" />
+        <meta name="description" content="library(tidyverse) Attaching packages tidyverse 1.3.0 ggplot2 3.3.3 purrr 0.3.4 tibble 3.0.6 dplyr 1.0.4 tidyr 1.1.2 stringr 1.4.0 readr 1.4.0 forcats 0.5.1 Conflicts tidyverse_conflicts() dplyr::filter() masks stats::filter() dplyr::lag() masks …" />
+
+
+    <title>Example Markdown from ipynb - Egresspathy</title>
+
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+
+    <link href="/theme/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="/theme/css/pygments/native.css" rel="stylesheet" />
+
+    <link href="/theme/css/pelican-twitchy.min.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Feeds -->
+</head>
+<body data-spy="scroll" data-target="#scrollspy">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper-small" class="twitchy-background">
+            <ul id="accordion-small" class="sidebar-nav sidebar-nav-small">
+                <li>
+        <a href="" title="Egresspathy" class="collapsed">
+            <span class="fas fa-home"></span>
+        </a>
+    </li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="/archives.html" title="Recent Articles" class="collapsed">
+            <span class="fas fa-th-list"></span>
+        </a>
+    </li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-social-small" title="Social" class="collapsed">
+                        <i class="fas fa-users padding-small"></i>
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-social-small" class="collapse ">
+                    <li>
+                        <a href="#" title="Another social link"><i class="fab fa-another-social-link-square padding-small"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="You can add links in your config file"><i class="fab fa-you-can-add-links-in-your-config-file-square padding-small"></i></a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="#" title="Back to top" class="collapsed">
+            <span class="fas fa-arrow-up"></span>
+        </a>
+    </li>
+            </ul>
+        </div>
+        <div id="sidebar-wrapper" class="twitchy-background">
+            <ul id="accordion" class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="/">
+                            <span class="fas fa-home padding-small"></span>
+                            Egresspathy
+                    </a>
+                </li>
+                    <li>
+                        <a href="/archives.html">
+                            <span class="fas fa-th-list padding-small"></span>
+                            Recent Articles
+                        </a>
+                    </li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-social">
+                        <i class="fas fa-users padding-small"></i>
+                        Contact
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-social" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="#" title="Another social link">
+                            <i class="fab fa-another-social-link-square padding-small"></i>
+                            Another social link
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="You can add links in your config file">
+                            <i class="fab fa-you-can-add-links-in-your-config-file-square padding-small"></i>
+                            You can add links in your config file
+                        </a>
+                    </li>
+                </ul></li>
+                
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-pages">
+                        <i class="fas fa-folder-open padding-small"></i>
+                        Pages
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-pages" class="sidebar_submenu collapse ">
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-categories">
+                        <i class="fas fa-folder-open padding-small"></i>
+                        Categories
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
+                    <li >
+                        <a href="/category/estimations.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            Estimations
+                            <span class="badge badge-secondary float-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="/category/review.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            Review
+                            <span class="badge badge-secondary float-right categorybadge">2</span>
+                        </a>
+                    </li>
+                </ul></li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- open/close sidebar -->
+        <a href="#menu-toggle" class="btn btn-primary" id="menu-toggle">
+            <span id="right-arrow" class="fas fa-chevron-right"  title="expand sidebar"></span>
+            <span id="left-arrow" class="fas fa-chevron-left" title="minimize sidebar"></span>
+        </a>
+       <!-- /open/close sidebar -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container">
+<section id="content">
+    <article>
+        <div class="row">
+            <div class="col-lg-9">
+                <header class="page-header">
+                    <h1>
+                        <a href="/example-markdown-from-ipynb.html"
+                           rel="bookmark"
+                           title="Permalink to Example Markdown from ipynb">
+                            Example Markdown from ipynb
+                        </a>
+                        <small>
+<div class="post-info">
+    <div class="publish-info-block">
+        <small>
+            <span class="published">
+                <i class="fa fa-calendar padding-small"></i><time datetime="2021-03-30T10:20:00+08:00"> Tue 30 March 2021</time>
+            </span>
+            <span class="category">
+                <i class="fa fa-folder-open padding-small"></i><a href="/category/review.html">Review</a>
+            </span>
+        </small>
+    </div>
+</div><!-- /.post-info -->                        </small>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="entry-content">
+                    <div class="highlight"><pre><span></span><code><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code> Attaching packages  tidyverse 1.3.0
+
+ ggplot2 3.3.3      purrr   0.3.4
+ tibble  3.0.6      dplyr   1.0.4
+ tidyr   1.1.2      stringr 1.4.0
+ readr   1.4.0      forcats 0.5.1
+
+ Conflicts  tidyverse_conflicts() 
+ dplyr::filter() masks stats::filter()
+ dplyr::lag()    masks stats::lag()
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">raw_arabica</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="s">&quot;https://raw.githubusercontent.com/jldbc/coffee-quality-database/master/data/arabica_data_cleaned.csv&quot;</span><span class="p">)</span> 
+<span class="n">raw_robusta</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="s">&quot;https://raw.githubusercontent.com/jldbc/coffee-quality-database/master/data/robusta_data_cleaned.csv&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Warning message:
+Missing column names filled in: &#39;X1&#39; [1]
+</code></pre></div>
+
+<p>olumn specification 
+    cols(
+      .default = col_character(),
+      X1 = col_double(),
+      Number.of.Bags = col_double(),
+      Aroma = col_double(),
+      Flavor = col_double(),
+      Aftertaste = col_double(),
+      Acidity = col_double(),
+      Body = col_double(),
+      Balance = col_double(),
+      Uniformity = col_double(),
+      Clean.Cup = col_double(),
+      Sweetness = col_double(),
+      Cupper.Points = col_double(),
+      Total.Cup.Points = col_double(),
+      Moisture = col_double(),
+      Category.One.Defects = col_double(),
+      Quakers = col_double(),
+      Category.Two.Defects = col_double(),
+      altitude_low_meters = 2mcol_double(),
+      altitude_high_meters = col_double(),
+      altitude_mean_meters = col_double()
+    )
+    ℹ Use <code>spec()</code> for the full column specifications.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">Warning</span> <span class="nv">message</span>:
+<span class="nv">Missing</span> <span class="nv">column</span> <span class="nv">names</span> <span class="nv">filled</span> <span class="nv">in</span>: <span class="s1">&#39;</span><span class="s">X1</span><span class="s1">&#39;</span> [<span class="mi">1</span>]
+
+ <span class="nv">Column</span> <span class="nv">specification</span> 
+<span class="nv">cols</span><span class="ss">(</span>
+  .<span class="nv">default</span> <span class="o">=</span> <span class="nv">col_character</span><span class="ss">()</span>,
+  <span class="nv">X1</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Number</span>.<span class="nv">of</span>.<span class="nv">Bags</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Harvest</span>.<span class="nv">Year</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Fragrance</span>...<span class="nv">Aroma</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Flavor</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Aftertaste</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Salt</span>...<span class="nv">Acid</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Bitter</span>...<span class="nv">Sweet</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Mouthfeel</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Uniform</span>.<span class="nv">Cup</span> <span class="o">=</span> <span class="nv">mcol_double</span><span class="ss">()</span>,
+  <span class="nv">Clean</span>.<span class="nv">Cup</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Balance</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Cupper</span>.<span class="nv">Points</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Total</span>.<span class="nv">Cup</span>.<span class="nv">Points</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Moisture</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Category</span>.<span class="nv">One</span>.<span class="nv">Defects</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Quakers</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">Category</span>.<span class="nv">Two</span>.<span class="nv">Defects</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">altitude_low_meters</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>,
+  <span class="nv">altitude_high_meters</span> <span class="o">=</span> <span class="nv">col_double</span><span class="ss">()</span>
+  # ... <span class="nv">with</span> <span class="mi">1</span> <span class="nv">more</span> <span class="nv">columns</span>
+<span class="ss">)</span>
+ℹ <span class="nv">Use</span> `<span class="nv">spec</span><span class="ss">()</span>` <span class="k">for</span> <span class="nv">the</span> <span class="nv">full</span> <span class="nv">column</span> <span class="nv">specifications</span>.
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nf">head</span><span class="p">(</span><span class="n">raw_arabica</span><span class="p">)</span>
+</code></pre></div>
+
+<table class="dataframe">
+<caption>A tibble: 6  44</caption>
+<thead>
+    <tr><th scope=col>X1</th><th scope=col>Species</th><th scope=col>Owner</th><th scope=col>Country.of.Origin</th><th scope=col>Farm.Name</th><th scope=col>Lot.Number</th><th scope=col>Mill</th><th scope=col>ICO.Number</th><th scope=col>Company</th><th scope=col>Altitude</th><th scope=col></th><th scope=col>Color</th><th scope=col>Category.Two.Defects</th><th scope=col>Expiration</th><th scope=col>Certification.Body</th><th scope=col>Certification.Address</th><th scope=col>Certification.Contact</th><th scope=col>unit_of_measurement</th><th scope=col>altitude_low_meters</th><th scope=col>altitude_high_meters</th><th scope=col>altitude_mean_meters</th></tr>
+    <tr><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>1</td><td>Arabica</td><td>metad plc               </td><td>Ethiopia </td><td>metad plc                               </td><td>NA</td><td>metad plc</td><td>2014/2015</td><td>metad agricultural developmet plc    </td><td>1950-2200    </td><td></td><td>Green       </td><td>0</td><td>April 3rd, 2016    </td><td>METAD Agricultural Development plc</td><td>309fcf77415a3661ae83e027f7e5f05dad786e44</td><td>19fef5a731de2db57d16da10287413f5f99bc2dd</td><td>m</td><td>1950</td><td>2200</td><td>2075</td></tr>
+    <tr><td>2</td><td>Arabica</td><td>metad plc               </td><td>Ethiopia </td><td>metad plc                               </td><td>NA</td><td>metad plc</td><td>2014/2015</td><td>metad agricultural developmet plc    </td><td>1950-2200    </td><td></td><td>Green       </td><td>1</td><td>April 3rd, 2016    </td><td>METAD Agricultural Development plc</td><td>309fcf77415a3661ae83e027f7e5f05dad786e44</td><td>19fef5a731de2db57d16da10287413f5f99bc2dd</td><td>m</td><td>1950</td><td>2200</td><td>2075</td></tr>
+    <tr><td>3</td><td>Arabica</td><td>grounds for health admin</td><td>Guatemala</td><td>san marcos barrancas "san cristobal cuch</td><td>NA</td><td>NA       </td><td>NA       </td><td>NA                                   </td><td>1600 - 1800 m</td><td></td><td>NA          </td><td>0</td><td>May 31st, 2011     </td><td>Specialty Coffee Association      </td><td>36d0d00a3724338ba7937c52a378d085f2172daa</td><td>0878a7d4b9d35ddbf0fe2ce69a2062cceb45a660</td><td>m</td><td>1600</td><td>1800</td><td>1700</td></tr>
+    <tr><td>4</td><td>Arabica</td><td>yidnekachew dabessa     </td><td>Ethiopia </td><td>yidnekachew dabessa coffee plantation   </td><td>NA</td><td>wolensu  </td><td>NA       </td><td>yidnekachew debessa coffee plantation</td><td>1800-2200    </td><td></td><td>Green       </td><td>2</td><td>March 25th, 2016   </td><td>METAD Agricultural Development plc</td><td>309fcf77415a3661ae83e027f7e5f05dad786e44</td><td>19fef5a731de2db57d16da10287413f5f99bc2dd</td><td>m</td><td>1800</td><td>2200</td><td>2000</td></tr>
+    <tr><td>5</td><td>Arabica</td><td>metad plc               </td><td>Ethiopia </td><td>metad plc                               </td><td>NA</td><td>metad plc</td><td>2014/2015</td><td>metad agricultural developmet plc    </td><td>1950-2200    </td><td></td><td>Green       </td><td>2</td><td>April 3rd, 2016    </td><td>METAD Agricultural Development plc</td><td>309fcf77415a3661ae83e027f7e5f05dad786e44</td><td>19fef5a731de2db57d16da10287413f5f99bc2dd</td><td>m</td><td>1950</td><td>2200</td><td>2075</td></tr>
+    <tr><td>6</td><td>Arabica</td><td>ji-ae ahn               </td><td>Brazil   </td><td>NA                                      </td><td>NA</td><td>NA       </td><td>NA       </td><td>NA                                   </td><td>NA           </td><td></td><td>Bluish-Green</td><td>1</td><td>September 3rd, 2014</td><td>Specialty Coffee Institute of Asia</td><td>726e4891cf2c9a4848768bd34b668124d12c4224</td><td>b70da261fcc84831e3e9620c30a8701540abc200</td><td>m</td><td>  NA</td><td>  NA</td><td>  NA</td></tr>
+</tbody>
+</table>
+
+<div class="highlight"><pre><span></span><code><span class="nf">colnames</span><span class="p">(</span><span class="n">raw_arabica</span><span class="p">)</span>
+<span class="nf">colnames</span><span class="p">(</span><span class="n">raw_robusta</span><span class="p">)</span>
+</code></pre></div>
+
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'X1'</li><li>'Species'</li><li>'Owner'</li><li>'Country.of.Origin'</li><li>'Farm.Name'</li><li>'Lot.Number'</li><li>'Mill'</li><li>'ICO.Number'</li><li>'Company'</li><li>'Altitude'</li><li>'Region'</li><li>'Producer'</li><li>'Number.of.Bags'</li><li>'Bag.Weight'</li><li>'In.Country.Partner'</li><li>'Harvest.Year'</li><li>'Grading.Date'</li><li>'Owner.1'</li><li>'Variety'</li><li>'Processing.Method'</li><li>'Aroma'</li><li>'Flavor'</li><li>'Aftertaste'</li><li>'Acidity'</li><li>'Body'</li><li>'Balance'</li><li>'Uniformity'</li><li>'Clean.Cup'</li><li>'Sweetness'</li><li>'Cupper.Points'</li><li>'Total.Cup.Points'</li><li>'Moisture'</li><li>'Category.One.Defects'</li><li>'Quakers'</li><li>'Color'</li><li>'Category.Two.Defects'</li><li>'Expiration'</li><li>'Certification.Body'</li><li>'Certification.Address'</li><li>'Certification.Contact'</li><li>'unit_of_measurement'</li><li>'altitude_low_meters'</li><li>'altitude_high_meters'</li><li>'altitude_mean_meters'</li></ol>
+
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'X1'</li><li>'Species'</li><li>'Owner'</li><li>'Country.of.Origin'</li><li>'Farm.Name'</li><li>'Lot.Number'</li><li>'Mill'</li><li>'ICO.Number'</li><li>'Company'</li><li>'Altitude'</li><li>'Region'</li><li>'Producer'</li><li>'Number.of.Bags'</li><li>'Bag.Weight'</li><li>'In.Country.Partner'</li><li>'Harvest.Year'</li><li>'Grading.Date'</li><li>'Owner.1'</li><li>'Variety'</li><li>'Processing.Method'</li><li>'Fragrance...Aroma'</li><li>'Flavor'</li><li>'Aftertaste'</li><li>'Salt...Acid'</li><li>'Bitter...Sweet'</li><li>'Mouthfeel'</li><li>'Uniform.Cup'</li><li>'Clean.Cup'</li><li>'Balance'</li><li>'Cupper.Points'</li><li>'Total.Cup.Points'</li><li>'Moisture'</li><li>'Category.One.Defects'</li><li>'Quakers'</li><li>'Color'</li><li>'Category.Two.Defects'</li><li>'Expiration'</li><li>'Certification.Body'</li><li>'Certification.Address'</li><li>'Certification.Contact'</li><li>'unit_of_measurement'</li><li>'altitude_low_meters'</li><li>'altitude_high_meters'</li><li>'altitude_mean_meters'</li></ol>
+
+<div class="highlight"><pre><span></span><code><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;tidytuesdayR&quot;</span><span class="p">)</span>
+<span class="c1"># Either ISO-8601 date or year/week works!</span>
+
+<span class="n">tuesdata</span> <span class="o">&lt;-</span> <span class="n">tidytuesdayR</span><span class="o">::</span><span class="nf">tt_load</span><span class="p">(</span><span class="s">&#39;2020-07-07&#39;</span><span class="p">)</span>
+<span class="n">tuesdata</span> <span class="o">&lt;-</span> <span class="n">tidytuesdayR</span><span class="o">::</span><span class="nf">tt_load</span><span class="p">(</span><span class="m">2020</span><span class="p">,</span> <span class="n">week</span> <span class="o">=</span> <span class="m">28</span><span class="p">)</span>
+
+<span class="n">coffee_ratings</span> <span class="o">&lt;-</span> <span class="n">tuesdata</span><span class="o">$</span><span class="n">coffee_ratings</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Installing</span> <span class="n">package</span> <span class="n">into</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">R</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">library</span>
+<span class="p">(</span><span class="k">as</span> <span class="n">lib</span> <span class="k">is</span> <span class="n">unspecified</span><span class="p">)</span>
+
+<span class="o">---</span> <span class="n">Compiling</span> <span class="c1">#TidyTuesday Information for 2020-07-07 ----</span>
+
+<span class="o">---</span> <span class="n">There</span> <span class="k">is</span> <span class="mi">1</span> <span class="n">file</span> <span class="n">available</span> <span class="o">---</span>
+
+<span class="o">---</span> <span class="n">Starting</span> <span class="n">Download</span> <span class="o">---</span>
+
+
+
+
+    <span class="n">Downloading</span> <span class="n">file</span> <span class="mi">1</span> <span class="n">of</span> <span class="mi">1</span><span class="p">:</span> <span class="err">`</span><span class="n">coffee_ratings</span><span class="o">.</span><span class="n">csv</span><span class="err">`</span>
+
+
+
+<span class="o">---</span> <span class="n">Download</span> <span class="n">complete</span> <span class="o">---</span>
+
+<span class="o">---</span> <span class="n">Compiling</span> <span class="c1">#TidyTuesday Information for 2020-07-07 ----</span>
+
+<span class="o">---</span> <span class="n">There</span> <span class="k">is</span> <span class="mi">1</span> <span class="n">file</span> <span class="n">available</span> <span class="o">---</span>
+
+<span class="o">---</span> <span class="n">Starting</span> <span class="n">Download</span> <span class="o">---</span>
+
+
+
+
+    <span class="n">Downloading</span> <span class="n">file</span> <span class="mi">1</span> <span class="n">of</span> <span class="mi">1</span><span class="p">:</span> <span class="err">`</span><span class="n">coffee_ratings</span><span class="o">.</span><span class="n">csv</span><span class="err">`</span>
+
+
+
+<span class="o">---</span> <span class="n">Download</span> <span class="n">complete</span> <span class="o">---</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="o">??</span><span class="n">tidytuesdayR</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">R</span> <span class="n">Information</span>
+
+<span class="n">Help</span> <span class="n">files</span> <span class="n">with</span> <span class="n">alias</span> <span class="ow">or</span> <span class="n">concept</span> <span class="ow">or</span> <span class="n">title</span> <span class="n">matching</span> <span class="n">tidytuesdayR</span> <span class="n">using</span>
+<span class="n">fuzzy</span> <span class="n">matching</span><span class="p">:</span>
+
+
+<span class="n">tidytuesdayR</span><span class="p">::</span><span class="n">available</span>
+                        <span class="n">Listing</span> <span class="n">all</span> <span class="n">available</span> <span class="n">TidyTuesdays</span>
+<span class="n">tidytuesdayR</span><span class="p">::</span><span class="n">tt_date</span>   <span class="n">Get</span> <span class="n">date</span> <span class="n">of</span> <span class="n">TidyTuesday</span><span class="p">,</span> <span class="n">given</span> <span class="n">the</span> <span class="n">year</span> <span class="ow">and</span>
+                        <span class="n">week</span>
+<span class="n">tidytuesdayR</span><span class="p">::</span><span class="n">tt_download_file</span>
+                        <span class="n">Reads</span> <span class="ow">in</span> <span class="n">TidyTuesday</span> <span class="n">datasets</span> <span class="n">from</span> <span class="n">Github</span> <span class="n">repo</span>
+<span class="n">tidytuesdayR</span><span class="p">::</span><span class="n">tt_load</span>   <span class="n">Load</span> <span class="n">TidyTuesday</span> <span class="n">data</span> <span class="n">from</span> <span class="n">Github</span>
+<span class="n">tidytuesdayR</span><span class="p">::</span><span class="n">tt_load_gh</span>
+                        <span class="n">Load</span> <span class="n">TidyTuesday</span> <span class="n">data</span> <span class="n">from</span> <span class="n">Github</span>
+
+
+<span class="n">Type</span> <span class="s1">&#39;?PKG::FOO&#39;</span> <span class="n">to</span> <span class="n">inspect</span> <span class="n">entries</span> <span class="s1">&#39;PKG::FOO&#39;</span><span class="p">,</span> <span class="ow">or</span> <span class="s1">&#39;TYPE?PKG::FOO&#39;</span> <span class="k">for</span>
+<span class="n">entries</span> <span class="n">like</span> <span class="s1">&#39;PKG::FOO-TYPE&#39;</span><span class="o">.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nf">library</span><span class="p">(</span><span class="n">tidytuesdayR</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="o">??</span><span class="n">tidytuesdayR</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">R</span> <span class="n">Information</span>
+
+<span class="n">Help</span> <span class="n">files</span> <span class="n">with</span> <span class="n">alias</span> <span class="ow">or</span> <span class="n">concept</span> <span class="ow">or</span> <span class="n">title</span> <span class="n">matching</span> <span class="n">tidytuesdayR</span> <span class="n">using</span>
+<span class="n">fuzzy</span> <span class="n">matching</span><span class="p">:</span>
+
+
+<span class="n">tidytuesdayR</span><span class="p">::</span><span class="n">available</span>
+                        <span class="n">Listing</span> <span class="n">all</span> <span class="n">available</span> <span class="n">TidyTuesdays</span>
+<span class="n">tidytuesdayR</span><span class="p">::</span><span class="n">tt_date</span>   <span class="n">Get</span> <span class="n">date</span> <span class="n">of</span> <span class="n">TidyTuesday</span><span class="p">,</span> <span class="n">given</span> <span class="n">the</span> <span class="n">year</span> <span class="ow">and</span>
+                        <span class="n">week</span>
+<span class="n">tidytuesdayR</span><span class="p">::</span><span class="n">tt_download_file</span>
+                        <span class="n">Reads</span> <span class="ow">in</span> <span class="n">TidyTuesday</span> <span class="n">datasets</span> <span class="n">from</span> <span class="n">Github</span> <span class="n">repo</span>
+<span class="n">tidytuesdayR</span><span class="p">::</span><span class="n">tt_load</span>   <span class="n">Load</span> <span class="n">TidyTuesday</span> <span class="n">data</span> <span class="n">from</span> <span class="n">Github</span>
+<span class="n">tidytuesdayR</span><span class="p">::</span><span class="n">tt_load_gh</span>
+                        <span class="n">Load</span> <span class="n">TidyTuesday</span> <span class="n">data</span> <span class="n">from</span> <span class="n">Github</span>
+
+
+<span class="n">Type</span> <span class="s1">&#39;?PKG::FOO&#39;</span> <span class="n">to</span> <span class="n">inspect</span> <span class="n">entries</span> <span class="s1">&#39;PKG::FOO&#39;</span><span class="p">,</span> <span class="ow">or</span> <span class="s1">&#39;TYPE?PKG::FOO&#39;</span> <span class="k">for</span>
+<span class="n">entries</span> <span class="n">like</span> <span class="s1">&#39;PKG::FOO-TYPE&#39;</span><span class="o">.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nf">tt_available</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Year</span><span class="p">:</span> <span class="mi">2021</span>
+
+   <span class="n">Week</span>       <span class="n">Date</span>                           <span class="n">Data</span>                      <span class="n">Source</span>
+<span class="mi">1</span>     <span class="mi">1</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">29</span> <span class="n">Bring</span> <span class="n">your</span> <span class="n">own</span> <span class="n">data</span> <span class="n">from</span> <span class="mi">2020</span><span class="o">!</span>                            
+<span class="mi">2</span>     <span class="mi">2</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">05</span>           <span class="n">Transit</span> <span class="n">Cost</span> <span class="n">Project</span>            <span class="n">TransitCosts</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">3</span>     <span class="mi">3</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">12</span>                <span class="n">Art</span> <span class="n">Collections</span>             <span class="n">Tate</span> <span class="n">Collection</span>
+<span class="mi">4</span>     <span class="mi">4</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">19</span>                   <span class="n">Kenya</span> <span class="n">Census</span>                <span class="n">rKenyaCensus</span>
+<span class="mi">5</span>     <span class="mi">5</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">26</span>              <span class="n">Plastic</span> <span class="n">Pollution</span>     <span class="n">Break</span> <span class="n">Free</span> <span class="n">from</span> <span class="n">Plastic</span>
+<span class="mi">6</span>     <span class="mi">6</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">02</span>                <span class="n">HBCU</span> <span class="n">Enrollment</span>     <span class="n">Data</span><span class="o">.</span><span class="n">World</span> <span class="o">&amp;</span> <span class="n">Data</span><span class="o">.</span><span class="n">World</span>
+<span class="mi">7</span>     <span class="mi">7</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">09</span>              <span class="n">Wealth</span> <span class="ow">and</span> <span class="n">Income</span> <span class="n">Urban</span> <span class="n">Institute</span> <span class="o">&amp;</span> <span class="n">US</span> <span class="n">Census</span>
+<span class="mi">8</span>     <span class="mi">8</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">16</span>       <span class="n">W</span><span class="o">.</span><span class="n">E</span><span class="o">.</span><span class="n">B</span><span class="o">.</span> <span class="n">Du</span> <span class="n">Bois</span> <span class="n">Challenge</span>      <span class="n">Du</span> <span class="n">Bois</span> <span class="n">Data</span> <span class="n">Challenge</span>
+<span class="mi">9</span>     <span class="mi">9</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">23</span>        <span class="n">Employment</span> <span class="ow">and</span> <span class="n">Earnings</span>                         <span class="n">BLS</span>
+<span class="mi">10</span>   <span class="mi">10</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">02</span>                  <span class="n">SuperBowl</span> <span class="n">Ads</span>             <span class="n">FiveThirtyEight</span>
+<span class="mi">11</span>   <span class="mi">11</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">09</span>                   <span class="n">Bechdel</span> <span class="n">Test</span>             <span class="n">FiveThirtyEight</span>
+<span class="mi">12</span>   <span class="mi">12</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">16</span>           <span class="n">Video</span> <span class="n">Games</span> <span class="o">+</span> <span class="n">Sliced</span>                       <span class="n">Steam</span>
+<span class="mi">13</span>   <span class="mi">13</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">23</span>                       <span class="n">UN</span> <span class="n">Votes</span>           <span class="n">Harvard</span> <span class="n">Dataverse</span>
+<span class="mi">14</span>   <span class="mi">14</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">30</span>                  <span class="n">Makeup</span> <span class="n">Shades</span>            <span class="n">The</span> <span class="n">Pudding</span> <span class="n">data</span>
+                                                <span class="n">Article</span>
+<span class="mi">1</span>                                                      
+<span class="mi">2</span>                              <span class="n">Transit</span> <span class="n">Costs</span> <span class="n">Case</span> <span class="n">Study</span>
+<span class="mi">3</span>                 <span class="n">Aspect</span> <span class="n">Ratio</span> <span class="n">of</span> <span class="n">Artworks</span> <span class="n">through</span> <span class="n">Time</span>
+<span class="mi">4</span>                              <span class="n">Introducing</span> <span class="n">rKenyaCensus</span>
+<span class="mi">5</span>                                           <span class="n">Sarah</span> <span class="n">Sauve</span>
+<span class="mi">6</span>                                <span class="n">HBCU</span> <span class="n">Donations</span> <span class="n">Article</span>
+<span class="mi">7</span>                                       <span class="n">Urban</span> <span class="n">Institute</span>
+<span class="mi">8</span>  <span class="n">Anthony</span> <span class="n">Starks</span> <span class="o">-</span> <span class="n">Recreating</span> <span class="n">Du</span> <span class="n">Bois</span><span class="s1">&#39;s data portraits</span>
+<span class="mi">9</span>                                           <span class="n">BLS</span> <span class="n">Article</span>
+<span class="mi">10</span>                                      <span class="n">FiveThirtyEight</span>
+<span class="mi">11</span>                                      <span class="n">FiveThirtyEight</span>
+<span class="mi">12</span>                                          <span class="n">SteamCharts</span>
+<span class="mi">13</span>                                 <span class="n">Citizen</span> <span class="n">Statistician</span>
+<span class="mi">14</span>                                          <span class="n">The</span> <span class="n">Pudding</span>
+
+
+<span class="n">Year</span><span class="p">:</span> <span class="mi">2020</span>
+
+   <span class="n">Week</span>       <span class="n">Date</span>                                <span class="n">Data</span>
+<span class="mi">1</span>     <span class="mi">1</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">31</span>      <span class="n">Bring</span> <span class="n">your</span> <span class="n">own</span> <span class="n">data</span> <span class="n">from</span> <span class="mi">2019</span><span class="o">!</span>
+<span class="mi">2</span>     <span class="mi">2</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">07</span>                    <span class="n">Australian</span> <span class="n">Fires</span>
+<span class="mi">3</span>     <span class="mi">3</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">14</span>                           <span class="n">Passwords</span>
+<span class="mi">4</span>     <span class="mi">4</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">21</span>                         <span class="n">Song</span> <span class="n">Genres</span>
+<span class="mi">5</span>     <span class="mi">5</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">28</span>                 <span class="n">San</span> <span class="n">Francisco</span> <span class="n">Trees</span>
+<span class="mi">6</span>     <span class="mi">6</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">04</span>                      <span class="n">NFL</span> <span class="n">Attendance</span>
+<span class="mi">7</span>     <span class="mi">7</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">11</span>                      <span class="n">Hotel</span> <span class="n">Bookings</span>
+<span class="mi">8</span>     <span class="mi">8</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">18</span>             <span class="n">Food</span><span class="s1">&#39;s Carbon Footprint</span>
+<span class="mi">9</span>     <span class="mi">9</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">25</span>                 <span class="n">Measles</span> <span class="n">Vaccination</span>
+<span class="mi">10</span>   <span class="mi">10</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">03</span>                           <span class="n">NHL</span> <span class="n">Goals</span>
+<span class="mi">11</span>   <span class="mi">11</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">10</span> <span class="n">College</span> <span class="n">Tuition</span><span class="p">,</span> <span class="n">Diversity</span><span class="p">,</span> <span class="ow">and</span> <span class="n">Pay</span>
+<span class="mi">12</span>   <span class="mi">12</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">17</span>                          <span class="n">The</span> <span class="n">Office</span>
+<span class="mi">13</span>   <span class="mi">13</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">24</span>              <span class="n">Traumatic</span> <span class="n">Brain</span> <span class="n">Injury</span>
+<span class="mi">14</span>   <span class="mi">14</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">31</span>                     <span class="n">Beer</span> <span class="n">Production</span>
+<span class="mi">15</span>   <span class="mi">15</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">07</span>                      <span class="n">Tour</span> <span class="n">de</span> <span class="n">France</span>
+<span class="mi">16</span>   <span class="mi">16</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">14</span>                    <span class="n">Best</span> <span class="n">Rap</span> <span class="n">Artists</span>
+<span class="mi">17</span>   <span class="mi">17</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">21</span>                     <span class="n">GDPR</span> <span class="n">Violations</span>
+<span class="mi">18</span>   <span class="mi">18</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">28</span>                   <span class="n">Broadway</span> <span class="n">Musicals</span>
+<span class="mi">19</span>   <span class="mi">19</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">05</span>                     <span class="n">Animal</span> <span class="n">Crossing</span>
+<span class="mi">20</span>   <span class="mi">20</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">12</span>                   <span class="n">Volcano</span> <span class="n">Eruptions</span>
+<span class="mi">21</span>   <span class="mi">21</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">19</span>                    <span class="n">Beach</span> <span class="n">Volleyball</span>
+<span class="mi">22</span>   <span class="mi">22</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">26</span>                           <span class="n">Cocktails</span>
+<span class="mi">23</span>   <span class="mi">23</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">02</span>                        <span class="n">Marble</span> <span class="n">Races</span>
+<span class="mi">24</span>   <span class="mi">24</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">09</span>       <span class="n">African</span><span class="o">-</span><span class="n">American</span> <span class="n">Achievements</span>
+<span class="mi">25</span>   <span class="mi">25</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">16</span>            <span class="n">African</span><span class="o">-</span><span class="n">American</span> <span class="n">History</span>
+<span class="mi">26</span>   <span class="mi">26</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">23</span>                   <span class="n">Caribou</span> <span class="n">Locations</span>
+<span class="mi">27</span>   <span class="mi">27</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">30</span>              <span class="n">Claremont</span> <span class="n">Run</span> <span class="n">of</span> <span class="n">X</span><span class="o">-</span><span class="n">Men</span>
+<span class="mi">28</span>   <span class="mi">28</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">07</span>                      <span class="n">Coffee</span> <span class="n">Ratings</span>
+<span class="mi">29</span>   <span class="mi">29</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">14</span>                  <span class="n">Astronaut</span> <span class="n">Database</span>
+<span class="mi">30</span>   <span class="mi">30</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">21</span>          <span class="n">Australian</span> <span class="n">Animal</span> <span class="n">Outcomes</span>
+<span class="mi">31</span>   <span class="mi">31</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">28</span>                     <span class="n">Palmer</span> <span class="n">Penguins</span>
+<span class="mi">32</span>   <span class="mi">32</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">04</span>                     <span class="n">European</span> <span class="n">Energy</span>
+<span class="mi">33</span>   <span class="mi">33</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">11</span>          <span class="n">Avatar</span><span class="p">:</span> <span class="n">The</span> <span class="n">Last</span> <span class="n">Airbender</span>
+<span class="mi">34</span>   <span class="mi">34</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">18</span>                      <span class="n">Extinct</span> <span class="n">Plants</span>
+<span class="mi">35</span>   <span class="mi">35</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">25</span>                             <span class="n">Chopped</span>
+<span class="mi">36</span>   <span class="mi">36</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span>                  <span class="n">Global</span> <span class="n">Crop</span> <span class="n">Yields</span>
+<span class="mi">37</span>   <span class="mi">37</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">08</span>                             <span class="n">Friends</span>
+<span class="mi">38</span>   <span class="mi">38</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">15</span>                <span class="n">Gov</span> <span class="n">Spending</span> <span class="n">on</span> <span class="n">Kids</span>
+<span class="mi">39</span>   <span class="mi">39</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">22</span>                  <span class="n">Himalayan</span> <span class="n">Climbers</span>
+<span class="mi">40</span>   <span class="mi">40</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">29</span>       <span class="n">Beyonce</span> <span class="o">&amp;</span> <span class="n">Taylor</span> <span class="n">Swift</span> <span class="n">Lyrics</span>
+<span class="mi">41</span>   <span class="mi">41</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">06</span>             <span class="n">NCAA</span> <span class="n">Women</span><span class="s1">&#39;s Basketball</span>
+<span class="mi">42</span>   <span class="mi">42</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">13</span>                    <span class="n">datasauRus</span> <span class="n">dozen</span>
+<span class="mi">43</span>   <span class="mi">43</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">20</span>   <span class="n">Great</span> <span class="n">American</span> <span class="n">Beer</span> <span class="n">Festival</span> <span class="n">Data</span>
+<span class="mi">44</span>   <span class="mi">44</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">27</span>              <span class="n">Canadian</span> <span class="n">Wind</span> <span class="n">Turbines</span>
+<span class="mi">45</span>   <span class="mi">45</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">03</span>                      <span class="n">Ikea</span> <span class="n">Furniture</span>
+<span class="mi">46</span>   <span class="mi">46</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">10</span>                   <span class="n">Historical</span> <span class="n">Phones</span>
+<span class="mi">47</span>   <span class="mi">47</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">17</span>                       <span class="n">Black</span> <span class="ow">in</span> <span class="n">Data</span>
+<span class="mi">48</span>   <span class="mi">48</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">24</span>                   <span class="n">Washington</span> <span class="n">Trails</span>
+<span class="mi">49</span>   <span class="mi">49</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">01</span>                    <span class="n">Toronto</span> <span class="n">Shelters</span>
+<span class="mi">50</span>   <span class="mi">50</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">08</span>                       <span class="n">Women</span> <span class="n">of</span> <span class="mi">2020</span>
+<span class="mi">51</span>   <span class="mi">51</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">15</span>                       <span class="n">Ninja</span> <span class="n">Warrior</span>
+<span class="mi">52</span>   <span class="mi">52</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">22</span>                       <span class="n">Big</span> <span class="n">Mac</span> <span class="n">Index</span>
+                                   <span class="n">Source</span>
+<span class="mi">1</span>                                        
+<span class="mi">2</span>                   <span class="n">Bureau</span> <span class="n">of</span> <span class="n">Meteorology</span>
+<span class="mi">3</span>                  <span class="n">Knowledge</span> <span class="k">is</span> <span class="n">Beautiful</span>
+<span class="mi">4</span>                                <span class="n">spotifyr</span>
+<span class="mi">5</span>                          <span class="n">data</span><span class="o">.</span><span class="n">sfgov</span><span class="o">.</span><span class="n">org</span>
+<span class="mi">6</span>                  <span class="n">Pro</span> <span class="n">Football</span> <span class="n">Reference</span>
+<span class="mi">7</span>       <span class="n">Antonio</span><span class="p">,</span> <span class="n">Almeida</span><span class="p">,</span> <span class="ow">and</span> <span class="n">Nunes</span><span class="p">,</span> <span class="mi">2019</span>
+<span class="mi">8</span>                                     <span class="n">nu3</span>
+<span class="mi">9</span>                  <span class="n">The</span> <span class="n">Wallstreet</span> <span class="n">Journal</span>
+<span class="mi">10</span>                    <span class="n">HockeyReference</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">11</span>                     <span class="n">TuitionTracker</span><span class="o">.</span><span class="n">org</span>
+<span class="mi">12</span>                                <span class="n">schrute</span>
+<span class="mi">13</span>                                    <span class="n">CDC</span>
+<span class="mi">14</span>                                    <span class="n">TTB</span>
+<span class="mi">15</span>                            <span class="n">tdf</span> <span class="n">package</span>
+<span class="mi">16</span>                              <span class="n">BBC</span> <span class="n">Music</span>
+<span class="mi">17</span>                        <span class="n">Privacy</span> <span class="n">Affairs</span>
+<span class="mi">18</span>                               <span class="n">Playbill</span>
+<span class="mi">19</span>                            <span class="n">Villager</span> <span class="n">DB</span>
+<span class="mi">20</span>                            <span class="n">Smithsonian</span>
+<span class="mi">21</span>                           <span class="n">BigTimeStats</span>
+<span class="mi">22</span>                        <span class="n">Kaggle</span> <span class="o">&amp;</span> <span class="n">Kaggle</span>
+<span class="mi">23</span>                    <span class="n">Jelle</span><span class="s1">&#39;s Marble Runs</span>
+<span class="mi">24</span>                  <span class="n">Wikipedia</span> <span class="o">&amp;</span> <span class="n">Wikipedia</span>
+<span class="mi">25</span>    <span class="n">Black</span> <span class="n">Past</span> <span class="o">&amp;</span> <span class="n">Census</span> <span class="o">&amp;</span> <span class="n">Slave</span> <span class="n">Voyages</span>
+<span class="mi">26</span>                               <span class="n">Movebank</span>
+<span class="mi">27</span>                          <span class="n">Claremont</span> <span class="n">Run</span>
+<span class="mi">28</span> <span class="n">James</span> <span class="n">LeDoux</span> <span class="o">&amp;</span> <span class="n">Coffee</span> <span class="n">Quality</span> <span class="n">Database</span>
+<span class="mi">29</span> <span class="n">Corlett</span><span class="p">,</span> <span class="n">Stavnichuk</span> <span class="o">&amp;</span> <span class="n">Komarova</span> <span class="n">article</span>
+<span class="mi">30</span>                                  <span class="n">RSPCA</span>
+<span class="mi">31</span>      <span class="n">Gorman</span><span class="p">,</span> <span class="n">Williams</span> <span class="ow">and</span> <span class="n">Fraser</span><span class="p">,</span> <span class="mi">2014</span>
+<span class="mi">32</span>                        <span class="n">Eurostat</span> <span class="n">Energy</span>
+<span class="mi">33</span>                                   <span class="n">appa</span>
+<span class="mi">34</span>                          <span class="n">IUCN</span> <span class="n">Red</span> <span class="n">List</span>
+<span class="mi">35</span>                          <span class="n">Kaggle</span> <span class="o">&amp;</span> <span class="n">IMDB</span>
+<span class="mi">36</span>                      <span class="n">Our</span> <span class="n">World</span> <span class="ow">in</span> <span class="n">Data</span>
+<span class="mi">37</span>                      <span class="n">friends</span> <span class="n">R</span> <span class="n">package</span>
+<span class="mi">38</span>                        <span class="n">Urban</span> <span class="n">Institute</span>
+<span class="mi">39</span>                 <span class="n">The</span> <span class="n">Himalayan</span> <span class="n">Database</span>
+<span class="mi">40</span>      <span class="n">Rosie</span> <span class="n">Baillie</span> <span class="ow">and</span> <span class="n">Dr</span><span class="o">.</span> <span class="n">Sara</span> <span class="n">Stoudt</span>
+<span class="mi">41</span>                        <span class="n">FiveThirtyEight</span>
+<span class="mi">42</span>                          <span class="n">Alberto</span> <span class="n">Cairo</span>
+<span class="mi">43</span>           <span class="n">Great</span> <span class="n">American</span> <span class="n">Beer</span> <span class="n">Festival</span>
+<span class="mi">44</span>                         <span class="n">open</span><span class="o">.</span><span class="n">canada</span><span class="o">.</span><span class="n">ca</span>
+<span class="mi">45</span>                                 <span class="n">Kaggle</span>
+<span class="mi">46</span>       <span class="n">Mobile</span> <span class="n">vs</span> <span class="n">Landline</span> <span class="n">subscriptions</span>
+<span class="mi">47</span>                     <span class="n">Black</span> <span class="ow">in</span> <span class="n">Data</span> <span class="n">Week</span>
+<span class="mi">48</span>                                    <span class="n">WTA</span>
+<span class="mi">49</span>                        <span class="n">opendatatoronto</span>
+<span class="mi">50</span>                                    <span class="n">BBC</span>
+<span class="mi">51</span>                             <span class="n">Data</span><span class="o">.</span><span class="n">World</span>
+<span class="mi">52</span>                           <span class="n">TheEconomist</span>
+                                                <span class="n">Article</span>
+<span class="mi">1</span>                                                      
+<span class="mi">2</span>                                        <span class="n">NY</span> <span class="n">Times</span> <span class="o">&amp;</span> <span class="n">BBC</span>
+<span class="mi">3</span>                              <span class="n">Information</span> <span class="k">is</span> <span class="n">Beautiful</span>
+<span class="mi">4</span>                                         <span class="n">Kaylin</span> <span class="n">Pavlik</span>
+<span class="mi">5</span>                                             <span class="n">SF</span> <span class="n">Weekly</span>
+<span class="mi">6</span>                                            <span class="n">Casino</span><span class="o">.</span><span class="n">org</span>
+<span class="mi">7</span>                                             <span class="n">tidyverts</span>
+<span class="mi">8</span>                               <span class="n">r</span><span class="o">-</span><span class="n">tastic</span> <span class="n">by</span> <span class="n">Kasia</span> <span class="n">Kulma</span>
+<span class="mi">9</span>                               <span class="n">The</span> <span class="n">Wall</span> <span class="n">Street</span> <span class="n">Journal</span>
+<span class="mi">10</span>                                      <span class="n">Washington</span> <span class="n">Post</span>
+<span class="mi">11</span>                                   <span class="n">TuitionTracker</span><span class="o">.</span><span class="n">org</span>
+<span class="mi">12</span>                                          <span class="n">The</span> <span class="n">Pudding</span>
+<span class="mi">13</span>                    <span class="n">CDC</span> <span class="n">Traumatic</span> <span class="n">Brain</span> <span class="n">Injury</span> <span class="n">Report</span>
+<span class="mi">14</span>                                  <span class="n">Brewers</span> <span class="n">Association</span>
+<span class="mi">15</span>                            <span class="n">Alastair</span> <span class="n">Rushworth</span><span class="s1">&#39;s blog</span>
+<span class="mi">16</span>                         <span class="n">Simon</span> <span class="n">Jockers</span> <span class="n">at</span> <span class="n">Datawrapper</span>
+<span class="mi">17</span>                                      <span class="n">Roel</span> <span class="n">Hogervorst</span>
+<span class="mi">18</span>                                         <span class="n">Alex</span> <span class="n">Cookson</span>
+<span class="mi">19</span>                                              <span class="n">Polygon</span>
+<span class="mi">20</span>                                    <span class="n">Axios</span> <span class="o">&amp;</span> <span class="n">Wikipedia</span>
+<span class="mi">21</span>                          <span class="n">FiveThirtyEight</span> <span class="o">&amp;</span> <span class="n">Wikipedia</span>
+<span class="mi">22</span>                                      <span class="n">FiveThirtyEight</span>
+<span class="mi">23</span>                                          <span class="n">Randy</span> <span class="n">Olson</span>
+<span class="mi">24</span>       <span class="n">David</span> <span class="n">Blackwell</span> <span class="o">&amp;</span> <span class="n">Petition</span> <span class="k">for</span> <span class="n">David</span> <span class="n">Blackwell</span>
+<span class="mi">25</span>                                         <span class="n">The</span> <span class="n">Guardian</span>
+<span class="mi">26</span>                         <span class="n">B</span><span class="o">.</span><span class="n">C</span><span class="o">.</span> <span class="n">Ministry</span> <span class="n">of</span> <span class="n">Environment</span>
+<span class="mi">27</span>                            <span class="n">Wikipedia</span> <span class="o">-</span> <span class="n">Uncanny</span> <span class="n">X</span><span class="o">-</span><span class="n">Men</span>
+<span class="mi">28</span>                               <span class="n">Yorgos</span> <span class="n">Askalidis</span> <span class="o">-</span> <span class="n">TWD</span>
+<span class="mi">29</span>               <span class="n">Corlett</span><span class="p">,</span> <span class="n">Stavnichuk</span> <span class="o">&amp;</span> <span class="n">Komarova</span> <span class="n">article</span>
+<span class="mi">30</span>                                         <span class="n">RSPCA</span> <span class="n">Report</span>
+<span class="mi">31</span>                                      <span class="n">Palmer</span> <span class="n">Penguins</span>
+<span class="mi">32</span>                               <span class="n">Washington</span> <span class="n">Post</span> <span class="n">Energy</span>
+<span class="mi">33</span> <span class="n">Exploring</span> <span class="n">Avatar</span><span class="p">:</span> <span class="n">The</span> <span class="n">Last</span> <span class="n">Airbender</span> <span class="n">transcript</span> <span class="n">data</span>
+<span class="mi">34</span>                         <span class="n">Florent</span> <span class="n">Lavergne</span> <span class="n">infographic</span>
+<span class="mi">35</span>                                                 <span class="n">Vice</span>
+<span class="mi">36</span>                                    <span class="n">Our</span> <span class="n">World</span> <span class="ow">in</span> <span class="n">Data</span>
+<span class="mi">37</span>                            <span class="n">ceros</span> <span class="n">interactive</span> <span class="n">article</span>
+<span class="mi">38</span>                  <span class="n">Joshua</span> <span class="n">Rosenberg</span><span class="s1">&#39;s tidykids package</span>
+<span class="mi">39</span>                               <span class="n">Alex</span> <span class="n">Cookson</span> <span class="n">blog</span> <span class="n">post</span>
+<span class="mi">40</span>                                  <span class="n">Taylor</span> <span class="n">Swift</span> <span class="n">lyrics</span>
+<span class="mi">41</span>                                      <span class="n">FiveThirtyEight</span>
+<span class="mi">42</span>                                 <span class="n">datasauRus</span> <span class="n">R</span> <span class="n">package</span>
+<span class="mi">43</span>                      <span class="mi">2019</span> <span class="n">GABF</span> <span class="n">Medal</span> <span class="n">Winner</span> <span class="n">Analysis</span>
+<span class="mi">44</span>                           <span class="n">Canada</span><span class="s1">&#39;s National Observer</span>
+<span class="mi">45</span>                                      <span class="n">FiveThirtyEight</span>
+<span class="mi">46</span>                     <span class="n">Pew</span> <span class="n">Research</span> <span class="n">Smartphone</span> <span class="n">Adoption</span>
+<span class="mi">47</span>                                 <span class="n">BlackInData</span> <span class="c1">#DataViz</span>
+<span class="mi">48</span>                                                <span class="n">TidyX</span>
+<span class="mi">49</span>                                            <span class="n">rabble</span><span class="o">.</span><span class="n">ca</span>
+<span class="mi">50</span>                                                  <span class="n">BBC</span>
+<span class="mi">51</span>                                          <span class="n">sasukepedia</span>
+<span class="mi">52</span>                                         <span class="n">TheEconomist</span>
+
+
+<span class="n">Year</span><span class="p">:</span> <span class="mi">2019</span>
+
+   <span class="n">Week</span>       <span class="n">Date</span>                               <span class="n">Data</span>
+<span class="mi">1</span>     <span class="mi">1</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span>      <span class="c1">#Rstats &amp; #TidyTuesday Tweets</span>
+<span class="mi">2</span>     <span class="mi">2</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">08</span>                    <span class="n">TV</span><span class="s1">&#39;s Golden Age</span>
+<span class="mi">3</span>     <span class="mi">3</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">15</span>                     <span class="n">Space</span> <span class="n">Launches</span>
+<span class="mi">4</span>     <span class="mi">4</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">22</span>               <span class="n">Incarceration</span> <span class="n">Trends</span>
+<span class="mi">5</span>     <span class="mi">5</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">29</span>     <span class="n">Dairy</span> <span class="n">production</span> <span class="o">&amp;</span> <span class="n">Consumption</span>
+<span class="mi">6</span>     <span class="mi">6</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">05</span> <span class="n">House</span> <span class="n">Price</span> <span class="n">Index</span> <span class="o">&amp;</span> <span class="n">Mortgage</span> <span class="n">Rates</span>
+<span class="mi">7</span>     <span class="mi">7</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">12</span>               <span class="n">Federal</span> <span class="n">R</span><span class="o">&amp;</span><span class="n">D</span> <span class="n">Spending</span>
+<span class="mi">8</span>     <span class="mi">8</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">19</span>                   <span class="n">US</span> <span class="n">PhD</span><span class="s1">&#39;s Awarded</span>
+<span class="mi">9</span>     <span class="mi">9</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">26</span>                <span class="n">French</span> <span class="n">Train</span> <span class="n">Delays</span>
+<span class="mi">10</span>   <span class="mi">10</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">05</span>             <span class="n">Women</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">Workplace</span>
+<span class="mi">11</span>   <span class="mi">11</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">12</span>                        <span class="n">Board</span> <span class="n">Games</span>
+<span class="mi">12</span>   <span class="mi">12</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">19</span>     <span class="n">Stanford</span> <span class="n">Open</span> <span class="n">Policing</span> <span class="n">Project</span>
+<span class="mi">13</span>   <span class="mi">13</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">26</span>                  <span class="n">Seattle</span> <span class="n">Pet</span> <span class="n">Names</span>
+<span class="mi">14</span>   <span class="mi">14</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">02</span>               <span class="n">Seattle</span> <span class="n">Bike</span> <span class="n">Traffic</span>
+<span class="mi">15</span>   <span class="mi">15</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">09</span>        <span class="n">Tennis</span> <span class="n">Grand</span> <span class="n">Slam</span> <span class="n">Champions</span>
+<span class="mi">16</span>   <span class="mi">16</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">16</span>    <span class="n">The</span> <span class="n">Economist</span> <span class="n">Data</span> <span class="n">Viz</span> <span class="n">Mistakes</span>
+<span class="mi">17</span>   <span class="mi">17</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">23</span>                         <span class="n">Anime</span> <span class="n">Data</span>
+<span class="mi">18</span>   <span class="mi">18</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">30</span>            <span class="n">Chicago</span> <span class="n">Bird</span> <span class="n">Collisions</span>
+<span class="mi">19</span>   <span class="mi">19</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">07</span>   <span class="n">Global</span> <span class="n">Student</span> <span class="n">to</span> <span class="n">Teacher</span> <span class="n">Ratios</span>
+<span class="mi">20</span>   <span class="mi">20</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">14</span>                <span class="n">Nobel</span> <span class="n">Prize</span> <span class="n">Winners</span>
+<span class="mi">21</span>   <span class="mi">21</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">21</span>               <span class="n">Global</span> <span class="n">Plastic</span> <span class="n">Waste</span>
+<span class="mi">22</span>   <span class="mi">22</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">28</span>                       <span class="n">Wine</span> <span class="n">Ratings</span>
+<span class="mi">23</span>   <span class="mi">23</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">04</span>                      <span class="n">Ramen</span> <span class="n">Ratings</span>
+<span class="mi">24</span>   <span class="mi">24</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">11</span>                         <span class="n">Meteorites</span>
+<span class="mi">25</span>   <span class="mi">25</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">18</span>              <span class="n">Christmas</span> <span class="n">Bird</span> <span class="n">Counts</span>
+<span class="mi">26</span>   <span class="mi">26</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">25</span>               <span class="n">Global</span> <span class="n">UFO</span> <span class="n">Sightings</span>
+<span class="mi">27</span>   <span class="mi">27</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">02</span>           <span class="n">Media</span> <span class="n">Franchise</span> <span class="n">Revenues</span>
+<span class="mi">28</span>   <span class="mi">28</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">09</span>                  <span class="n">Women</span><span class="s1">&#39;s World Cup</span>
+<span class="mi">29</span>   <span class="mi">29</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">16</span>                    <span class="n">R4DS</span> <span class="n">Membership</span>
+<span class="mi">30</span>   <span class="mi">30</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">23</span>                   <span class="n">Wildlife</span> <span class="n">Strikes</span>
+<span class="mi">31</span>   <span class="mi">31</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">30</span>                        <span class="n">Video</span> <span class="n">Games</span>
+<span class="mi">32</span>   <span class="mi">32</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">06</span>                 <span class="n">Bob</span> <span class="n">Ross</span> <span class="n">paintings</span>
+<span class="mi">33</span>   <span class="mi">33</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">13</span>                     <span class="n">Roman</span> <span class="n">Emperors</span>
+<span class="mi">34</span>   <span class="mi">34</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">20</span>                 <span class="n">Nuclear</span> <span class="n">Explosions</span>
+<span class="mi">35</span>   <span class="mi">35</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">27</span>               <span class="n">Simpsons</span> <span class="n">Guest</span> <span class="n">Stars</span>
+<span class="mi">36</span>   <span class="mi">36</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">03</span>                        <span class="n">Moore</span><span class="s1">&#39;s Law</span>
+<span class="mi">37</span>   <span class="mi">37</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">10</span>            <span class="n">Amusement</span> <span class="n">Park</span> <span class="n">Injuries</span>
+<span class="mi">38</span>   <span class="mi">38</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">17</span>               <span class="n">National</span> <span class="n">Park</span> <span class="n">Visits</span>
+<span class="mi">39</span>   <span class="mi">39</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">24</span>                   <span class="n">School</span> <span class="n">Diversity</span>
+<span class="mi">40</span>   <span class="mi">40</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">01</span>                      <span class="n">All</span> <span class="n">the</span> <span class="n">Pizza</span>
+<span class="mi">41</span>   <span class="mi">41</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">08</span>                       <span class="n">Powerlifting</span>
+<span class="mi">42</span>   <span class="mi">42</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">15</span>                   <span class="n">Car</span> <span class="n">Fuel</span> <span class="n">Economy</span>
+<span class="mi">43</span>   <span class="mi">43</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">22</span>               <span class="n">Horror</span> <span class="n">movie</span> <span class="n">ratings</span>
+<span class="mi">44</span>   <span class="mi">44</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">29</span>                <span class="n">NYC</span> <span class="n">Squirrel</span> <span class="n">Census</span>
+<span class="mi">45</span>   <span class="mi">45</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">05</span>               <span class="n">Bike</span> <span class="o">&amp;</span> <span class="n">Walk</span> <span class="n">Commutes</span>
+<span class="mi">46</span>   <span class="mi">46</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">12</span>                          <span class="n">CRAN</span> <span class="n">Code</span>
+<span class="mi">47</span>   <span class="mi">47</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">19</span>                <span class="n">NZ</span> <span class="n">Bird</span> <span class="n">of</span> <span class="n">the</span> <span class="n">Year</span>
+<span class="mi">48</span>   <span class="mi">48</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">26</span>                  <span class="n">Student</span> <span class="n">Loan</span> <span class="n">Debt</span>
+<span class="mi">49</span>   <span class="mi">49</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">03</span>             <span class="n">Philly</span> <span class="n">Parking</span> <span class="n">Tickets</span>
+<span class="mi">50</span>   <span class="mi">50</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">10</span>             <span class="n">Replicating</span> <span class="n">plots</span> <span class="ow">in</span> <span class="n">R</span>
+<span class="mi">51</span>   <span class="mi">51</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">17</span>                     <span class="n">Adoptable</span> <span class="n">dogs</span>
+<span class="mi">52</span>   <span class="mi">52</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">24</span>                    <span class="n">Christmas</span> <span class="n">Songs</span>
+                                                     <span class="n">Source</span>
+<span class="mi">1</span>                                                    <span class="n">rtweet</span>
+<span class="mi">2</span>                                                      <span class="n">IMDb</span>
+<span class="mi">3</span>                               <span class="n">JSR</span> <span class="n">Launch</span> <span class="n">Vehicle</span> <span class="n">Database</span>
+<span class="mi">4</span>                                            <span class="n">Vera</span> <span class="n">Institute</span>
+<span class="mi">5</span>                                                      <span class="n">USDA</span>
+<span class="mi">6</span>                                   <span class="n">FreddieMac</span> <span class="o">&amp;</span> <span class="n">FreddieMac</span>
+<span class="mi">7</span>                                                      <span class="n">AAAS</span>
+<span class="mi">8</span>                                                       <span class="n">NSF</span>
+<span class="mi">9</span>                                                      <span class="n">SNCF</span>
+<span class="mi">10</span>                          <span class="n">Census</span> <span class="n">Bureau</span> <span class="o">&amp;</span> <span class="n">Bureau</span> <span class="n">of</span> <span class="n">Labor</span>
+<span class="mi">11</span>                                         <span class="n">Board</span> <span class="n">Game</span> <span class="n">Geeks</span>
+<span class="mi">12</span>   <span class="n">Stanford</span> <span class="n">Open</span> <span class="n">Policing</span> <span class="n">Project</span> <span class="n">SOPP</span> <span class="o">-</span> <span class="n">arXiv</span><span class="p">:</span><span class="mf">1706.05678</span>
+<span class="mi">13</span>                                              <span class="n">seattle</span><span class="o">.</span><span class="n">gov</span>
+<span class="mi">14</span>                                              <span class="n">seattle</span><span class="o">.</span><span class="n">gov</span>
+<span class="mi">15</span>                                                <span class="n">Wikipedia</span>
+<span class="mi">16</span>                                            <span class="n">The</span> <span class="n">Economist</span>
+<span class="mi">17</span>                                              <span class="n">MyAnimeList</span>
+<span class="mi">18</span>                                       <span class="n">Winger</span> <span class="n">et</span> <span class="n">al</span><span class="p">,</span> <span class="mi">2019</span>
+<span class="mi">19</span>                                                   <span class="n">UNESCO</span>
+<span class="mi">20</span>                                                   <span class="n">Kaggle</span>
+<span class="mi">21</span>                                        <span class="n">Our</span> <span class="n">World</span> <span class="n">In</span> <span class="n">Data</span>
+<span class="mi">22</span>                                                   <span class="n">Kaggle</span>
+<span class="mi">23</span>                                        <span class="n">TheRamenRater</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">24</span>                                                     <span class="n">NASA</span>
+<span class="mi">25</span>                                      <span class="n">Bird</span> <span class="n">Studies</span> <span class="n">Canada</span>
+<span class="mi">26</span>                                                   <span class="n">NUFORC</span>
+<span class="mi">27</span>                                                <span class="n">Wikipedia</span>
+<span class="mi">28</span>                                               <span class="n">data</span><span class="o">.</span><span class="n">world</span>
+<span class="mi">29</span>                                               <span class="n">R4DS</span> <span class="n">Slack</span>
+<span class="mi">30</span>                                                      <span class="n">FAA</span>
+<span class="mi">31</span>                                                <span class="n">Steam</span> <span class="n">Spy</span>
+<span class="mi">32</span>                                          <span class="n">FiveThirtyEight</span>
+<span class="mi">33</span>                                   <span class="n">Wikipedia</span> <span class="o">/</span> <span class="n">Zonination</span>
+<span class="mi">34</span>                                                    <span class="n">SIPRI</span>
+<span class="mi">35</span>                                                <span class="n">Wikipedia</span>
+<span class="mi">36</span>                                                <span class="n">Wikipedia</span>
+<span class="mi">37</span>                                  <span class="n">Data</span><span class="o">.</span><span class="n">world</span> <span class="o">&amp;</span> <span class="n">Saferparks</span>
+<span class="mi">38</span>                                               <span class="n">Data</span><span class="o">.</span><span class="n">world</span>
+<span class="mi">39</span>                                                     <span class="n">NCES</span>
+<span class="mi">40</span> <span class="n">Jared</span> <span class="n">Lander</span> <span class="o">&amp;</span> <span class="n">Ludmila</span> <span class="n">Janda</span><span class="p">,</span> <span class="n">Tyler</span> <span class="n">Richards</span><span class="p">,</span> <span class="n">DataFiniti</span>
+<span class="mi">41</span>                                     <span class="n">OpenPowerlifting</span><span class="o">.</span><span class="n">org</span>
+<span class="mi">42</span>                                                      <span class="n">EPA</span>
+<span class="mi">43</span>                                                     <span class="n">IMDB</span>
+<span class="mi">44</span>                                          <span class="n">Squirrel</span> <span class="n">Census</span>
+<span class="mi">45</span>                                                      <span class="n">ACS</span>
+<span class="mi">46</span>                                                     <span class="n">CRAN</span>
+<span class="mi">47</span>                          <span class="n">New</span> <span class="n">Zealand</span> <span class="n">Forest</span> <span class="ow">and</span> <span class="n">Bird</span> <span class="n">Org</span>
+<span class="mi">48</span>                                  <span class="n">Department</span> <span class="n">of</span> <span class="n">Education</span>
+<span class="mi">49</span>                                         <span class="n">Open</span> <span class="n">Data</span> <span class="n">Philly</span>
+<span class="mi">50</span>                                        <span class="n">Simply</span> <span class="n">Statistics</span>
+<span class="mi">51</span>                                                <span class="n">Petfinder</span>
+<span class="mi">52</span>                                        <span class="n">Billboard</span> <span class="n">Top</span> <span class="mi">100</span>
+                                 <span class="n">Article</span>
+<span class="mi">1</span>                     <span class="n">stackoverflow</span><span class="o">.</span><span class="n">blog</span>
+<span class="mi">2</span>                          <span class="n">The</span> <span class="n">Economist</span>
+<span class="mi">3</span>                          <span class="n">The</span> <span class="n">Economist</span>
+<span class="mi">4</span>                         <span class="n">Vera</span> <span class="n">Institute</span>
+<span class="mi">5</span>                                    <span class="n">NPR</span>
+<span class="mi">6</span>                                <span class="n">Fortune</span>
+<span class="mi">7</span>                         <span class="n">New</span> <span class="n">York</span> <span class="n">Times</span>
+<span class="mi">8</span>                           <span class="c1">#epibookclub</span>
+<span class="mi">9</span>                            <span class="n">RTL</span> <span class="o">-</span> <span class="n">Today</span>
+<span class="mi">10</span>                         <span class="n">Census</span> <span class="n">Bureau</span>
+<span class="mi">11</span>                       <span class="n">fivethirtyeight</span>
+<span class="mi">12</span>               <span class="n">SOPP</span> <span class="o">-</span> <span class="n">arXiv</span><span class="p">:</span><span class="mf">1706.05678</span>
+<span class="mi">13</span>                        <span class="n">Curbed</span> <span class="n">Seattle</span>
+<span class="mi">14</span>                         <span class="n">Seattle</span> <span class="n">Times</span>
+<span class="mi">15</span>                       <span class="n">Financial</span> <span class="n">Times</span>
+<span class="mi">16</span>                         <span class="n">The</span> <span class="n">Economist</span>
+<span class="mi">17</span>                           <span class="n">MyAnimeList</span>
+<span class="mi">18</span>                    <span class="n">Winger</span> <span class="n">et</span> <span class="n">al</span><span class="p">,</span> <span class="mi">2019</span>
+<span class="mi">19</span>           <span class="n">Center</span> <span class="k">for</span> <span class="n">Public</span> <span class="n">Education</span>
+<span class="mi">20</span>                         <span class="n">The</span> <span class="n">Economist</span>
+<span class="mi">21</span>                     <span class="n">Our</span> <span class="n">World</span> <span class="ow">in</span> <span class="n">Data</span>
+<span class="mi">22</span>                                <span class="n">Vivino</span>
+<span class="mi">23</span>                         <span class="n">Food</span> <span class="n">Republic</span>
+<span class="mi">24</span>          <span class="n">The</span> <span class="n">Guardian</span> <span class="o">-</span> <span class="n">Meteorite</span> <span class="n">map</span>
+<span class="mi">25</span>         <span class="n">Hamilton</span> <span class="n">Christmas</span> <span class="n">Bird</span> <span class="n">Count</span>
+<span class="mi">26</span>                         <span class="n">Example</span> <span class="n">Plots</span>
+<span class="mi">27</span>           <span class="n">reddit</span><span class="o">/</span><span class="n">dataisbeautiful</span> <span class="n">post</span>
+<span class="mi">28</span>                             <span class="n">Wikipedia</span>
+<span class="mi">29</span>                <span class="n">R4DS</span> <span class="n">useR</span> <span class="n">Presentation</span>
+<span class="mi">30</span>                                   <span class="n">FAA</span>
+<span class="mi">31</span>                             <span class="n">Liza</span> <span class="n">Wood</span>
+<span class="mi">32</span>                       <span class="n">FiveThirtyEight</span>
+<span class="mi">33</span>          <span class="n">reddit</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">r</span><span class="o">/</span><span class="n">dataisbeautiful</span>
+<span class="mi">34</span>                     <span class="n">Our</span> <span class="n">World</span> <span class="ow">in</span> <span class="n">Data</span>
+<span class="mi">35</span>                             <span class="n">Wikipedia</span>
+<span class="mi">36</span>                             <span class="n">Wikipedia</span>
+<span class="mi">37</span>                            <span class="n">Saferparks</span>
+<span class="mi">38</span>               <span class="n">fivethirtyeight</span> <span class="n">article</span>
+<span class="mi">39</span>               <span class="n">Washington</span> <span class="n">Post</span> <span class="n">article</span>
+<span class="mi">40</span>                 <span class="n">Tyler</span> <span class="n">Richards</span> <span class="n">on</span> <span class="n">TWD</span>
+<span class="mi">41</span>                         <span class="n">Elias</span> <span class="n">Oziolor</span>
+<span class="mi">42</span>                          <span class="n">Ellis</span> <span class="n">Hughes</span>
+<span class="mi">43</span>                       <span class="n">Stephen</span> <span class="n">Follows</span>
+<span class="mi">44</span>                               <span class="n">CityLab</span>
+<span class="mi">45</span>                                   <span class="n">ACS</span>
+<span class="mi">46</span>                    <span class="n">Phillip</span> <span class="n">Massicotte</span>
+<span class="mi">47</span> <span class="n">Dragonfly</span> <span class="n">Data</span> <span class="n">Science</span> <span class="o">&amp;</span> <span class="n">Nathan</span> <span class="n">Moore</span>
+<span class="mi">48</span>                      <span class="n">Dignity</span> <span class="ow">and</span> <span class="n">Debt</span>
+<span class="mi">49</span>                      <span class="n">NBC</span> <span class="n">Philadelphia</span>
+<span class="mi">50</span>                       <span class="n">Rafael</span> <span class="n">Irizarry</span>
+<span class="mi">51</span>                           <span class="n">The</span> <span class="n">Pudding</span>
+<span class="mi">52</span>                        <span class="n">A</span> <span class="n">Dash</span> <span class="n">of</span> <span class="n">Data</span>
+
+
+<span class="n">Year</span><span class="p">:</span> <span class="mi">2018</span>
+
+   <span class="n">Week</span>       <span class="n">Date</span>                                                  <span class="n">Data</span>
+<span class="mi">1</span>     <span class="mi">1</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">02</span>                                      <span class="n">US</span> <span class="n">Tuition</span> <span class="n">Costs</span>
+<span class="mi">2</span>     <span class="mi">2</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">09</span>                               <span class="n">NFL</span> <span class="n">Positional</span> <span class="n">Salaries</span>
+<span class="mi">3</span>     <span class="mi">3</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">16</span>                                      <span class="n">Global</span> <span class="n">Mortality</span>
+<span class="mi">4</span>     <span class="mi">4</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">23</span>                         <span class="n">Australian</span> <span class="n">Salaries</span> <span class="n">by</span> <span class="n">Gender</span>
+<span class="mi">5</span>     <span class="mi">5</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">30</span>                                <span class="n">ACS</span> <span class="n">Census</span> <span class="n">Data</span> <span class="p">(</span><span class="mi">2015</span><span class="p">)</span>
+<span class="mi">6</span>     <span class="mi">6</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">07</span>                                  <span class="n">Global</span> <span class="n">Coffee</span> <span class="n">Chains</span>
+<span class="mi">7</span>     <span class="mi">7</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">14</span>                                      <span class="n">Star</span> <span class="n">Wars</span> <span class="n">Survey</span>
+<span class="mi">8</span>     <span class="mi">8</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">21</span>                                   <span class="n">US</span> <span class="n">Honey</span> <span class="n">Production</span>
+<span class="mi">9</span>     <span class="mi">9</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">29</span>                                 <span class="n">Comic</span> <span class="n">book</span> <span class="n">characters</span>
+<span class="mi">10</span>   <span class="mi">10</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">05</span>                                    <span class="n">Biketown</span> <span class="n">Bikeshare</span>
+<span class="mi">11</span>   <span class="mi">11</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">12</span>                               <span class="n">FIFA</span> <span class="n">World</span> <span class="n">Cup</span> <span class="n">Audience</span>
+<span class="mi">12</span>   <span class="mi">12</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">19</span>                              <span class="n">Hurricanes</span> <span class="o">&amp;</span> <span class="n">Puerto</span> <span class="n">Rico</span>
+<span class="mi">13</span>   <span class="mi">13</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">26</span>                                   <span class="n">Alcohol</span> <span class="n">Consumption</span>
+<span class="mi">14</span>   <span class="mi">14</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">03</span>                                <span class="n">Global</span> <span class="n">Life</span> <span class="n">Expectancy</span>
+<span class="mi">15</span>   <span class="mi">15</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">10</span>                                        <span class="n">Craft</span> <span class="n">Beer</span> <span class="n">USA</span>
+<span class="mi">16</span>   <span class="mi">16</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">17</span>                                          <span class="n">Exercise</span> <span class="n">USA</span>
+<span class="mi">17</span>   <span class="mi">17</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">23</span>                            <span class="n">p</span><span class="o">-</span><span class="n">hack</span><span class="o">-</span><span class="n">athon</span> <span class="n">collaboration</span>
+<span class="mi">18</span>   <span class="mi">18</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">31</span>                          <span class="n">Dallas</span> <span class="n">Animal</span> <span class="n">Shelter</span> <span class="n">FY2017</span>
+<span class="mi">19</span>   <span class="mi">19</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">07</span>                                        <span class="n">Airline</span> <span class="n">Safety</span>
+<span class="mi">20</span>   <span class="mi">20</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">14</span>                                  <span class="n">Russian</span> <span class="n">Troll</span> <span class="n">Tweets</span>
+<span class="mi">21</span>   <span class="mi">21</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">21</span>                                      <span class="n">California</span> <span class="n">Fires</span>
+<span class="mi">22</span>   <span class="mi">22</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">28</span>                                             <span class="n">NFL</span> <span class="n">Stats</span>
+<span class="mi">23</span>   <span class="mi">23</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">04</span>                                    <span class="n">Fast</span> <span class="n">Food</span> <span class="n">Calories</span>
+<span class="mi">24</span>   <span class="mi">24</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">11</span>                                    <span class="n">Cats</span> <span class="n">vs</span> <span class="n">Dogs</span> <span class="p">(</span><span class="n">USA</span><span class="p">)</span>
+<span class="mi">25</span>   <span class="mi">25</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">18</span>                                 <span class="n">US</span> <span class="n">Flights</span> <span class="ow">or</span> <span class="n">Hypoxia</span>
+<span class="mi">26</span>   <span class="mi">26</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">25</span>                               <span class="n">Global</span> <span class="n">Invasive</span> <span class="n">Species</span>
+<span class="mi">27</span>   <span class="mi">27</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">02</span>                                             <span class="n">US</span> <span class="n">Births</span>
+<span class="mi">28</span>   <span class="mi">28</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">09</span>                                      <span class="n">US</span> <span class="n">Voter</span> <span class="n">Turnout</span>
+<span class="mi">29</span>   <span class="mi">29</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">16</span>                                <span class="n">College</span> <span class="n">Major</span> <span class="o">&amp;</span> <span class="n">Income</span>
+<span class="mi">30</span>   <span class="mi">30</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">23</span>                                   <span class="n">Horror</span> <span class="n">Movie</span> <span class="n">Profit</span>
+<span class="mi">31</span>   <span class="mi">31</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">30</span>                             <span class="n">R</span> <span class="ow">and</span> <span class="n">R</span> <span class="n">package</span> <span class="n">downloads</span>
+<span class="mi">32</span>   <span class="mi">32</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">06</span>                                <span class="n">US</span> <span class="n">Wind</span> <span class="n">Farm</span> <span class="n">locations</span>
+<span class="mi">33</span>   <span class="mi">33</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">13</span>                                          <span class="n">Malaria</span> <span class="n">Data</span>
+<span class="mi">34</span>   <span class="mi">34</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">20</span> <span class="n">Thanksgiving</span> <span class="n">Dinner</span> <span class="ow">or</span> <span class="n">Transgender</span> <span class="n">Day</span> <span class="n">of</span> <span class="n">Remembrance</span>
+<span class="mi">35</span>   <span class="mi">35</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">27</span>                                     <span class="n">Baltimore</span> <span class="n">Bridges</span>
+<span class="mi">36</span>   <span class="mi">36</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">04</span>                               <span class="n">Medium</span> <span class="n">Article</span> <span class="n">Metadata</span>
+<span class="mi">37</span>   <span class="mi">37</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">11</span>                            <span class="n">NYC</span> <span class="n">Restaurant</span> <span class="n">inspections</span>
+<span class="mi">38</span>   <span class="mi">38</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">18</span>                                        <span class="n">Cetaceans</span> <span class="n">Data</span>
+                                                                                   <span class="n">Source</span>
+<span class="mi">1</span>                                                                       <span class="n">onlinembapage</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">2</span>                                                                             <span class="n">Spotrac</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">3</span>                                                                      <span class="n">ourworldindata</span><span class="o">.</span><span class="n">org</span>
+<span class="mi">4</span>                                                                             <span class="n">data</span><span class="o">.</span><span class="n">gov</span><span class="o">.</span><span class="n">au</span>
+<span class="mi">5</span>                                                                     <span class="n">census</span><span class="o">.</span><span class="n">gov</span> <span class="p">,</span> <span class="n">Kaggle</span>
+<span class="mi">6</span>  <span class="n">Starbucks</span><span class="p">:</span> <span class="n">kaggle</span><span class="o">.</span><span class="n">com</span> <span class="p">,</span> <span class="n">Tim</span> <span class="n">Horton</span><span class="p">:</span> <span class="n">timhortons</span><span class="o">.</span><span class="n">com</span> <span class="p">,</span> <span class="n">Dunkin</span> <span class="n">Donuts</span><span class="p">:</span> <span class="n">odditysoftware</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">7</span>                                                                 <span class="n">fivethirtyeight</span> <span class="n">package</span>
+<span class="mi">8</span>                                                                        <span class="n">USDA</span><span class="p">,</span> <span class="n">Kaggle</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">9</span>                                                                 <span class="n">FiveThirtyEight</span> <span class="n">package</span>
+<span class="mi">10</span>                                                                            <span class="n">BiketownPDX</span>
+<span class="mi">11</span>                                                                <span class="n">FiveThirtyEight</span> <span class="n">package</span>
+<span class="mi">12</span>                                                                <span class="n">FiveThirtyEight</span> <span class="n">package</span>
+<span class="mi">13</span>                                                                <span class="n">FiveThirtyEight</span> <span class="n">package</span>
+<span class="mi">14</span>                                                                     <span class="n">ourworldindata</span><span class="o">.</span><span class="n">org</span>
+<span class="mi">15</span>                                                                             <span class="n">data</span><span class="o">.</span><span class="n">world</span>
+<span class="mi">16</span>                                                                                    <span class="n">CDC</span>
+<span class="mi">17</span>                                                                   <span class="n">simplystatistics</span><span class="o">.</span><span class="n">org</span>
+<span class="mi">18</span>                                                                        <span class="n">Dallas</span> <span class="n">OpenData</span>
+<span class="mi">19</span>                                                                <span class="n">FiveThirtyEight</span> <span class="n">Package</span>
+<span class="mi">20</span>                                                                    <span class="n">FiveThirtyEight</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">21</span>                                                                           <span class="n">BuzzFeed</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">22</span>                                                             <span class="n">pro</span><span class="o">-</span><span class="n">football</span><span class="o">-</span><span class="n">reference</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">23</span>                                                                  <span class="n">fastfoodnutrition</span><span class="o">.</span><span class="n">org</span>
+<span class="mi">24</span>                                                                             <span class="n">data</span><span class="o">.</span><span class="n">world</span>
+<span class="mi">25</span>                                                      <span class="n">faa</span><span class="o">.</span><span class="n">govSoaring</span> <span class="n">Society</span> <span class="n">of</span> <span class="n">America</span>
+<span class="mi">26</span>                                                             <span class="n">Paini</span> <span class="n">et</span> <span class="n">al</span><span class="p">,</span> <span class="mi">2016</span><span class="n">griis</span><span class="o">.</span><span class="n">org</span>
+<span class="mi">27</span>                                                                <span class="n">fivethirtyeight</span> <span class="n">package</span>
+<span class="mi">28</span>                                                                             <span class="n">data</span><span class="o">.</span><span class="n">world</span>
+<span class="mi">29</span>                                                                    <span class="n">fivethirtyeight</span><span class="o">/</span><span class="n">ACS</span>
+<span class="mi">30</span>                                                                        <span class="n">the</span><span class="o">-</span><span class="n">numbers</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">31</span>                                                                  <span class="n">cran</span><span class="o">-</span><span class="n">logs</span><span class="o">.</span><span class="n">rstudio</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">32</span>                                                                               <span class="n">usgs</span><span class="o">.</span><span class="n">gov</span>
+<span class="mi">33</span>                                               <span class="n">ourworldindata</span><span class="o">.</span><span class="n">orgMalaria</span> <span class="n">Data</span> <span class="n">Challenge</span>
+<span class="mi">34</span>                                                                    <span class="n">fivethirtyeightTDoR</span>
+<span class="mi">35</span>                                                         <span class="n">Federal</span> <span class="n">Highway</span> <span class="n">Administration</span>
+<span class="mi">36</span>                                                                             <span class="n">Kaggle</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">37</span>                                                     <span class="n">NYC</span> <span class="n">OpenData</span><span class="o">/</span><span class="n">NYC</span> <span class="n">Health</span> <span class="n">Department</span>
+<span class="mi">38</span>                                                                            <span class="n">The</span> <span class="n">Pudding</span>
+                                       <span class="n">Article</span>
+<span class="mi">1</span>                            <span class="n">onlinembapage</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">2</span>                          <span class="n">fivethirtyeight</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">3</span>                           <span class="n">ourworldindata</span><span class="o">.</span><span class="n">org</span>
+<span class="mi">4</span>                                  <span class="n">data</span><span class="o">.</span><span class="n">gov</span><span class="o">.</span><span class="n">au</span>
+<span class="mi">5</span>                                   <span class="n">No</span> <span class="n">article</span>
+<span class="mi">6</span>                              <span class="n">flowingdata</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">7</span>                          <span class="n">fivethirtyeight</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">8</span>                                  <span class="n">Bee</span> <span class="n">Culture</span>
+<span class="mi">9</span>                          <span class="n">FiveThirtyEight</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">10</span>               <span class="n">Biketown</span> <span class="n">cascadiaRconf</span><span class="o">/</span><span class="n">cRaggy</span>
+<span class="mi">11</span>                         <span class="n">FiveThirtyEight</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">12</span>                         <span class="n">FiveThirtyEight</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">13</span>                         <span class="n">FiveThirtyEight</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">14</span>                          <span class="n">ourworldindata</span><span class="o">.</span><span class="n">org</span>
+<span class="mi">15</span>                               <span class="n">thrillist</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">16</span>    <span class="n">CDC</span> <span class="o">-</span> <span class="n">National</span> <span class="n">Health</span> <span class="n">Statistics</span> <span class="n">Reports</span>
+<span class="mi">17</span>                                <span class="n">p</span><span class="o">-</span><span class="n">hack</span><span class="o">-</span><span class="n">athon</span>
+<span class="mi">18</span>              <span class="n">Dallas</span> <span class="n">OpenData</span> <span class="n">FY2017</span> <span class="n">Summary</span>
+<span class="mi">19</span>                        <span class="mi">538</span> <span class="o">-</span> <span class="n">Airline</span> <span class="n">Safety</span>
+<span class="mi">20</span>                  <span class="mi">538</span> <span class="o">-</span> <span class="n">Russian</span> <span class="n">Troll</span> <span class="n">Tweets</span>
+<span class="mi">21</span> <span class="n">BuzzFeed</span> <span class="n">News</span> <span class="o">-</span> <span class="n">California</span> <span class="n">Fires</span><span class="p">,</span> <span class="n">RMarkdown</span>
+<span class="mi">22</span>                                     <span class="n">eldo</span><span class="o">.</span><span class="n">co</span>
+<span class="mi">23</span>                  <span class="n">franchiseopportunities</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">24</span>                             <span class="n">Washington</span> <span class="n">Post</span>
+<span class="mi">25</span>               <span class="n">travelweekly</span><span class="o">.</span><span class="n">comSSA</span> <span class="o">-</span> <span class="n">Hypoxia</span>
+<span class="mi">26</span>                  <span class="n">Paini</span> <span class="n">et</span> <span class="n">al</span><span class="p">,</span> <span class="mi">2016</span><span class="n">griis</span><span class="o">.</span><span class="n">org</span>
+<span class="mi">27</span>                                <span class="mi">538</span> <span class="o">-</span> <span class="n">Births</span>
+<span class="mi">28</span>                                <span class="n">Star</span> <span class="n">Tribune</span>
+<span class="mi">29</span>                             <span class="n">fivethirtyeight</span>
+<span class="mi">30</span>                             <span class="n">fivethirtyeight</span>
+<span class="mi">31</span>                                  <span class="n">No</span> <span class="n">Article</span>
+<span class="mi">32</span>                         <span class="n">Wind</span> <span class="n">Market</span> <span class="n">Reports</span>
+<span class="mi">33</span>             <span class="n">ourworldindata</span><span class="o">.</span><span class="n">org</span> <span class="n">malariaAtlas</span>
+<span class="mi">34</span>                         <span class="n">fivethirtyeightTDoR</span>
+<span class="mi">35</span>                               <span class="n">Baltimore</span> <span class="n">Sun</span>
+<span class="mi">36</span>                            <span class="n">TidyText</span> <span class="n">package</span>
+<span class="mi">37</span>                             <span class="n">FiveThirtyEight</span>
+<span class="mi">38</span>                                 <span class="n">The</span> <span class="n">Pudding</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nf">tt_datasets</span><span class="p">(</span><span class="m">2021</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>   <span class="n">Week</span>       <span class="n">Date</span>                           <span class="n">Data</span>                      <span class="n">Source</span>
+<span class="mi">1</span>     <span class="mi">1</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">29</span> <span class="n">Bring</span> <span class="n">your</span> <span class="n">own</span> <span class="n">data</span> <span class="n">from</span> <span class="mi">2020</span><span class="o">!</span>                            
+<span class="mi">2</span>     <span class="mi">2</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">05</span>           <span class="n">Transit</span> <span class="n">Cost</span> <span class="n">Project</span>            <span class="n">TransitCosts</span><span class="o">.</span><span class="n">com</span>
+<span class="mi">3</span>     <span class="mi">3</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">12</span>                <span class="n">Art</span> <span class="n">Collections</span>             <span class="n">Tate</span> <span class="n">Collection</span>
+<span class="mi">4</span>     <span class="mi">4</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">19</span>                   <span class="n">Kenya</span> <span class="n">Census</span>                <span class="n">rKenyaCensus</span>
+<span class="mi">5</span>     <span class="mi">5</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">26</span>              <span class="n">Plastic</span> <span class="n">Pollution</span>     <span class="n">Break</span> <span class="n">Free</span> <span class="n">from</span> <span class="n">Plastic</span>
+<span class="mi">6</span>     <span class="mi">6</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">02</span>                <span class="n">HBCU</span> <span class="n">Enrollment</span>     <span class="n">Data</span><span class="o">.</span><span class="n">World</span> <span class="o">&amp;</span> <span class="n">Data</span><span class="o">.</span><span class="n">World</span>
+<span class="mi">7</span>     <span class="mi">7</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">09</span>              <span class="n">Wealth</span> <span class="ow">and</span> <span class="n">Income</span> <span class="n">Urban</span> <span class="n">Institute</span> <span class="o">&amp;</span> <span class="n">US</span> <span class="n">Census</span>
+<span class="mi">8</span>     <span class="mi">8</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">16</span>       <span class="n">W</span><span class="o">.</span><span class="n">E</span><span class="o">.</span><span class="n">B</span><span class="o">.</span> <span class="n">Du</span> <span class="n">Bois</span> <span class="n">Challenge</span>      <span class="n">Du</span> <span class="n">Bois</span> <span class="n">Data</span> <span class="n">Challenge</span>
+<span class="mi">9</span>     <span class="mi">9</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">23</span>        <span class="n">Employment</span> <span class="ow">and</span> <span class="n">Earnings</span>                         <span class="n">BLS</span>
+<span class="mi">10</span>   <span class="mi">10</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">02</span>                  <span class="n">SuperBowl</span> <span class="n">Ads</span>             <span class="n">FiveThirtyEight</span>
+<span class="mi">11</span>   <span class="mi">11</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">09</span>                   <span class="n">Bechdel</span> <span class="n">Test</span>             <span class="n">FiveThirtyEight</span>
+<span class="mi">12</span>   <span class="mi">12</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">16</span>           <span class="n">Video</span> <span class="n">Games</span> <span class="o">+</span> <span class="n">Sliced</span>                       <span class="n">Steam</span>
+<span class="mi">13</span>   <span class="mi">13</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">23</span>                       <span class="n">UN</span> <span class="n">Votes</span>           <span class="n">Harvard</span> <span class="n">Dataverse</span>
+<span class="mi">14</span>   <span class="mi">14</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">30</span>                  <span class="n">Makeup</span> <span class="n">Shades</span>            <span class="n">The</span> <span class="n">Pudding</span> <span class="n">data</span>
+                                                <span class="n">Article</span>
+<span class="mi">1</span>                                                      
+<span class="mi">2</span>                              <span class="n">Transit</span> <span class="n">Costs</span> <span class="n">Case</span> <span class="n">Study</span>
+<span class="mi">3</span>                 <span class="n">Aspect</span> <span class="n">Ratio</span> <span class="n">of</span> <span class="n">Artworks</span> <span class="n">through</span> <span class="n">Time</span>
+<span class="mi">4</span>                              <span class="n">Introducing</span> <span class="n">rKenyaCensus</span>
+<span class="mi">5</span>                                           <span class="n">Sarah</span> <span class="n">Sauve</span>
+<span class="mi">6</span>                                <span class="n">HBCU</span> <span class="n">Donations</span> <span class="n">Article</span>
+<span class="mi">7</span>                                       <span class="n">Urban</span> <span class="n">Institute</span>
+<span class="mi">8</span>  <span class="n">Anthony</span> <span class="n">Starks</span> <span class="o">-</span> <span class="n">Recreating</span> <span class="n">Du</span> <span class="n">Bois</span><span class="s1">&#39;s data portraits</span>
+<span class="mi">9</span>                                           <span class="n">BLS</span> <span class="n">Article</span>
+<span class="mi">10</span>                                      <span class="n">FiveThirtyEight</span>
+<span class="mi">11</span>                                      <span class="n">FiveThirtyEight</span>
+<span class="mi">12</span>                                          <span class="n">SteamCharts</span>
+<span class="mi">13</span>                                 <span class="n">Citizen</span> <span class="n">Statistician</span>
+<span class="mi">14</span>                                          <span class="n">The</span> <span class="n">Pudding</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nf">colnames</span><span class="p">(</span><span class="n">tuesdata</span><span class="o">$</span><span class="n">coffee_ratings</span><span class="p">)</span>
+</code></pre></div>
+
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'total_cup_points'</li><li>'species'</li><li>'owner'</li><li>'country_of_origin'</li><li>'farm_name'</li><li>'lot_number'</li><li>'mill'</li><li>'ico_number'</li><li>'company'</li><li>'altitude'</li><li>'region'</li><li>'producer'</li><li>'number_of_bags'</li><li>'bag_weight'</li><li>'in_country_partner'</li><li>'harvest_year'</li><li>'grading_date'</li><li>'owner_1'</li><li>'variety'</li><li>'processing_method'</li><li>'aroma'</li><li>'flavor'</li><li>'aftertaste'</li><li>'acidity'</li><li>'body'</li><li>'balance'</li><li>'uniformity'</li><li>'clean_cup'</li><li>'sweetness'</li><li>'cupper_points'</li><li>'moisture'</li><li>'category_one_defects'</li><li>'quakers'</li><li>'color'</li><li>'category_two_defects'</li><li>'expiration'</li><li>'certification_body'</li><li>'certification_address'</li><li>'certification_contact'</li><li>'unit_of_measurement'</li><li>'altitude_low_meters'</li><li>'altitude_high_meters'</li><li>'altitude_mean_meters'</li></ol>
+
+<div class="highlight"><pre><span></span><code><span class="nf">head</span><span class="p">(</span><span class="n">tuesdata</span><span class="o">$</span><span class="n">coffee_ratings</span><span class="p">)</span>
+</code></pre></div>
+
+<table class="dataframe">
+<caption>A tibble: 6  43</caption>
+<thead>
+    <tr><th scope=col>total_cup_points</th><th scope=col>species</th><th scope=col>owner</th><th scope=col>country_of_origin</th><th scope=col>farm_name</th><th scope=col>lot_number</th><th scope=col>mill</th><th scope=col>ico_number</th><th scope=col>company</th><th scope=col>altitude</th><th scope=col></th><th scope=col>color</th><th scope=col>category_two_defects</th><th scope=col>expiration</th><th scope=col>certification_body</th><th scope=col>certification_address</th><th scope=col>certification_contact</th><th scope=col>unit_of_measurement</th><th scope=col>altitude_low_meters</th><th scope=col>altitude_high_meters</th><th scope=col>altitude_mean_meters</th></tr>
+    <tr><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>90.58</td><td>Arabica</td><td>metad plc               </td><td>Ethiopia </td><td>metad plc                               </td><td>NA</td><td>metad plc</td><td>2014/2015</td><td>metad agricultural developmet plc    </td><td>1950-2200    </td><td></td><td>Green       </td><td>0</td><td>April 3rd, 2016    </td><td>METAD Agricultural Development plc</td><td>309fcf77415a3661ae83e027f7e5f05dad786e44</td><td>19fef5a731de2db57d16da10287413f5f99bc2dd</td><td>m</td><td>1950</td><td>2200</td><td>2075</td></tr>
+    <tr><td>89.92</td><td>Arabica</td><td>metad plc               </td><td>Ethiopia </td><td>metad plc                               </td><td>NA</td><td>metad plc</td><td>2014/2015</td><td>metad agricultural developmet plc    </td><td>1950-2200    </td><td></td><td>Green       </td><td>1</td><td>April 3rd, 2016    </td><td>METAD Agricultural Development plc</td><td>309fcf77415a3661ae83e027f7e5f05dad786e44</td><td>19fef5a731de2db57d16da10287413f5f99bc2dd</td><td>m</td><td>1950</td><td>2200</td><td>2075</td></tr>
+    <tr><td>89.75</td><td>Arabica</td><td>grounds for health admin</td><td>Guatemala</td><td>san marcos barrancas "san cristobal cuch</td><td>NA</td><td>NA       </td><td>NA       </td><td>NA                                   </td><td>1600 - 1800 m</td><td></td><td>NA          </td><td>0</td><td>May 31st, 2011     </td><td>Specialty Coffee Association      </td><td>36d0d00a3724338ba7937c52a378d085f2172daa</td><td>0878a7d4b9d35ddbf0fe2ce69a2062cceb45a660</td><td>m</td><td>1600</td><td>1800</td><td>1700</td></tr>
+    <tr><td>89.00</td><td>Arabica</td><td>yidnekachew dabessa     </td><td>Ethiopia </td><td>yidnekachew dabessa coffee plantation   </td><td>NA</td><td>wolensu  </td><td>NA       </td><td>yidnekachew debessa coffee plantation</td><td>1800-2200    </td><td></td><td>Green       </td><td>2</td><td>March 25th, 2016   </td><td>METAD Agricultural Development plc</td><td>309fcf77415a3661ae83e027f7e5f05dad786e44</td><td>19fef5a731de2db57d16da10287413f5f99bc2dd</td><td>m</td><td>1800</td><td>2200</td><td>2000</td></tr>
+    <tr><td>88.83</td><td>Arabica</td><td>metad plc               </td><td>Ethiopia </td><td>metad plc                               </td><td>NA</td><td>metad plc</td><td>2014/2015</td><td>metad agricultural developmet plc    </td><td>1950-2200    </td><td></td><td>Green       </td><td>2</td><td>April 3rd, 2016    </td><td>METAD Agricultural Development plc</td><td>309fcf77415a3661ae83e027f7e5f05dad786e44</td><td>19fef5a731de2db57d16da10287413f5f99bc2dd</td><td>m</td><td>1950</td><td>2200</td><td>2075</td></tr>
+    <tr><td>88.83</td><td>Arabica</td><td>ji-ae ahn               </td><td>Brazil   </td><td>NA                                      </td><td>NA</td><td>NA       </td><td>NA       </td><td>NA                                   </td><td>NA           </td><td></td><td>Bluish-Green</td><td>1</td><td>September 3rd, 2014</td><td>Specialty Coffee Institute of Asia</td><td>726e4891cf2c9a4848768bd34b668124d12c4224</td><td>b70da261fcc84831e3e9620c30a8701540abc200</td><td>m</td><td>  NA</td><td>  NA</td><td>  NA</td></tr>
+</tbody>
+</table>
+
+<div class="highlight"><pre><span></span><code><span class="n">tuesdata</span><span class="o">$</span><span class="n">coffee_ratings</span> <span class="o">%&gt;%</span> <span class="nf">select</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;country_of_origin&quot;</span><span class="p">,</span> <span class="s">&quot;total_cup_points&quot;</span><span class="p">))</span> <span class="o">%&gt;%</span> 
+    <span class="nf">group_by</span><span class="p">(</span><span class="n">country_of_origin</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+    <span class="nf">summarise</span><span class="p">(</span><span class="n">mu_points</span> <span class="o">=</span> <span class="nf">mean</span><span class="p">(</span><span class="n">total_cup_points</span><span class="p">),</span> <span class="n">count</span> <span class="o">=</span> <span class="nf">n</span><span class="p">())</span> <span class="o">%&gt;%</span> 
+    <span class="nf">arrange</span><span class="p">(</span><span class="nf">desc</span><span class="p">(</span><span class="n">mu_points</span><span class="p">))</span>
+</code></pre></div>
+
+<table class="dataframe">
+<caption>A tibble: 37  3</caption>
+<thead>
+    <tr><th scope=col>country_of_origin</th><th scope=col>mu_points</th><th scope=col>count</th></tr>
+    <tr><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;int&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>Papua New Guinea            </td><td>85.75000</td><td>  1</td></tr>
+    <tr><td>Ethiopia                    </td><td>85.48409</td><td> 44</td></tr>
+    <tr><td>Japan                       </td><td>84.67000</td><td>  1</td></tr>
+    <tr><td>United States               </td><td>84.43300</td><td> 10</td></tr>
+    <tr><td>Kenya                       </td><td>84.30960</td><td> 25</td></tr>
+    <tr><td>Panama                      </td><td>83.70750</td><td>  4</td></tr>
+    <tr><td>Uganda                      </td><td>83.45194</td><td> 36</td></tr>
+    <tr><td>Colombia                    </td><td>83.10656</td><td>183</td></tr>
+    <tr><td>El Salvador                 </td><td>83.05286</td><td> 21</td></tr>
+    <tr><td>China                       </td><td>82.92750</td><td> 16</td></tr>
+    <tr><td>Rwanda                      </td><td>82.83000</td><td>  1</td></tr>
+    <tr><td>Costa Rica                  </td><td>82.78902</td><td> 51</td></tr>
+    <tr><td>Thailand                    </td><td>82.57375</td><td> 32</td></tr>
+    <tr><td>Indonesia                   </td><td>82.56550</td><td> 20</td></tr>
+    <tr><td>Peru                        </td><td>82.52600</td><td> 10</td></tr>
+    <tr><td>Brazil                      </td><td>82.40591</td><td>132</td></tr>
+    <tr><td>Tanzania, United Republic Of</td><td>82.36950</td><td> 40</td></tr>
+    <tr><td>Taiwan                      </td><td>82.00133</td><td> 75</td></tr>
+    <tr><td>Zambia                      </td><td>81.92000</td><td>  1</td></tr>
+    <tr><td>Guatemala                   </td><td>81.84657</td><td>181</td></tr>
+    <tr><td>Laos                        </td><td>81.83333</td><td>  3</td></tr>
+    <tr><td>Burundi                     </td><td>81.83000</td><td>  2</td></tr>
+    <tr><td>United States (Hawaii)      </td><td>81.82041</td><td> 73</td></tr>
+    <tr><td>United States (Puerto Rico) </td><td>81.72750</td><td>  4</td></tr>
+    <tr><td>Malawi                      </td><td>81.71182</td><td> 11</td></tr>
+    <tr><td>Vietnam                     </td><td>81.20875</td><td>  8</td></tr>
+    <tr><td>India                       </td><td>81.08286</td><td> 14</td></tr>
+    <tr><td>Mexico                      </td><td>80.89008</td><td>236</td></tr>
+    <tr><td>Philippines                 </td><td>80.83400</td><td>  5</td></tr>
+    <tr><td>Myanmar                     </td><td>80.75000</td><td>  8</td></tr>
+    <tr><td>Mauritius                   </td><td>80.50000</td><td>  1</td></tr>
+    <tr><td>Nicaragua                   </td><td>80.45808</td><td> 26</td></tr>
+    <tr><td>Ecuador                     </td><td>80.22000</td><td>  3</td></tr>
+    <tr><td>Honduras                    </td><td>79.35755</td><td> 53</td></tr>
+    <tr><td>Cote d?Ivoire               </td><td>79.33000</td><td>  1</td></tr>
+    <tr><td>NA                          </td><td>79.08000</td><td>  1</td></tr>
+    <tr><td>Haiti                       </td><td>77.18000</td><td>  6</td></tr>
+</tbody>
+</table>
+
+<div class="highlight"><pre><span></span><code><span class="n">tuesdata</span><span class="o">$</span><span class="n">coffee_ratings</span> <span class="o">%&gt;%</span> <span class="nf">select</span><span class="p">(</span><span class="n">country_of_origin</span><span class="p">)</span> <span class="o">%&gt;%</span> <span class="nf">table</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>.
+                      Brazil                      Burundi 
+                         132                            2 
+                       China                     Colombia 
+                          16                          183 
+                  Costa Rica                Cote d?Ivoire 
+                          51                            1 
+                     Ecuador                  El Salvador 
+                           3                           21 
+                    Ethiopia                    Guatemala 
+                          44                          181 
+                       Haiti                     Honduras 
+                           6                           53 
+                       India                    Indonesia 
+                          14                           20 
+                       Japan                        Kenya 
+                           1                           25 
+                        Laos                       Malawi 
+                           3                           11 
+                   Mauritius                       Mexico 
+                           1                          236 
+                     Myanmar                    Nicaragua 
+                           8                           26 
+                      Panama             Papua New Guinea 
+                           4                            1 
+                        Peru                  Philippines 
+                          10                            5 
+                      Rwanda                       Taiwan 
+                           1                           75 
+Tanzania, United Republic Of                     Thailand 
+                          40                           32 
+                      Uganda                United States 
+                          36                           10 
+      United States (Hawaii)  United States (Puerto Rico) 
+                          73                            4 
+                     Vietnam                       Zambia 
+                           8                            1
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">tuesdata</span><span class="o">$</span><span class="n">coffee_ratings</span> <span class="o">%&gt;%</span> <span class="nf">select</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;altitude_mean_meters&quot;</span><span class="p">,</span> <span class="s">&quot;total_cup_points&quot;</span><span class="p">))</span> <span class="o">%&gt;%</span> <span class="nf">plot</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="png" src="coffee_ratings_files/coffee_ratings_14_0.png"></p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+                </div>
+                <footer class="text-right">
+                    <p>- Jason Wang</p>
+                </footer>
+            </div>
+        </div>
+    </article>
+</section>
+<footer>
+    <hr>
+    <div class="row">
+        <div class="col-lg-9 text-center">
+            <p><small>
+                Built by <a href="http://docs.getpelican.com/en/latest">Pelican</a> / <a href="https://github.com/ingwinlu/pelican-twitchy">pelican-twitchy</a>
+                &middot;                    &copy; 2021 Jason Wang
+            </small></p>
+        </div>
+    </div>
+</footer>            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery Version 1.11.2 -->
+    <script src="/theme/js/jquery-1.11.2.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/theme/js/bootstrap.min.js"></script>
+    <!-- twitchy Script -->
+    <script src="/theme/js/pelican_twitchy.min.js"></script>
+
+</body>
+</html>
