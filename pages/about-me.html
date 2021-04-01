@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Jason Wang" />
-        <meta name="description" content="" />
+        <meta name="description" content="Graduted from UC Berkeley with a B.A. Data Science in 2019" />
 
 
-    <title>Recent Articles - Egresspathy</title>
+    <title>About&nbsp;me - Egresspathy</title>
 
         <link rel="stylesheet" href="/theme/css/bootstrap.bootstrap.min.css" type="text/css"/>
 
@@ -127,8 +127,9 @@
                         Pages
                     </a>
                 </li>
-                <li class="panel anti-panel"><ul id="collapse-pages" class="sidebar_submenu collapse ">
-                    <li>
+                <li class="panel anti-panel"><ul id="collapse-pages" class="sidebar_submenu collapse         in
+">
+                    <li class="active">
                         <a href="/pages/about-me.html">
                             <i class="fas fa-file-alt padding-small"></i>
                             About&nbsp;me
@@ -173,25 +174,12 @@
             <div class="container">
 <div class="row">
     <div class="col-lg-9">
-        <header class="page-header">
-            <h1>Archive</h1>
-        </header>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-9">
-            <article>
-                <h4>
-                    <time datetime="2021-03-31T05:08:00+08:00"> Wed 31 March 2021</time>
-                    <a href="/co2-emission-to-fill-a-confined-space-estimation.html"><span class="caps">CO2</span> Emission to Fill a Confined Space&nbsp;Estimation</a>
-                </h4>
-            </article>
-            <article>
-                <h4>
-                    <time datetime="2021-03-30T10:20:00+08:00"> Tue 30 March 2021</time>
-                    <a href="/example-markdown-from-ipynb.html">Example Markdown from&nbsp;ipynb</a>
-                </h4>
-            </article>
+        <section id="content" class="body">
+            <h1 class="page-header">About&nbsp;me</h1>
+            <div class="entry-content">
+                <p>Graduted from <span class="caps">UC</span> Berkeley with a <span class="caps">B.A.</span> Data Science in&nbsp;2019</p>
+            </div>
+        </section>
     </div>
 </div>
 <footer>
@@ -215,24 +203,5 @@
     <script src="/theme/js/bootstrap.min.js"></script>
     <!-- twitchy Script -->
     <script src="/theme/js/pelican_twitchy.min.js"></script>
-<script>
-    function FadeInOnScroll(ObjectList){
-        ObjectList.each(function(i) {
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            if( bottom_of_window > bottom_of_object ){
-                $(this).fadeTo(750,1);
-            }
-        });
-    }
-
-    articles = $("article").fadeTo(0, 0.05);
-    FadeInOnScroll(articles)
-
-    $(window).scroll(function() {
-        FadeInOnScroll(articles)
-    });
-</script>
 </body>
 </html>
