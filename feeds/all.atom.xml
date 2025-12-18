@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Egresspathy</title><link href="https://jasonwang.us/" rel="alternate"></link><link href="https://jasonwang.us/feeds/all.atom.xml" rel="self"></link><id>https://jasonwang.us/</id><updated>2025-12-14T00:00:00+08:00</updated><subtitle></subtitle><entry><title>The New Moat</title><link href="https://jasonwang.us/the-new-moat.html" rel="alternate"></link><published>2025-12-14T00:00:00+08:00</published><updated>2025-12-14T00:00:00+08:00</updated><author><name>Jason Wang</name></author><id>tag:jasonwang.us,2025-12-14:/the-new-moat.html</id><summary type="html">&lt;p&gt;Users of Large Language Models (LLMs) often observe distinct preferences in code generation. Gemini frequently prioritizes Google Cloud SDKs, Angular, and TensorFlow, while OpenAI’s models often default to React, TypeScript, and Azure&amp;nbsp;patterns.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Egresspathy</title><link href="https://jasonwang.us/" rel="alternate"></link><link href="https://jasonwang.us/feeds/all.atom.xml" rel="self"></link><id>https://jasonwang.us/</id><updated>2025-12-14T00:00:00+08:00</updated><subtitle></subtitle><entry><title>Introducing My AI-Powered Tour Guide</title><link href="https://jasonwang.us/introducing-my-ai-powered-tour-guide.html" rel="alternate"></link><published>2025-12-14T00:00:00+08:00</published><updated>2025-12-14T00:00:00+08:00</updated><author><name>Jason Wang</name></author><id>tag:jasonwang.us,2025-12-14:/introducing-my-ai-powered-tour-guide.html</id><summary type="html">&lt;p&gt;I&amp;#8217;m excited to announce a new project I&amp;#8217;ve been working on: an &lt;span class="caps"&gt;AI&lt;/span&gt;-assisted tour guide&amp;nbsp;app! &lt;/p&gt;
+&lt;p&gt;This app uses the power of Large Language Models (LLMs) to provide a rich, interactive, and personalized touring&amp;nbsp;experience.&lt;/p&gt;
+&lt;h3&gt;Key&amp;nbsp;Features:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Landmark Discovery:&lt;/strong&gt; The app searches for landmarks around your area …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;I&amp;#8217;m excited to announce a new project I&amp;#8217;ve been working on: an &lt;span class="caps"&gt;AI&lt;/span&gt;-assisted tour guide&amp;nbsp;app! &lt;/p&gt;
+&lt;p&gt;This app uses the power of Large Language Models (LLMs) to provide a rich, interactive, and personalized touring&amp;nbsp;experience.&lt;/p&gt;
+&lt;h3&gt;Key&amp;nbsp;Features:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Landmark Discovery:&lt;/strong&gt; The app searches for landmarks around your area of&amp;nbsp;interest.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Local Events and History:&lt;/strong&gt; It researches local events, historical facts, and interesting tidbits to make your tour&amp;nbsp;unique.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Guided Introductions:&lt;/strong&gt; Each landmark comes with a guided introduction and a&amp;nbsp;picture.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Audio Narration:&lt;/strong&gt; The introductions are provided as audio, so you can listen as you&amp;nbsp;explore.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can check out the app at the following&amp;nbsp;link:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://gemini.google.com/share/76448a53122e"&gt;My Gemini&amp;nbsp;App&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m excited to hear your&amp;nbsp;feedback!&lt;/p&gt;</content><category term="Projects"></category><category term="AI"></category><category term="Gemini"></category><category term="Travel"></category><category term="Tour Guide"></category></entry><entry><title>The New Moat</title><link href="https://jasonwang.us/the-new-moat.html" rel="alternate"></link><published>2025-12-14T00:00:00+08:00</published><updated>2025-12-14T00:00:00+08:00</updated><author><name>Jason Wang</name></author><id>tag:jasonwang.us,2025-12-14:/the-new-moat.html</id><summary type="html">&lt;p&gt;Users of Large Language Models (LLMs) often observe distinct preferences in code generation. Gemini frequently prioritizes Google Cloud SDKs, Angular, and TensorFlow, while OpenAI’s models often default to React, TypeScript, and Azure&amp;nbsp;patterns.&lt;/p&gt;
 &lt;p&gt;This phenomenon is not merely a reflection of training data frequency. It represents a structural shift …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Users of Large Language Models (LLMs) often observe distinct preferences in code generation. Gemini frequently prioritizes Google Cloud SDKs, Angular, and TensorFlow, while OpenAI’s models often default to React, TypeScript, and Azure&amp;nbsp;patterns.&lt;/p&gt;
 &lt;p&gt;This phenomenon is not merely a reflection of training data frequency. It represents a structural shift in the &lt;span class="caps"&gt;AI&lt;/span&gt; industry: The rise of Toolchain Bias. The next phase of &lt;span class="caps"&gt;AI&lt;/span&gt; competition will center on the software libraries that models are optimized to use, creating a new economy around verifiable training&amp;nbsp;environments.&lt;/p&gt;
 &lt;h2&gt;1. The Bias in the&amp;nbsp;Machine&lt;/h2&gt;
@@ -35,37 +50,42 @@
 &lt;/ul&gt;</content><category term="AI"></category></entry><entry><title>CO2 Emission to Fill a Confined Space Estimation</title><link href="https://jasonwang.us/co2-emission-to-fill-a-confined-space-estimation.html" rel="alternate"></link><published>2021-03-31T05:08:00+08:00</published><updated>2021-03-31T05:08:00+08:00</updated><author><name>Jason Wang</name></author><id>tag:jasonwang.us,2021-03-31:/co2-emission-to-fill-a-confined-space-estimation.html</id><summary type="html">&lt;p&gt;Back of the napkin calculation of human emmission of &lt;span class="caps"&gt;CO2&lt;/span&gt; and the toxicity level in contained space over&amp;nbsp;time&lt;/p&gt;
 &lt;p&gt;Considering covid lockdown has the world quarentined in their houses. Some people who work from home has not left their room for weeks. I&amp;#8217;m wondering if your room is air …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Back of the napkin calculation of human emmission of &lt;span class="caps"&gt;CO2&lt;/span&gt; and the toxicity level in contained space over&amp;nbsp;time&lt;/p&gt;
 &lt;p&gt;Considering covid lockdown has the world quarentined in their houses. Some people who work from home has not left their room for weeks. I&amp;#8217;m wondering if your room is air tight, how long can you stay in them till your production of &lt;span class="caps"&gt;CO2&lt;/span&gt; becomes&amp;nbsp;toxic.   &lt;/p&gt;
-&lt;p&gt;Some reference&amp;nbsp;link&lt;/p&gt;
-&lt;p&gt;(1)&amp;nbsp;https://www.globe.gov/explore-science/scientists-blog/archived-posts/sciblog/2008/08/11/release-of-carbon-dioxide-by-individual-humans/comment-page-1/index.html&lt;/p&gt;
-&lt;p&gt;(2)
-https://www.ncbi.nlm.nih.gov/pmc/articles/&lt;span class="caps"&gt;PMC5380556&lt;/span&gt;/&lt;/p&gt;
-&lt;p&gt;(3)&amp;nbsp;https://en.wikipedia.org/wiki/Density_of_air&lt;/p&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.globe.gov/explore-science/scientists-blog/archived-posts/sciblog/2008/08/11/release-of-carbon-dioxide-by-individual-humans/comment-page-1/index.html"&gt;Release of Carbon Dioxide by Individual&amp;nbsp;Humans&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5380556/"&gt;&lt;span class="caps"&gt;PMCID5380556&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Density_of_air"&gt;Density of Air -&amp;nbsp;Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;First read the first link because most of the numbers comes from there and to understand how some of the figures are&amp;nbsp;calculated.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Assumptions&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Assuming my room is 4x3x2 m of volume. That&amp;#8217;s 24 square meters
-Assuming air density of air is 1kg per cubic meter (1)(3)*
-My room thus has 24kg of air 
-From results of link 1) we produce &amp;#8220;0.9 kilograms of carbon dioxide for each day per human&amp;#8221; (1)
-&lt;span class="caps"&gt;CO2&lt;/span&gt; at levels greater then 5% starts to be toxic to humans (2)
-Moist air contains 0.038% of &lt;span class="caps"&gt;CO2&lt;/span&gt; by volume&amp;nbsp;1)&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Calculation&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The quesion is how long till the room is at toxic level of &lt;span class="caps"&gt;CO2&lt;/span&gt;, assuming ~5% is toxic level. (2) From link (2), people have different tolorance for &lt;span class="caps"&gt;CO2&lt;/span&gt; toxicity, but we&amp;#8217;ll use 5% for this&amp;nbsp;calculation&lt;/p&gt;
-&lt;p&gt;Air in my room contains 0.038% of &lt;span class="caps"&gt;CO2&lt;/span&gt; by volume. By weight it&amp;#8217;s 0.0006% grams of &lt;span class="caps"&gt;CO2&lt;/span&gt; per gram of air.&amp;nbsp;(1)&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;0.0006*24 = .0144 kg of &lt;span class="caps"&gt;CO2&lt;/span&gt; per kg of&amp;nbsp;air&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;If we use 5% toxicity by weight, then 1.2kg of &lt;span class="caps"&gt;CO2&lt;/span&gt; is at&amp;nbsp;toxic. &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;24*0.05 = 1.2&amp;nbsp;kg&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Assuming the room is air tight, it&amp;#8217;s not, then in 1.317 days the room will be at toxic level of &lt;span class="caps"&gt;CO2&lt;/span&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;(1.2-0.0144)/0.9 =&amp;nbsp;1.317&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;If 5% toxiciity is by volume,&amp;nbsp;&amp;#8230;&lt;/p&gt;
-&lt;p&gt;From calories intake perspective,&amp;nbsp;&amp;#8230;&lt;/p&gt;
-&lt;p&gt;This is an aproximation. It&amp;#8217;s so I know to open the window every other day as oppose to keeping it close the whole week to keep the moquito out and the&amp;nbsp;heat. &lt;/p&gt;
-&lt;p&gt;*Density of air is actually 1.225 kg/m3 from wikipedia&amp;nbsp;(3)&lt;/p&gt;
+&lt;h2&gt;Assumptions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Assuming my room is 4x3x2 m of volume. That&amp;#8217;s 24 square&amp;nbsp;meters.&lt;/li&gt;
+&lt;li&gt;Assuming air density of air is 1kg per cubic meter&amp;nbsp;(1)(3).&lt;/li&gt;
+&lt;li&gt;My room thus has 24kg of&amp;nbsp;air.&lt;/li&gt;
+&lt;li&gt;From results of link 1) we produce &amp;#8220;0.9 kilograms of carbon dioxide for each day per human&amp;#8221;&amp;nbsp;(1).&lt;/li&gt;
+&lt;li&gt;&lt;span class="caps"&gt;CO2&lt;/span&gt; at levels greater then 5% starts to be toxic to humans&amp;nbsp;(2).&lt;/li&gt;
+&lt;li&gt;Moist air contains 0.038% of &lt;span class="caps"&gt;CO2&lt;/span&gt; by volume&amp;nbsp;(1).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Calculation&lt;/h2&gt;
+&lt;p&gt;The question is how long till the room is at toxic level of &lt;span class="caps"&gt;CO2&lt;/span&gt;, assuming ~5% is toxic level. (2) From link (2), people have different tolerance for &lt;span class="caps"&gt;CO2&lt;/span&gt; toxicity, but we&amp;#8217;ll use 5% for this&amp;nbsp;calculation.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Air in my room contains 0.038% of &lt;span class="caps"&gt;CO2&lt;/span&gt; by volume. By weight, it&amp;#8217;s 0.0006% grams of &lt;span class="caps"&gt;CO2&lt;/span&gt; per gram of air. (1)
+    &amp;gt; 0.0006 * 24 = 0.0144 kg of &lt;span class="caps"&gt;CO2&lt;/span&gt; per kg of&amp;nbsp;air&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If we use 5% toxicity by weight, then 1.2kg of &lt;span class="caps"&gt;CO2&lt;/span&gt; is considered toxic.
+    &amp;gt; 24 * 0.05 = 1.2&amp;nbsp;kg&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assuming the room is airtight (which it&amp;#8217;s not), then in 1.317 days, the room will reach a toxic level of &lt;span class="caps"&gt;CO2&lt;/span&gt;.
+    &amp;gt; (1.2 - 0.0144) / 0.9 =&amp;nbsp;1.317&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If 5% toxicity is by volume,&amp;nbsp;&amp;#8230;&lt;/p&gt;
+&lt;p&gt;From a caloric intake perspective,&amp;nbsp;&amp;#8230;&lt;/p&gt;
+&lt;p&gt;This is an approximation, helping me decide to open the window every other day rather than keeping it closed all week to keep mosquitoes out and maintain&amp;nbsp;heat. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: The density of air is actually 1.225 kg/m3 from Wikipedia&amp;nbsp;(3).&lt;/em&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;1.2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.0144&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mf"&gt;0.9&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
