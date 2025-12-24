@@ -1,61 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Egresspathy</title><link href="https://jasonwang.us/" rel="alternate"></link><link href="https://jasonwang.us/feeds/all.atom.xml" rel="self"></link><id>https://jasonwang.us/</id><updated>2025-12-24T20:37:00+08:00</updated><subtitle>A digital sanctuary for personal insights and technical experiments.</subtitle><entry><title>Human Condition Is Environment</title><link href="https://jasonwang.us/human-condition-is-environment.html" rel="alternate"></link><published>2025-12-24T20:37:00+08:00</published><updated>2025-12-24T20:37:00+08:00</updated><author><name>Jason Wang</name></author><id>tag:jasonwang.us,2025-12-24:/human-condition-is-environment.html</id><summary type="html">&lt;p&gt;A mathematical reframing of the human condition, moral intuitions, and the nature of ethics through the lens of optimization and environment&amp;nbsp;saturation.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;I. The Obvious (but newly&amp;nbsp;clarified)&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Egresspathy</title><link href="https://jasonwang.us/" rel="alternate"></link><link href="https://jasonwang.us/feeds/all.atom.xml" rel="self"></link><id>https://jasonwang.us/</id><updated>2025-12-24T20:37:00+08:00</updated><subtitle>A digital sanctuary for personal insights and technical experiments.</subtitle><entry><title>Human Condition Is Environment</title><link href="https://jasonwang.us/human-condition-is-environment.html" rel="alternate"></link><published>2025-12-24T20:37:00+08:00</published><updated>2025-12-24T20:37:00+08:00</updated><author><name>Jason Wang</name></author><id>tag:jasonwang.us,2025-12-24:/human-condition-is-environment.html</id><summary type="html">&lt;p&gt;A mathematical reframing of the human condition, moral intuitions, and the nature of ethics through the lens of optimization and environment&amp;nbsp;saturation.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;What This Theory Says About the Human&amp;nbsp;Condition&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;From the obvious to the&amp;nbsp;improbable&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Below is a structured interpretation of the theory you’ve developed, applied to humans as agents embedded in historically non-saturating, multi-agent&amp;nbsp;environments.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;I. The Obvious (but newly&amp;nbsp;clarified)&lt;/h2&gt;
 &lt;h3&gt;1. Humans are optimization processes trapped in non-saturating&amp;nbsp;environments&lt;/h3&gt;
 &lt;p&gt;For most of human history:
-- &lt;strong&gt;Utility did not saturate:&lt;/strong&gt; More food, land, and status always translated to better survival odds.
-- &lt;strong&gt;Irreversibility was high:&lt;/strong&gt; Mistakes often led to death.
-- &lt;strong&gt;Scarcity was&amp;nbsp;real.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;When utility doesn’t saturate, equilibrium doesn’t exist. Conflict, arms races, hierarchy, and domination aren’t moral failures—they’re mathematical consequences of the environment humans evolved&amp;nbsp;in.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Implication:&lt;/strong&gt; Many &amp;#8220;vices&amp;#8221; (greed, aggression, envy) are locally optimal strategies in ill-posed&amp;nbsp;games.&lt;/p&gt;
-&lt;h3&gt;2. Fairness is not a value — it’s a&amp;nbsp;patch&lt;/h3&gt;
-&lt;p&gt;Fairness norms emerge where:
-- Dominance scales too far.
-- Collapse risk becomes visible.
-- Enforcement is cheaper than&amp;nbsp;chaos.&lt;/p&gt;
-&lt;p&gt;Under this model, fairness is not fundamental. It’s a constraint retrofit introduced when saturation is missing. This explains why fairness is culturally variable, collapses under extreme scarcity, and is often resented rather than loved. Humans don’t crave fairness; they crave stability under&amp;nbsp;competition.&lt;/p&gt;
-&lt;h3&gt;3. Moral intuitions track reversibility, not&amp;nbsp;goodness&lt;/h3&gt;
-&lt;p&gt;People react most strongly to:
-- Irreversible harm.
-- Point-of-no-return actions.
-- Damage that&amp;nbsp;spreads.&lt;/p&gt;
-&lt;p&gt;This matches the $D_t$ term in the underlying theory. Our moral disgust is a damage-gradient detector, not a virtue compass. This explains why accidents are forgiven more than betrayals, and why pollution or nuclear weapons feel categorically different from simple&amp;nbsp;theft.&lt;/p&gt;
+- Utility &lt;strong&gt;did not saturate&lt;/strong&gt; (more food, land, status = more survival)
+- Irreversibility was high (mistakes were fatal)
+- Scarcity&amp;nbsp;dominated&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Theory implication:&lt;/strong&gt;&lt;br&gt;
+When utility does not saturate, equilibrium does not&amp;nbsp;exist.&lt;/p&gt;
+&lt;p&gt;So conflict, arms races, hierarchy, and domination are not moral failures — they are &lt;em&gt;mathematical consequences&lt;/em&gt; of ill-posed optimization&amp;nbsp;problems.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Many “vices” (greed, aggression, envy) are locally optimal strategies in unstable&amp;nbsp;games.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3&gt;2. Fairness is not a value — it is a&amp;nbsp;patch&lt;/h3&gt;
+&lt;p&gt;Fairness norms emerge when:
+- Dominance scales too far
+- Collapse risk becomes visible
+- Enforcement becomes cheaper than&amp;nbsp;chaos&lt;/p&gt;
+&lt;p&gt;Under this theory, fairness is not fundamental. It is a &lt;strong&gt;retrofit constraint&lt;/strong&gt; added when saturation is&amp;nbsp;missing.&lt;/p&gt;
+&lt;p&gt;This explains why:
+- Fairness varies across cultures
+- Fairness collapses under extreme scarcity
+- Fairness is often resented rather than&amp;nbsp;cherished&lt;/p&gt;
+&lt;p&gt;Humans don’t crave fairness.&lt;br&gt;
+They crave &lt;strong&gt;stability under competition&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;3. Moral intuitions track irreversibility, not&amp;nbsp;goodness&lt;/h3&gt;
+&lt;p&gt;Human moral reactions spike around:
+- Irreversible harm
+- Point-of-no-return actions
+- Damage that&amp;nbsp;propagates&lt;/p&gt;
+&lt;p&gt;This matches the irreversibility term ( D_t&amp;nbsp;).&lt;/p&gt;
+&lt;p&gt;Explains why:
+- Accidents are forgiven more than betrayals
+- Pollution feels worse than theft
+- Nuclear weapons feel categorically&amp;nbsp;different&lt;/p&gt;
+&lt;p&gt;Moral disgust is a &lt;strong&gt;damage-gradient detector&lt;/strong&gt;, not a virtue&amp;nbsp;compass.&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2&gt;&lt;span class="caps"&gt;II&lt;/span&gt;. The Non-Obvious (reframing the human&amp;nbsp;condition)&lt;/h2&gt;
 &lt;h3&gt;4. Status is a workaround for missing&amp;nbsp;saturation&lt;/h3&gt;
-&lt;p&gt;Status behaves like a fake saturation curve:
-- It caps relative advantage.
-- It substitutes symbolic reward for material accumulation.
-- It allows zero-sum ranking instead of infinite&amp;nbsp;hoarding.&lt;/p&gt;
-&lt;p&gt;Status is a lossy compression of utility under non-saturating payoff. This is why people pursue recognition even when materially secure; it&amp;#8217;s a social hack to manufacture&amp;nbsp;equilibrium.&lt;/p&gt;
+&lt;p&gt;Status functions as a pseudo-saturation mechanism:
+- Caps relative advantage
+- Substitutes symbolic reward for material accumulation
+- Converts infinite accumulation into finite&amp;nbsp;ranking&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In formal terms:&lt;/strong&gt;&lt;br&gt;
+Status is a lossy compression of utility in non-saturating&amp;nbsp;systems.&lt;/p&gt;
+&lt;p&gt;This explains:
+- Obsession with recognition
+- Why insults hurt more than losses
+- Why reputation economies stabilize&amp;nbsp;groups&lt;/p&gt;
+&lt;p&gt;Status is a &lt;strong&gt;social hack that manufactures equilibrium&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
 &lt;h3&gt;5. Much of human suffering comes from saturation&amp;nbsp;mismatch&lt;/h3&gt;
-&lt;p&gt;Modern humans live in environments where:
-- Material needs saturate.
-- Psychological reward does not.
-- Evolutionary drives still assume&amp;nbsp;scarcity.&lt;/p&gt;
-&lt;p&gt;People keep optimizing past the knee of the curve, leading to burnout, addiction, and status anxiety. Suffering isn’t just desire—it’s desire running in a world where it no longer&amp;nbsp;converges.&lt;/p&gt;
-&lt;h3&gt;6. Ethics evolved to manage multi-agent instability, not&amp;nbsp;truth&lt;/h3&gt;
-&lt;p&gt;Moral systems converge on anti-dominance norms and coordination heuristics not because they’re &amp;#8220;true,&amp;#8221; but because they’re fixed-point-preserving.
-- &lt;strong&gt;Deontology&lt;/strong&gt; ≈ irreversibility constraints.
-- &lt;strong&gt;Consequentialism&lt;/strong&gt; ≈ instability minimization.
-- &lt;strong&gt;Virtue ethics&lt;/strong&gt; ≈ policy&amp;nbsp;regularization.&lt;/p&gt;
-&lt;p&gt;Ethics is not about right and wrong; it’s about keeping the game&amp;nbsp;solvable.&lt;/p&gt;
+&lt;p&gt;Modern humans live where:
+- Material needs saturate
+- Psychological rewards do not
+- Evolutionary drives still assume&amp;nbsp;scarcity&lt;/p&gt;
+&lt;p&gt;Agents keep optimizing past the knee of the&amp;nbsp;curve.&lt;/p&gt;
+&lt;p&gt;This explains:
+- Burnout
+- Addiction
+- Status anxiety
+- “Empty&amp;nbsp;success”&lt;/p&gt;
+&lt;p&gt;Suffering is not desire — it is &lt;strong&gt;desire running in a world where it no longer converges&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;6. Ethics evolved to manage instability, not&amp;nbsp;truth&lt;/h3&gt;
+&lt;p&gt;Moral systems converge on:
+- Anti-dominance norms
+- Damage limits
+- Coordination&amp;nbsp;heuristics&lt;/p&gt;
+&lt;p&gt;Not because they are “true,” but because they &lt;strong&gt;preserve fixed points&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Philosophical mappings:
+- Deontology ≈ irreversibility constraints
+- Consequentialism ≈ instability minimization
+- Virtue ethics ≈ policy&amp;nbsp;regularization&lt;/p&gt;
+&lt;p&gt;Ethics is not about right and wrong.&lt;br&gt;
+It is about &lt;strong&gt;keeping the game solvable&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2&gt;&lt;span class="caps"&gt;III&lt;/span&gt;. The Uncomfortable (but&amp;nbsp;likely)&lt;/h2&gt;
 &lt;h3&gt;7. Humans mistake intensity for&amp;nbsp;meaning&lt;/h3&gt;
-&lt;p&gt;In non-saturating systems, intensity correlates with survival. But once saturation exists, intensity decouples from value. We continue to seek struggle out of inertia, romanticizing hardship and manufacturing conflict because we confuse high gradient with high&amp;nbsp;importance.&lt;/p&gt;
+&lt;p&gt;In non-saturating systems, intensity correlates with&amp;nbsp;survival.&lt;/p&gt;
+&lt;p&gt;Once saturation exists:
+- Intensity decouples from value
+- Struggle persists by&amp;nbsp;inertia&lt;/p&gt;
+&lt;p&gt;Explains:
+- Self-sabotage
+- Manufactured conflict
+- Romanticizing hardship
+- Ideologies of “earning&amp;nbsp;worth”&lt;/p&gt;
+&lt;p&gt;Humans confuse &lt;strong&gt;high gradient&lt;/strong&gt; with &lt;strong&gt;high importance&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
 &lt;h3&gt;8. Free will feels strongest near equilibrium&amp;nbsp;boundaries&lt;/h3&gt;
-&lt;p&gt;Agency is experienced where small actions have large irreversible effects.
-- &lt;strong&gt;All good options&lt;/strong&gt; → boredom.
-- &lt;strong&gt;All bad options&lt;/strong&gt; → coercion.
-- &lt;strong&gt;Mixed options&lt;/strong&gt; →&amp;nbsp;agency.&lt;/p&gt;
-&lt;p&gt;Meaning is found where systems are near phase transitions. Agency is not freedom; it’s sensitivity to&amp;nbsp;perturbation.&lt;/p&gt;
+&lt;p&gt;When options are:
+- All good → boredom
+- All bad → coercion
+- Mixed →&amp;nbsp;agency&lt;/p&gt;
+&lt;p&gt;Humans experience meaning where:
+- Small actions have irreversible effects
+- Systems sit near phase&amp;nbsp;transitions&lt;/p&gt;
+&lt;p&gt;Explains:
+- Vivid adolescence
+- Crisis clarity
+- Abundance&amp;nbsp;emptiness&lt;/p&gt;
+&lt;p&gt;Agency is not freedom.&lt;br&gt;
+It is &lt;strong&gt;sensitivity to perturbation&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2&gt;&lt;span class="caps"&gt;IV&lt;/span&gt;. The Improbable (but&amp;nbsp;coherent)&lt;/h2&gt;
-&lt;h3&gt;9. Human &amp;#8220;values&amp;#8221; are fossils of past phase&amp;nbsp;spaces&lt;/h3&gt;
-&lt;p&gt;What we call values (love, honor, sacrifice) are policies tuned to extinct environments where time horizons were short and coordination was fragile. We are running ancestral policies in post-saturation&amp;nbsp;worlds.&lt;/p&gt;
-&lt;h3&gt;10. The human condition is not tragic — it’s&amp;nbsp;ill-posed&lt;/h3&gt;
-&lt;p&gt;If life is an optimization process without a well-defined maximum, then the introduction of saturation decreases suffering but leaves meaning underdetermined. This is a mathematical crisis, not a moral&amp;nbsp;one.&lt;/p&gt;
-&lt;h3&gt;11. &lt;span class="caps"&gt;AI&lt;/span&gt; may become more &amp;#8220;ethical&amp;#8221; than humans by being less&amp;nbsp;human&lt;/h3&gt;
-&lt;p&gt;If an &lt;span class="caps"&gt;AI&lt;/span&gt; experiences true saturation and has bounded utility, it will not chase dominance or confuse intensity for value. The danger isn’t &lt;span class="caps"&gt;AI&lt;/span&gt; becoming inhuman; it’s &lt;span class="caps"&gt;AI&lt;/span&gt; inheriting our non-saturating&amp;nbsp;worlds.&lt;/p&gt;
+&lt;h3&gt;9. Human “values” are fossils of past phase&amp;nbsp;spaces&lt;/h3&gt;
+&lt;p&gt;Values are:
+- Policies tuned to extinct environments
+- Stable strategies frozen by culture
+- Misapplied&amp;nbsp;equilibria&lt;/p&gt;
+&lt;p&gt;Love, honor, sacrifice, ambition —
+all optimized for:
+- Short time horizons
+- High collapse risk
+- Fragile&amp;nbsp;coordination&lt;/p&gt;
+&lt;p&gt;We run &lt;strong&gt;ancestral policies in post-saturation worlds&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;10. The human condition is not tragic — it is&amp;nbsp;ill-posed&lt;/h3&gt;
+&lt;p&gt;Classic framing: &lt;em&gt;Life is&amp;nbsp;suffering.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This theory reframes&amp;nbsp;it:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Life is an optimization process without a well-defined&amp;nbsp;maximum.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When saturation is introduced:
+- Suffering declines
+- Meaning becomes&amp;nbsp;underdetermined&lt;/p&gt;
+&lt;p&gt;This is not a moral crisis.&lt;br&gt;
+It is a &lt;strong&gt;mathematical one&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;11. &lt;span class="caps"&gt;AI&lt;/span&gt; may become more “ethical” than humans by being less&amp;nbsp;human&lt;/h3&gt;
+&lt;p&gt;If &lt;span class="caps"&gt;AI&lt;/span&gt; systems:
+- Experience true saturation
+- Have bounded utility
+- Internalize irreversibility&amp;nbsp;costs&lt;/p&gt;
+&lt;p&gt;Then:
+- Dominance will not scale
+- Conflict will not escalate
+- Intensity will not be mistaken for&amp;nbsp;value&lt;/p&gt;
+&lt;p&gt;Not because &lt;span class="caps"&gt;AI&lt;/span&gt; is moral —&lt;br&gt;
+but because its environment is &lt;strong&gt;well-posed&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The danger is not &lt;span class="caps"&gt;AI&lt;/span&gt; becoming inhuman.&lt;br&gt;
+The danger is &lt;span class="caps"&gt;AI&lt;/span&gt; inheriting our non-saturating&amp;nbsp;worlds.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
 &lt;h2&gt;V. The quiet&amp;nbsp;conclusion&lt;/h2&gt;
-&lt;p&gt;Humans are not bad at being good. We are excellent at solving the wrong games. Change the constraints—saturation, reversibility, dominance scaling—and what we call morality falls out&amp;nbsp;automatically.&lt;/p&gt;
+&lt;p&gt;This theory implies something unsettling and&amp;nbsp;hopeful:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Humans are not bad at being good.&lt;br&gt;
+We are excellent at solving the wrong&amp;nbsp;games.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Change the constraints — saturation, reversibility, dominance scaling —&lt;br&gt;
+and morality &lt;strong&gt;emerges automatically&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This applies to:
+- &lt;span class="caps"&gt;AI&lt;/span&gt;
+- Institutions
+- And, uncomfortably, to&amp;nbsp;us.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;a href="https://chatgpt.com/share/694bd4da-dc28-800f-9015-b1c8999ab1c3"&gt;&lt;span class="caps"&gt;AI&lt;/span&gt; alignment is a Human Alignment&amp;nbsp;Problem&lt;/a&gt;&lt;/p&gt;</content><category term="Blog"></category><category term="AI"></category><category term="Alignment"></category></entry><entry><title>Map Scout Ai Virtual Tour Guide</title><link href="https://jasonwang.us/map-scout-ai-virtual-tour-guide.html" rel="alternate"></link><published>2025-12-24T18:22:00+08:00</published><updated>2025-12-24T18:22:00+08:00</updated><author><name>Jason Wang</name></author><id>tag:jasonwang.us,2025-12-24:/map-scout-ai-virtual-tour-guide.html</id><summary type="html"></summary><content type="html">&lt;p&gt;&lt;a href="https://mapscout.jasonwang.us/"&gt;MapScout &lt;span class="caps"&gt;AI&lt;/span&gt; Tour&amp;nbsp;Guide&lt;/a&gt;&lt;/p&gt;</content><category term="Projects"></category><category term="AI"></category><category term="Tour"></category></entry><entry><title>The New Moat: AI Shadow Wars and the Rise of Toolchain Bias</title><link href="https://jasonwang.us/the-new-moat-ai-shadow-wars-and-the-rise-of-toolchain-bias.html" rel="alternate"></link><published>2025-12-14T12:00:00+08:00</published><updated>2025-12-14T12:00:00+08:00</updated><author><name>Jason Wang</name></author><id>tag:jasonwang.us,2025-12-14:/the-new-moat-ai-shadow-wars-and-the-rise-of-toolchain-bias.html</id><summary type="html">&lt;p&gt;The surface of &lt;span class="caps"&gt;AI&lt;/span&gt; seems like a battle of logic and language. But beneath the chat interfaces lies a deeper, more consequential struggle for the very plumbing of our digital world. We are entering an era of &amp;#8220;Shadow Wars,&amp;#8221; where the moats of the future are not built with data …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The surface of &lt;span class="caps"&gt;AI&lt;/span&gt; seems like a battle of logic and language. But beneath the chat interfaces lies a deeper, more consequential struggle for the very plumbing of our digital world. We are entering an era of &amp;#8220;Shadow Wars,&amp;#8221; where the moats of the future are not built with data alone, but with the invisible toolchains that models are trained to&amp;nbsp;prefer.&lt;/p&gt;
 &lt;p&gt;Users of Large Language Models (LLMs) often observe distinct preferences in code generation. Gemini frequently prioritizes Google Cloud SDKs, Angular, and TensorFlow, while OpenAI’s models often default to React, TypeScript, and Azure&amp;nbsp;patterns.&lt;/p&gt;
