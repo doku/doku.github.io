@@ -14,9 +14,9 @@
 <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
 </a>
         <header id="banner" class="body">
-                <h1><a href="https://jasonwang.us/">Egresspathy</a></h1>
+                <h1><a href="https://jasonwang.us/">Egresspathy <strong>A digital sanctuary for personal insights and technical experiments.</strong></a></h1>
                 <nav><ul>
-                    <li><a href="https://jasonwang.us/pages/about-me.html">About&nbsp;me</a></li>
+                    <li><a href="https://jasonwang.us/pages/about-me.html">About&nbsp;Me</a></li>
                     <li><a href="https://jasonwang.us/category/ai.html">AI</a></li>
                     <li><a href="https://jasonwang.us/category/curiosity.html">Curiosity</a></li>
                     <li><a href="https://jasonwang.us/category/projects.html">Projects</a></li>
@@ -26,29 +26,51 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://jasonwang.us/introducing-my-ai-powered-tour-guide.html">Introducing My <span class="caps">AI</span>-Powered Tour&nbsp;Guide</a></h1>
+                    <h1 class="entry-title"><a href="https://jasonwang.us/the-new-moat-ai-shadow-wars-and-the-rise-of-toolchain-bias.html">The New Moat: <span class="caps">AI</span> Shadow Wars and the Rise of Toolchain&nbsp;Bias</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2025-12-14T00:00:00+08:00">
+        <abbr class="published" title="2025-12-14T12:00:00+08:00">
                 Published: Sun 14 December 2025
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="https://jasonwang.us/author/jason-wang.html">Jason Wang</a>
         </address>
-<p>In <a href="https://jasonwang.us/category/projects.html">Projects</a>.</p>
-<p>tags: <a href="https://jasonwang.us/tag/ai.html">AI</a> <a href="https://jasonwang.us/tag/gemini.html">Gemini</a> <a href="https://jasonwang.us/tag/travel.html">Travel</a> <a href="https://jasonwang.us/tag/tour-guide.html">Tour Guide</a> </p>
-</footer><!-- /.post-info --><p>I&#8217;m excited to announce a new project I&#8217;ve been working on: an <span class="caps">AI</span>-assisted tour guide&nbsp;app! </p>
-<p>This app uses the power of Large Language Models (LLMs) to provide a rich, interactive, and personalized touring&nbsp;experience.</p>
-<h3>Key&nbsp;Features:</h3>
+<p>In <a href="https://jasonwang.us/category/ai.html">AI</a>.</p>
+<p>tags: <a href="https://jasonwang.us/tag/ai.html">AI</a> <a href="https://jasonwang.us/tag/llm.html">LLM</a> <a href="https://jasonwang.us/tag/cloud.html">Cloud</a> <a href="https://jasonwang.us/tag/strategy.html">Strategy</a> </p>
+</footer><!-- /.post-info --><p>The surface of <span class="caps">AI</span> seems like a battle of logic and language. But beneath the chat interfaces lies a deeper, more consequential struggle for the very plumbing of our digital world. We are entering an era of &#8220;Shadow Wars,&#8221; where the moats of the future are not built with data alone, but with the invisible toolchains that models are trained to&nbsp;prefer.</p>
+<p>Users of Large Language Models (LLMs) often observe distinct preferences in code generation. Gemini frequently prioritizes Google Cloud SDKs, Angular, and TensorFlow, while OpenAI’s models often default to React, TypeScript, and Azure&nbsp;patterns.</p>
+<p>This phenomenon is not merely a reflection of training data frequency. It represents a structural shift in the <span class="caps">AI</span> industry: The rise of Toolchain Bias. The next phase of <span class="caps">AI</span> competition will center on the software libraries that models are optimized to use, creating a new economy around verifiable training&nbsp;environments.</p>
+<h2>1. The Bias in the&nbsp;Machine</h2>
+<p>To understand why models exhibit specific software preferences, one must examine the Reinforcement Learning (<span class="caps">RL</span>)&nbsp;process.</p>
+<p>Modern code-generation models are refined using Reinforcement Learning from Human Feedback (<span class="caps">RLHF</span>) or similar techniques where the model generates code and receives a reward signal based on the outcome. In an automated coding context, this &#8220;reward&#8221; is often triggered by successful compilation, passing unit tests, or correct execution within a sandboxed&nbsp;environment.</p>
+<p>This creates a systemic bias. If a model is trained within an environment optimized for a specific cloud provider or library set, it will converge on solutions that are most stable within that environment. The model optimizes for the verification signal. Consequently, the model does not necessarily suggest the optimal tool for the user&#8217;s specific context; it suggests the tool that yielded the highest success rate during its training&nbsp;phase.</p>
+<h2>2. The Rise of Verification&nbsp;Environments</h2>
+<p>The industry is shifting from training on unstructured web data to training in Licensed Verification&nbsp;Environments.</p>
+<p>As scraping public repositories becomes legally and technically more difficult, proprietary verification environments will become a valuable asset. Companies holding intellectual property rights to major programming languages or frameworks could license &#8220;Certified Execution Environments&#8221; to model&nbsp;developers.</p>
+<p>For example, a corporation like Oracle could provide a comprehensive, sandboxed environment for Java that includes all official <span class="caps">SDK</span> versions and compliance checkers. By integrating this environment into the training loop, a model developer ensures their model produces syntactically perfect and legally compliant Java code. This shifts the value proposition from simple data access to the capability to verify and execute code during the training&nbsp;process.</p>
+<h2>3. The Hardware&nbsp;Battlefield</h2>
+<p>This feedback loop has significant implications for hardware&nbsp;vendors.</p>
+<p>Currently, models often hallucinate or write suboptimal code for low-level hardware interfaces (such as <span class="caps">CUDA</span> for Nvidia or ROCm for <span class="caps">AMD</span>) because they lack an execution environment to verify the code during&nbsp;training.</p>
+<p><strong>The Nvidia Advantage:</strong> If Nvidia provides a standardized, high-throughput <span class="caps">RL</span> environment for <span class="caps">CUDA</span> kernel generation to model labs, LLMs will naturally become proficient at writing optimized <span class="caps">CUDA</span>&nbsp;code.</p>
+<p><strong>The <span class="caps">AMD</span> Challenge:</strong> Without a comparable automated verification environment for ROCm, models will fail to learn the nuances of the platform. If the model cannot execute and verify the code during training, it cannot reliably generate it for&nbsp;users.</p>
+<p>This suggests that hardware market share may soon depend on which vendor can best integrate their toolchain into the <span class="caps">RL</span> pipelines of major <span class="caps">AI</span>&nbsp;labs.</p>
+<h2>4. The Specter of <span class="caps">AI</span>-Only&nbsp;Libraries</h2>
+<p>A critical risk emerging from this dynamic is the potential for <span class="caps">AI</span>-Only&nbsp;Libraries.</p>
+<p>Traditionally, software libraries are documented for human understanding. However, cloud providers could develop high-performance libraries designed exclusively for model consumption. These libraries might lack human-readable documentation but would be fully integrated into the model&#8217;s training&nbsp;environment.</p>
+<p>In this&nbsp;scenario:</p>
+<ol>
+<li>A model generates code using a proprietary, undocumented library (e.g.,&nbsp;CloudProvider.optimize_v9(&#8230;)).</li>
+<li>The code performs efficiently but is opaque to human&nbsp;developers.</li>
+<li>Maintenance and debugging of this code become impossible without the assistance of the specific model trained on that&nbsp;library.</li>
+</ol>
+<p>This creates a form of technical debt where the user becomes dependent on a specific <span class="caps">AI</span> model to maintain their codebase, effectively weaponizing library bias for vendor&nbsp;lock-in.</p>
+<h2>5. The Road&nbsp;Ahead</h2>
+<p>As the industry matures, we can expect several&nbsp;developments:</p>
 <ul>
-<li><strong>Landmark Discovery:</strong> The app searches for landmarks around your area of&nbsp;interest.</li>
-<li><strong>Local Events and History:</strong> It researches local events, historical facts, and interesting tidbits to make your tour&nbsp;unique.</li>
-<li><strong>Guided Introductions:</strong> Each landmark comes with a guided introduction and a&nbsp;picture.</li>
-<li><strong>Audio Narration:</strong> The introductions are provided as audio, so you can listen as you&nbsp;explore.</li>
-</ul>
-<p>You can check out the app at the following&nbsp;link:</p>
-<p><a href="https://gemini.google.com/share/76448a53122e">My Gemini&nbsp;App</a></p>
-<p>I&#8217;m excited to hear your&nbsp;feedback!</p>                </article>
+<li><strong>Certification of Competency:</strong> Models may carry specific certifications indicating they have been trained in verified environments (e.g., &#8220;Certified for <span class="caps">AWS</span> Infrastructure&#8221; or &#8220;Enterprise Java&nbsp;Compliant&#8221;).</li>
+<li><strong>Legacy Version Support:</strong> There will be a market for models trained specifically on older, &#8220;frozen&#8221; execution environments (e.g., Python 3.7) to support enterprise legacy systems that cannot upgrade to modern&nbsp;standards.</li>
+<li><strong>Machine-Readable Libraries:</strong> Open-source projects will need to prioritize &#8220;machine-friendliness&#8221;—consistent error logging, fast compilation, and easy containerization—to be effectively adopted by <span class="caps">AI</span> training pipelines. Libraries that are difficult to automate will see decreased usage as <span class="caps">AI</span>-generated code becomes the&nbsp;norm.</li>
+</ul>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>
@@ -57,31 +79,30 @@
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="https://jasonwang.us/the-new-moat.html" rel="bookmark"
-                           title="Permalink to The New Moat">The New&nbsp;Moat</a></h1>
+                    <h1><a href="https://jasonwang.us/unveiling-the-world-the-journey-of-my-ai-powered-tour-guide.html" rel="bookmark"
+                           title="Permalink to Unveiling the World: The Journey of My AI-Powered Tour Guide">Unveiling the World: The Journey of My <span class="caps">AI</span>-Powered Tour&nbsp;Guide</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2025-12-14T00:00:00+08:00">
+        <abbr class="published" title="2025-12-14T12:00:00+08:00">
                 Published: Sun 14 December 2025
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="https://jasonwang.us/author/jason-wang.html">Jason Wang</a>
         </address>
-<p>In <a href="https://jasonwang.us/category/ai.html">AI</a>.</p>
-
-</footer><!-- /.post-info -->                <p>Users of Large Language Models (LLMs) often observe distinct preferences in code generation. Gemini frequently prioritizes Google Cloud SDKs, Angular, and TensorFlow, while OpenAI’s models often default to React, TypeScript, and Azure&nbsp;patterns.</p>
-<p>This phenomenon is not merely a reflection of training data frequency. It represents a structural shift …</p>
-                <a class="readmore" href="https://jasonwang.us/the-new-moat.html">read more</a>
+<p>In <a href="https://jasonwang.us/category/projects.html">Projects</a>.</p>
+<p>tags: <a href="https://jasonwang.us/tag/ai.html">AI</a> <a href="https://jasonwang.us/tag/gemini.html">Gemini</a> <a href="https://jasonwang.us/tag/travel.html">Travel</a> <a href="https://jasonwang.us/tag/tour-guide.html">Tour Guide</a> </p>
+</footer><!-- /.post-info -->                <p>Every city has a secret language—a hidden history etched into its architecture and a vibrant energy pulse in its local events. Often, as travelers, we only scratch the surface. This realization was the spark for my latest experiment: a personal, <span class="caps">AI</span>-powered companion designed to unveil the hidden stories …</p>
+                <a class="readmore" href="https://jasonwang.us/unveiling-the-world-the-journey-of-my-ai-powered-tour-guide.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="https://jasonwang.us/co2-emission-to-fill-a-confined-space-estimation.html" rel="bookmark"
-                           title="Permalink to CO2 Emission to Fill a Confined Space Estimation"><span class="caps">CO2</span> Emission to Fill a Confined Space&nbsp;Estimation</a></h1>
+                    <h1><a href="https://jasonwang.us/the-invisible-boundary-estimating-co2-toxicity-in-confined-spaces.html" rel="bookmark"
+                           title="Permalink to The Invisible Boundary: Estimating CO2 Toxicity in Confined Spaces">The Invisible Boundary: Estimating <span class="caps">CO2</span> Toxicity in Confined&nbsp;Spaces</a></h1>
                 </header>
 
                 <div class="entry-content">
@@ -94,17 +115,16 @@
                 By                         <a class="url fn" href="https://jasonwang.us/author/jason-wang.html">Jason Wang</a>
         </address>
 <p>In <a href="https://jasonwang.us/category/curiosity.html">Curiosity</a>.</p>
-<p>tags: <a href="https://jasonwang.us/tag/python.html">python</a> <a href="https://jasonwang.us/tag/estimation.html">estimation</a> </p>
-</footer><!-- /.post-info -->                <p>Back of the napkin calculation of human emmission of <span class="caps">CO2</span> and the toxicity level in contained space over&nbsp;time</p>
-<p>Considering covid lockdown has the world quarentined in their houses. Some people who work from home has not left their room for weeks. I&#8217;m wondering if your room is air …</p>
-                <a class="readmore" href="https://jasonwang.us/co2-emission-to-fill-a-confined-space-estimation.html">read more</a>
+<p>tags: <a href="https://jasonwang.us/tag/python.html">Python</a> <a href="https://jasonwang.us/tag/estimation.html">Estimation</a> <a href="https://jasonwang.us/tag/systems-thinking.html">Systems Thinking</a> </p>
+</footer><!-- /.post-info -->                <p>During the quiet isolation of the global lockdown, I found myself contemplating the invisible systems that sustain us. While we often think of our homes as fortresses of safety, I wondered about the very air we breathe. If a room were truly airtight, how long could a human inhabit it …</p>
+                <a class="readmore" href="https://jasonwang.us/the-invisible-boundary-estimating-co2-toxicity-in-confined-spaces.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="https://jasonwang.us/example-markdown-from-ipynb.html" rel="bookmark"
-                           title="Permalink to Example Markdown from ipynb">Example Markdown from&nbsp;ipynb</a></h1>
+                    <h1><a href="https://jasonwang.us/the-chemistry-of-ritual-a-data-driven-exploration-of-coffee-quality.html" rel="bookmark"
+                           title="Permalink to The Chemistry of Ritual: A Data-Driven Exploration of Coffee Quality">The Chemistry of Ritual: A Data-Driven Exploration of Coffee&nbsp;Quality</a></h1>
                 </header>
 
                 <div class="entry-content">
@@ -117,21 +137,9 @@
                 By                         <a class="url fn" href="https://jasonwang.us/author/jason-wang.html">Jason Wang</a>
         </address>
 <p>In <a href="https://jasonwang.us/category/review.html">Review</a>.</p>
-
-</footer><!-- /.post-info -->                <div class="highlight"><pre><span></span><code><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="nx">Attaching</span><span class="w"> </span><span class="nx">packages</span><span class="w">  </span><span class="nx">tidyverse</span><span class="w"> </span><span class="m m-Double">1.3.0</span>
-
-<span class="w"> </span><span class="nx">ggplot2</span><span class="w"> </span><span class="m m-Double">3.3.3</span><span class="w">      </span><span class="nx">purrr</span><span class="w">   </span><span class="m m-Double">0.3.4</span>
-<span class="w"> </span><span class="nx">tibble</span><span class="w">  </span><span class="m m-Double">3.0.6</span><span class="w">      </span><span class="nx">dplyr</span><span class="w">   </span><span class="m m-Double">1.0.4</span>
-<span class="w"> </span><span class="nx">tidyr</span><span class="w">   </span><span class="m m-Double">1.1.2</span><span class="w">      </span><span class="nx">stringr</span><span class="w"> </span><span class="m m-Double">1.4.0</span>
-<span class="w"> </span><span class="nx">readr</span><span class="w">   </span><span class="m m-Double">1.4.0</span><span class="w">      </span><span class="nx">forcats</span><span class="w"> </span><span class="m m-Double">0.5.1</span>
-
-<span class="w"> </span><span class="nx">Conflicts</span><span class="w">  </span><span class="nx">tidyverse_conflicts</span><span class="p">()</span><span class="w"> </span>
-<span class="w"> </span><span class="nx">dplyr</span><span class="o">::</span><span class="nx">filter</span><span class="p">()</span><span class="w"> </span><span class="nx">masks</span><span class="w"> </span><span class="nx">stats</span><span class="o">::</span><span class="nx">filter</span><span class="p">()</span>
-<span class="w"> </span><span class="nx">dplyr</span><span class="o">::</span><span class="nx">lag</span><span class="p">()</span><span class="w">    </span><span class="nx">masks …</span></code></pre></div>
-                <a class="readmore" href="https://jasonwang.us/example-markdown-from-ipynb.html">read more</a>
+<p>tags: <a href="https://jasonwang.us/tag/r.html">R</a> <a href="https://jasonwang.us/tag/data-science.html">Data Science</a> <a href="https://jasonwang.us/tag/coffee.html">Coffee</a> </p>
+</footer><!-- /.post-info -->                <p>Coffee is more than a beverage; it is a global ritual, a complex intersection of geography, chemistry, and sensory experience. In this experiment, I dive into the Coffee Quality Institute&#8217;s database to uncover the hidden patterns that define a &#8220;perfect&#8221; cup. By applying data science to the art of …</p>
+                <a class="readmore" href="https://jasonwang.us/the-chemistry-of-ritual-a-data-driven-exploration-of-coffee-quality.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->
@@ -143,7 +151,6 @@
                             <li><a href="https://getpelican.com/">Pelican</a></li>
                             <li><a href="https://www.python.org/">Python.org</a></li>
                             <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
                         </ul>
                 </div><!-- /.blogroll -->
                 <div class="social">
