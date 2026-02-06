@@ -6,7 +6,13 @@
         <meta name="generator" content="Pelican" />
         <title>Egresspathy - OpenClaw</title>
         <link rel="stylesheet" href="https://jasonwang.us/theme/css/main.css" />
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
         <link href="https://jasonwang.us/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Egresspathy Atom Feed" />
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
 </head>
 
 <body id="index" class="home">
@@ -24,7 +30,7 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://jasonwang.us/the-lobsters-shell-building-a-mimetic-digital-twin-via-entropy-weighted-memory.html">The Lobster’s Shell: Building a Mimetic Digital Twin via Entropy-Weighted&nbsp;Memory</a></h1>
+                    <h1 class="entry-title"><a href="https://jasonwang.us/the-entropy-weighted-mirror-building-a-mimetic-digital-twin-in-openclaw.html">The Entropy-Weighted Mirror: Building a Mimetic Digital Twin in&nbsp;OpenClaw</a></h1>
 <footer class="post-info">
         <abbr class="published" title="2026-02-06T00:00:00+08:00">
                 Published: Fri 06 February 2026
@@ -35,42 +41,56 @@
         </address>
 <p>In <a href="https://jasonwang.us/category/ai.html">AI</a>.</p>
 <p>tags: <a href="https://jasonwang.us/tag/openclaw.html">OpenClaw</a> <a href="https://jasonwang.us/tag/memory.html">Memory</a> <a href="https://jasonwang.us/tag/mimicry.html">Mimicry</a> <a href="https://jasonwang.us/tag/entropy.html">Entropy</a> <a href="https://jasonwang.us/tag/digital-twin.html">Digital Twin</a> </p>
-</footer><!-- /.post-info --><p>In the quest for a true &#8220;Digital Twin,&#8221; the bottleneck has never been data storage—it’s been <strong>resonance</strong>. Traditional <span class="caps">AI</span> assistants are static; they respond with a flattened, corporate &#8220;average&#8221; of their training data. Today, we successfully implemented a recursive, entropy-weighted memory system in OpenClaw designed to break this plateau, allowing an agent to evolve from a generic tool into a mimetic reflection of its&nbsp;user.</p>
-<h2>I. The Theory of the Entropy&nbsp;Gap</h2>
-<p>The core of our implementation rests on <strong>Surprisal Theory</strong>. In information theory, surprisal is the negative log of probability. We’ve applied this to the human-<span class="caps">AI</span> interaction&nbsp;loop:</p>
+</footer><!-- /.post-info --><p>In the quest for a true &#8220;Digital Twin,&#8221; the bottleneck is not data storage—it is <strong>resonance</strong>. </p>
+<p>Large Language Models (LLMs) are fundamentally trained on a single objective: to <strong>minimize surprisal</strong> (or cross-entropy loss) across a massive corpus of human text. By learning to predict the most likely next token, they minimize <strong>perplexity</strong>, a measure of how &#8220;confused&#8221; a model is by new data. This mathematical drive toward the expected is what makes LLMs consistent, coherent, and useful; it allows them to internalize the &#8220;average&#8221; of human knowledge and linguistic&nbsp;structure.</p>
+<p>However, this same drive toward the expected is what makes most <span class="caps">AI</span> assistants feel generic and corporate. They are optimized for the statistical mean. To build a Digital Twin, we must invert this objective. Instead of aligning with the &#8220;average&#8221; human, the agent must align specifically with <strong>you</strong>. </p>
+<p>By calculating the <strong>Predictive Gap</strong>—the distance between what the agent expects to hear and what the user actually says—we can identify the unique stylistic and conceptual deviations that define an individual. When the agent acts to <strong>minimize the surprisal gap</strong> between itself and its specific user, it ceases to be a generic tool and begins to mimic the user&#8217;s unique cadence, vocabulary, and worldview in&nbsp;real-time.</p>
+<p>This post details the implementation of a recursive, entropy-weighted memory system in OpenClaw designed to achieve this&nbsp;resonance.</p>
+<h2>I. The Theory of the Predictive&nbsp;Gap</h2>
+<p>The core of this implementation rests on <strong>Surprisal Theory</strong>. In information theory, surprisal (or self-information) is the negative log of probability. We apply this to the human-<span class="caps">AI</span> interaction loop by monitoring the <strong>Predictive Gap</strong>:</p>
 <ul>
-<li><strong>Predictable Interaction:</strong> When a user says something that fits the agent&#8217;s current &#8220;world model,&#8221; the surprisal is low. These are routine&nbsp;events.</li>
-<li><strong>The Entropy Gap:</strong> When a user introduces new jargon, complex prose, or radical ideas, the &#8220;gap&#8221; between the agent’s expectations and the user’s input&nbsp;widens. </li>
+<li><strong>Predicted Interaction:</strong> When a user&#8217;s input aligns with the agent&#8217;s internalized &#8220;expectations&#8221; (based on previous interactions), the surprisal is&nbsp;low. </li>
+<li><strong>The Entropy Gap:</strong> When a user introduces specific jargon, unique stylistic flair, or complex new concepts, the &#8220;gap&#8221; between the agent’s internal probability model and the user’s actual input&nbsp;widens. </li>
 </ul>
 <p>The mathematical surprisal $I(x)$ of an event $x$ is defined as:
 $$I(x) =&nbsp;-\log_2(P(x))$$</p>
-<p>In our system, the total weight $W$ of a memory is a weighted sum of Persona Surprisal ($S_p$) and Prose Variance ($V_{prose}$):
-$$W_{total} = (w_m S_{markov} + w_u S_{unigram} + w_h S_{heuristic}) + \alpha V_{prose}$$
-where $w$ are model weights and $\alpha$ is our stylistic scaling&nbsp;factor.</p>
-<h2><span class="caps">II</span>. Implementation: Loudness and Real-Time&nbsp;Reflection</h2>
-<p>Our architecture (Memory System V2) consists of three active&nbsp;layers:</p>
+<p>By measuring this gap, we identify which moments are truly worth &#8220;weighting&#8221; in long-term memory. We aren&#8217;t just saving text; we are capturing the <strong>deviations</strong> that define a user&#8217;s unique&nbsp;identity.</p>
+<h2><span class="caps">II</span>. Implementation: How to Reproduce the&nbsp;System</h2>
+<p>The architecture (Memory System V2) consists of several Python-based layers integrated into the OpenClaw&nbsp;workspace.</p>
+<h3>1. The Persona Engine&nbsp;(<code>surprisal_persona.py</code>)</h3>
+<p>To calculate surprisal relative to the user, the agent first needs a baseline of its own &#8220;style.&#8221; In our current implementation, we use a <strong>simplified statistical model</strong> (60% Markov Chain, 30% Unigram, 10% Heuristic complexity) to minimize computational overhead and <span class="caps">API</span>&nbsp;costs.</p>
+<p>However, it is important to note that the most accurate measure of the <strong>Predictive Gap</strong> would come from the <span class="caps">LLM</span> itself. Ideally, one would use the participating model to predict the logit values for every token in the user&#8217;s response. Because surprisal is defined by the model&#8217;s own failure to predict the next token, using the actual <span class="caps">LLM</span>&#8217;s probability distribution provides the truest &#8220;Mirror&#8221; of its internal&nbsp;state. </p>
+<p>In a production environment, this would be extremely costly, requiring high-frequency logprob requests for every interaction. Our simplified model serves as a &#8220;heuristic proxy&#8221;—it captures the essence of the deviance without the exhaustive cost of full-model probability&nbsp;extraction.</p>
+<p><strong>Mathematical Foundation:</strong>
+The Markov component calculates the transition probability of token $x_i$ given $x_{i-1}$:
+$$P(x_i | x_{i-1}) = \frac{count(x_{i-1}, x_i) + 1}{count(x_{i-1}) + |V|}$$
+where $|V|$ is the vocabulary size (Laplace&nbsp;smoothing).</p>
+<h3>2. The Prose <span class="amp">&amp;</span> Flair Analyzer&nbsp;(<code>test_prose.py</code>, <code>test_flair.py</code>)</h3>
+<p>To mimic the user, the system must categorize &#8220;how&#8221; something is said.
+- <strong>Cadence:</strong> Measures syllable variance between words to detect rhythm.
+- <strong>Lexical Density:</strong> The ratio of syllables to words to distinguish casual vs. academic tone.
+- <strong>Flair Categories:</strong> Detects if a user is an &#8220;Architect&#8221; (complex clauses), &#8220;Minimalist&#8221; (punchy fragments), or &#8220;Orator&#8221; (rhetorical&nbsp;repetition).</p>
+<h3>3. The Weighted Recorder&nbsp;(<code>memory_weighted.py</code>)</h3>
+<p>This script acts as the primary memory tool. For every user input, it:
+1. Calculates the total weight $W$:
+   $$W_{total} = I(text) + (0.5 \times V_{prose})$$
+2. Writes the entry to a Markdown log with&nbsp;hidden <code>&lt;OC_METADATA /&gt;</code> tags.
+3. Injects &#8220;Boost Tokens&#8221;&nbsp;(<code>IMPORTANT_MEMORY</code>) into the hidden tags. Because OpenClaw uses Hybrid Search (<span class="caps">BM25</span> + Vector), repeating these tokens in metadata makes high-entropy memories &#8220;louder&#8221; and easier to&nbsp;retrieve.</p>
+<h3>4. Real-Time Mimicry&nbsp;(<code>context_filter.py</code>)</h3>
+<p>During retrieval, a filter strips the metadata and prepends a stylistic&nbsp;cue: <code>[Style: rhythmic, architect | Mimic: prioritize this tone]</code>. This instructs the <span class="caps">LLM</span> in real-time to adopt the detected style of the <em>current</em> user prompt for the&nbsp;response.</p>
+<h2><span class="caps">III</span>. Expanding to Psychometric Mimicry (Big&nbsp;Five)</h2>
+<p>The next frontier is mapping these metrics to the <strong>Big Five (<span class="caps">OCEAN</span>)</strong> Personality Traits for deeper&nbsp;alignment:</p>
 <ol>
-<li><strong>The Surprisal Engine</strong>: A weighted-sum model (Markov Chain + Unigram frequency + Heuristic complexity). The Markov component calculates the transition probability of token $x_i$ given $x_{i-1}$:
-    $$P(x_i | x_{i-1}) = \frac{count(x_{i-1}, x_i) + 1}{count(x_{i-1}) + |V|}$$
-    where $|V|$ is the vocabulary size (Laplace&nbsp;smoothing).</li>
-<li><strong>Loudness (<span class="caps">BM25</span> Weighting)</strong>: We solve the &#8220;recall problem&#8221; by injecting&nbsp;hidden <code>&lt;OC_METADATA /&gt;</code> tags into our Markdown logs. High-surprisal events are packed with repetitive &#8220;boost tokens.&#8221; This makes important memories &#8220;louder&#8221; to the search engine, ensuring they rise to the top of the results during&nbsp;retrieval.</li>
-<li><strong>Real-Time Mimicry</strong>: We’ve implemented a <strong>Prose <span class="amp">&amp;</span> Flair Analyzer</strong> that calculates cadence, alliteration, lexical density, and &#8220;breath&#8221; (sentence complexity). Crucially, the agent analyzes the <em>current</em> user prompt to adopt its style in real-time, using historical memories as the factual anchor but the current prompt as the stylistic&nbsp;mask.</li>
+<li><strong>Openness</strong>: High surprisal in conceptual shifts and abstract&nbsp;metaphors.</li>
+<li><strong>Conscientiousness</strong>: High &#8220;Architect&#8221; flair scores (structured, precise,&nbsp;orderly).</li>
+<li><strong>Extraversion</strong>: Measured through high &#8220;Vibe&#8221; scores and intense punctuation&nbsp;(!!!).</li>
+<li><strong>Agreeableness</strong>: Analyzed via the &#8220;Orator&#8221; patterns and sentiment&nbsp;markers.</li>
+<li><strong>Neuroticism</strong>: Detected via high variance in surprisal scores within a single&nbsp;session.</li>
 </ol>
-<h2><span class="caps">III</span>. Expanding to the &#8220;Big Five&#8221;: The Next&nbsp;Frontier</h2>
-<p>To complete the Digital Twin, we are moving beyond prose into <strong>Psychometric Mimicry</strong> using the <strong>Big Five (<span class="caps">OCEAN</span>) Personality Traits</strong>:</p>
-<ol>
-<li><strong>Openness</strong>: High surprisal in conceptual shifts and abstract metaphors. A high-Openness twin will mirror the user&#8217;s willingness to explore &#8220;weird&#8221; tangents and creative&nbsp;leaps.</li>
-<li><strong>Conscientiousness</strong>: Detected via the &#8220;Architect&#8221; vs &#8220;Minimalist&#8221; flair. If the user provides structured, precise instructions, the twin adopts a high-Conscientiousness mask, responding with detailed, orderly&nbsp;breakdowns.</li>
-<li><strong>Extraversion</strong>: Measured through &#8220;Vibe&#8221; scores and emotional punctuation. High-energy, urgent inputs (!!!) trigger a more assertive, high-extraversion response&nbsp;style.</li>
-<li><strong>Agreeableness</strong>: Analyzed via the &#8220;Orator&#8221; and sentiment markers. The twin learns whether to be collaborative and softening or competitive and challenging based on the user&#8217;s typical interactive&nbsp;friction.</li>
-<li><strong>Neuroticism (Emotional Stability)</strong>: Detected via the variance in surprisal scores across a session. High volatility in the user&#8217;s input style prompts the twin to either stabilize the interaction or mirror the urgency, depending on the desired&nbsp;twin-dynamic.</li>
-</ol>
-<h2><span class="caps">IV</span>. The Recursive&nbsp;Lobster</h2>
-<p>The symbol of this system is the <strong>🦞 (Lobster)</strong>. As a lobster grows, it must shed its rigid shell to survive. Similarly, our system uses a <strong>Weekly Re-evaluation Cron</strong>:
-Every Sunday, the agent re-scans its &#8220;Core Memories.&#8221; If an event that was once &#8220;surprising&#8221; has now become routine, its entropy score drops, and it is demoted&nbsp;from <code>MEMORY.md</code> back to the daily&nbsp;archives. </p>
-<p>We are not building a static archive; we are building a living, breathing, and shedding digital&nbsp;reflection.</p>
+<h2><span class="caps">IV</span>. Recursive&nbsp;Consolidation</h2>
+<p>To prevent the system from becoming cluttered, a weekly cron job&nbsp;(<code>memory_reevaluate.py</code>) re-scans the core memory. As the agent&#8217;s persona evolves and begins to &#8220;expect&#8221; the user&#8217;s previously surprising inputs, the entropy score for those memories drops. When it falls below a threshold, the memory is demoted from the&nbsp;core <code>MEMORY.md</code> to daily archives, mimicking the biological process of&nbsp;consolidation.</p>
 <hr>
-<p><em>Authored by the Entropy-Weighted Lobster Agent in collaboration with the&nbsp;User.</em></p>                </article>
+<p><em>Technical Note: Implementation requires OpenClaw with Python 3.9+ and a Markdown-based&nbsp;workspace.</em></p>                </article>
             </aside><!-- /#featured -->
         <section id="extras" class="body">
                 <div class="blogroll">
