@@ -4,10 +4,10 @@
                         <meta charset="utf-8" />
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <meta name="generator" content="Pelican" />
-                        <title>Stop Losing Research Papers in Your Browser Tabs</title>
+                        <title>VTOL Drone Simulator</title>
                         <link rel="stylesheet" href="https://jasonwang.us/theme/css/main.css" />
                                 <link href="https://jasonwang.us/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Egresspathy Atom Feed" />
-    <meta name="description" content="Every paper you read, every connection you make, every insight — saved, connected, and actually findable six months from now." />
+    <meta name="description" content="Fly a VTOL drone in real time and watch every control decision play out before your eyes. No black boxes, no mystery — just you, the sticks, and..." />
         </head>
 
         <body id="index" class="home">
@@ -27,14 +27,14 @@
     <article>
       <header>
         <h1 class="entry-title">
-          <a href="https://jasonwang.us/stop-losing-research-papers-in-your-browser-tabs.html" rel="bookmark"
-             title="Permalink to Stop Losing Research Papers in Your Browser Tabs">Stop Losing Research Papers in Your Browser&nbsp;Tabs</a></h1>
+          <a href="https://jasonwang.us/vtol-drone-simulator.html" rel="bookmark"
+             title="Permalink to VTOL Drone Simulator"><span class="caps">VTOL</span> Drone&nbsp;Simulator</a></h1>
     <a rel="nofollow" href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="jasonwang">Tweet</a><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
       </header>
 
       <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2026-10-24T08:25:00+08:00">
+        <abbr class="published" title="2026-10-24T08:00:00+08:00">
                 Published: Sat 24 October 2026
         </abbr>
 
@@ -44,21 +44,21 @@
         <p>In <a href="https://jasonwang.us/category/projects.html">Projects</a>.</p>
 <p>tags: <a href="https://jasonwang.us/tag/project.html">project</a> </p>        
 </footer><!-- /.post-info -->        <hr>
-<h1>Stop Losing Research Papers in Your Browser&nbsp;Tabs</h1>
-<p><strong><span class="caps">URL</span>:</strong> https://niche.jasonwang.us<br>
-<strong>Stack:</strong> Python FastAPI, SQLite, wiki-style&nbsp;frontend</p>
+<h1>Stop Guessing Your Drone Flights — See Exactly What’s Happening in Real&nbsp;Time</h1>
+<p><strong><span class="caps">URL</span>:</strong> https://drone.jasonwang.us<br>
+<strong>Stack:</strong> React, Three.js, Rapier physics,&nbsp;Zustand</p>
 <h2>What It&nbsp;Is</h2>
-<p>You know the feeling. You find a great paper, read half of it, tell yourself you’ll come back, and then it’s buried under twenty other tabs. Three months later you remember there was something useful in there, but you can’t find it. This is your research memory — every paper you read, every connection you make, every insight — saved, connected, and actually findable six months from&nbsp;now.</p>
+<p>This is a <span class="caps">VTOL</span> drone flight simulator that runs in your browser. You’re not watching a video — you’re flying a simulated drone and seeing every control decision happen in real time. Every tilt, every correction, every control surface moving as you manipulate the&nbsp;sticks.</p>
 <h2>What It&nbsp;Does</h2>
 <ul>
-<li><strong>Save papers as you read them</strong> — arXiv, bioRxiv, anything you’re&nbsp;studying</li>
-<li><strong>Highlight what matters</strong> — mark the insights that actually matter to&nbsp;you</li>
-<li><strong>Connect papers</strong> — link Paper A to Paper B when you notice they’re talking about the same&nbsp;thing</li>
-<li><strong>Search your memory</strong> — six months from now, search for “causal inference” or “protein folding” and every relevant paper you’ve ever read shows up, with your notes still&nbsp;attached</li>
-<li><strong>Daily auto-ingest</strong> — new papers pulled automatically every&nbsp;morning</li>
+<li><strong>Fly a <span class="caps">VTOL</span> drone</strong> — take off, hover, maneuver, and land in a 3D&nbsp;environment</li>
+<li><strong>Choose your flight style</strong> — smooth and steady, aggressive and responsive, or adaptive to changing&nbsp;conditions</li>
+<li><strong>See every control decision</strong> — watch control surfaces move and the drone respond stick by&nbsp;stick</li>
+<li><strong>No black-box autopilot</strong> — you choose the controller, you see what it does, you learn what actually&nbsp;works</li>
 </ul>
 <h2>How It&nbsp;Works</h2>
-<p>You save papers as you encounter them. The system ingests new papers daily from arXiv and bioRxiv. You add your own notes and connections between papers. When you need to find something later, it’s all there — not scattered across browser tabs, but organized and&nbsp;searchable.</p>
+<p>You open the simulator in your browser and start flying. The physics engine (Rapier) handles gravity, thrust, and aerodynamics in real time. You pick a controller — <span class="caps">PID</span>, <span class="caps">LQR</span>, <span class="caps">MPC</span>, <span class="caps">SMC</span>, or Adaptive — and each one responds differently to your inputs. The 3D scene renders with Three.js so you can see the drone from every angle as you&nbsp;fly.</p>
+<p>No installation, no setup. Just open it and&nbsp;fly.</p>
 <h2>Tech&nbsp;Stack</h2>
 <table>
 <thead>
@@ -69,32 +69,28 @@
 </thead>
 <tbody>
 <tr>
-<td>Backend</td>
-<td>Python FastAPI</td>
-</tr>
-<tr>
-<td>Database</td>
-<td>SQLite</td>
-</tr>
-<tr>
 <td>Frontend</td>
-<td>Wiki-style web interface</td>
+<td>React + TypeScript</td>
 </tr>
 <tr>
-<td>Ingest pipeline</td>
-<td>Python cron jobs</td>
+<td>Build tool</td>
+<td>Vite</td>
 </tr>
 <tr>
-<td>Reverse proxy</td>
-<td>nginx</td>
+<td>3D rendering</td>
+<td>Three.js + @react-three/fiber</td>
 </tr>
 <tr>
-<td>Process manager</td>
-<td><span class="caps">PM2</span></td>
+<td>Physics</td>
+<td>@react-three/rapier</td>
+</tr>
+<tr>
+<td>State management</td>
+<td>Zustand</td>
 </tr>
 </tbody>
 </table>
-<p><a href="https://niche.jasonwang.us">Start&nbsp;collecting</a></p>
+<p><a href="https://drone.jasonwang.us">Try the&nbsp;simulator</a></p>
       </div><!-- /.entry-content -->
 
     </article>

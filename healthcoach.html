@@ -4,10 +4,10 @@
                         <meta charset="utf-8" />
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <meta name="generator" content="Pelican" />
-                        <title>HypeScore — Turn Your Energy Into a Number</title>
+                        <title>HealthCoach</title>
                         <link rel="stylesheet" href="https://jasonwang.us/theme/css/main.css" />
                                 <link href="https://jasonwang.us/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Egresspathy Atom Feed" />
-    <meta name="description" content="A real-time hype meter that watches your webcam and scores your energy. Dance, move, or just vibe — it reads your motion and gives you a hype..." />
+    <meta name="description" content="Stop logging workouts into a void. Get an AI health coach that reads your exercise history, understands your goals, and tells you what to do next." />
         </head>
 
         <body id="index" class="home">
@@ -27,14 +27,14 @@
     <article>
       <header>
         <h1 class="entry-title">
-          <a href="https://jasonwang.us/hypescore-turn-your-energy-into-a-number.html" rel="bookmark"
-             title="Permalink to HypeScore — Turn Your Energy Into a Number">HypeScore — Turn Your Energy Into a&nbsp;Number</a></h1>
+          <a href="https://jasonwang.us/healthcoach.html" rel="bookmark"
+             title="Permalink to HealthCoach">HealthCoach</a></h1>
     <a rel="nofollow" href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="jasonwang">Tweet</a><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
       </header>
 
       <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2026-10-24T08:45:00+08:00">
+        <abbr class="published" title="2026-10-24T08:05:00+08:00">
                 Published: Sat 24 October 2026
         </abbr>
 
@@ -44,25 +44,21 @@
         <p>In <a href="https://jasonwang.us/category/projects.html">Projects</a>.</p>
 <p>tags: <a href="https://jasonwang.us/tag/project.html">project</a> </p>        
 </footer><!-- /.post-info -->        <hr>
-<h1>HypeScore — Turn Your Energy Into a&nbsp;Number</h1>
-<p><strong><span class="caps">URL</span>:</strong> https://hypescore.jasonwang.us<br>
-<strong>Stack:</strong> React, MediaPipe pose detection, WebAssembly, Web&nbsp;Workers</p>
+<h1>A Coach in Your Pocket That Actually Knows What You Did&nbsp;Today</h1>
+<p><strong><span class="caps">URL</span>:</strong> https://aura.jasonwang.us<br>
+<strong>Stack:</strong> Node.js, React, OpenRouter <span class="caps">LLM</span></p>
 <h2>What It&nbsp;Is</h2>
-<p>HypeScore is a real-time hype meter. You turn on your webcam, move around, and it gives you a score based on your energy and&nbsp;movement.</p>
-<p>It&#8217;s not a fitness tracker. It&#8217;s not counting steps or calories. It&#8217;s measuring <em>hype</em> — how much energy you&#8217;re putting into the&nbsp;moment.</p>
+<p>This is a health coach that remembers. Most fitness apps are just calendars with a sad graph — you log your workout, and then nothing happens. No feedback. No guidance. This is different. It’s an <span class="caps">AI</span> coach that actually looks at what you did and has an opinion on what you should do&nbsp;next.</p>
 <h2>What It&nbsp;Does</h2>
 <ul>
-<li><strong>Reads your movement</strong> through your webcam using pose detection and optical&nbsp;flow</li>
-<li><strong>Scores your energy</strong> in real time with a live hype&nbsp;gauge</li>
-<li><strong>Shows signal analysis</strong> — rhythm, energy, and density telemetry as you&nbsp;move</li>
-<li><strong>Switches between <span class="caps">FFT</span> and <span class="caps">CWT</span> signal engines</strong> for different analysis&nbsp;styles</li>
-<li><strong>Has a Zen mode</strong> with six visual styles that react to your&nbsp;movement</li>
-<li><strong>Works with video files too</strong> — upload a recording and score it&nbsp;retroactively</li>
+<li><strong>Log your workouts</strong> — sets, reps, weight, exercise&nbsp;type</li>
+<li><strong>Get feedback</strong> — the coach reads your history and tells you if you’re progressing or&nbsp;plateauing</li>
+<li><strong>Ask questions</strong> — “Should I increase the weight?” “Am I overtraining?” — and get answers in plain&nbsp;language</li>
+<li><strong>Set goals</strong> — track progress toward fitness targets over&nbsp;time</li>
+<li><strong>Push notifications</strong> — reminders and updates so you don’t forget to&nbsp;log</li>
 </ul>
 <h2>How It&nbsp;Works</h2>
-<p>You open the page, grant camera access, and start moving. The app processes your webcam feed through MediaPipe pose detection and optical flow to measure motion. A signal engine (your choice of <span class="caps">FFT</span> or Continuous Wavelet Transform) turns that motion into a live hype&nbsp;score.</p>
-<p>The score updates every frame. Dance, jump, gesture, or just wave your arms — watch the number go&nbsp;up.</p>
-<p>When you want to zone out, hit Zen mode and pick from six visual styles that pulse and shift with your&nbsp;energy.</p>
+<p>You log each workout as you do it. The <span class="caps">AI</span> coach reads your history, compares last week to today, and gives you feedback in plain language — no generic “drink more water” advice. It’s free to use and runs right here in your&nbsp;browser.</p>
 <h2>Tech&nbsp;Stack</h2>
 <table>
 <thead>
@@ -73,28 +69,28 @@
 </thead>
 <tbody>
 <tr>
+<td>Backend</td>
+<td>Node.js</td>
+</tr>
+<tr>
 <td>Frontend</td>
-<td>React + Vite</td>
+<td>React</td>
 </tr>
 <tr>
-<td>Pose detection</td>
-<td>MediaPipe</td>
+<td><span class="caps">LLM</span> provider</td>
+<td>OpenRouter</td>
 </tr>
 <tr>
-<td>Signal analysis</td>
-<td><span class="caps">FFT</span> <span class="amp">&amp;</span> <span class="caps">CWT</span>, Web Workers</td>
+<td>Reverse proxy</td>
+<td>nginx</td>
 </tr>
 <tr>
-<td>Styling</td>
-<td>Tailwind <span class="caps">CSS</span></td>
-</tr>
-<tr>
-<td>Hosting</td>
-<td>Static files via nginx</td>
+<td>Process manager</td>
+<td><span class="caps">PM2</span></td>
 </tr>
 </tbody>
 </table>
-<p><a href="https://hypescore.jasonwang.us">Try&nbsp;HypeScore</a></p>
+<p><a href="https://aura.jasonwang.us">Meet your&nbsp;coach</a></p>
       </div><!-- /.entry-content -->
 
     </article>
