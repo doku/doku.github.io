@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>Magnetic Hound</title>
+                        <link rel="stylesheet" href="https://jasonwang.us/theme/css/main.css" />
+                                <link href="https://jasonwang.us/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Egresspathy Atom Feed" />
+    <meta name="description" content="A 3D browser game about a magnetic quadruped exploring a hijacked freighter where every surface — floor, ceiling, walls — is walkable. Third..." />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="https://jasonwang.us/">Egresspathy <strong>A digital sanctuary for personal insights and technical experiments.</strong></a></h1>
+                        <nav><ul>
+                                                <li><a href="https://jasonwang.us/pages/about-me.html">About&nbsp;Me</a></li>
+                                                <li><a href="https://jasonwang.us/category/ai.html">AI</a></li>
+                                                <li><a href="https://jasonwang.us/category/blog.html">Blog</a></li>
+                                                <li><a href="https://jasonwang.us/category/curiosity.html">Curiosity</a></li>
+                                                <li><a href="https://jasonwang.us/category/ideas.html">Ideas</a></li>
+                                                <li class="active"><a href="https://jasonwang.us/category/projects.html">Projects</a></li>
+                                                <li><a href="https://jasonwang.us/category/review.html">Review</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+  <section id="content" class="body">
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="https://jasonwang.us/magnetic-hound.html" rel="bookmark"
+             title="Permalink to Magnetic Hound">Magnetic&nbsp;Hound</a></h1>
+    <a rel="nofollow" href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="jasonwang">Tweet</a><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+      </header>
+
+      <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2026-10-24T09:00:00+08:00">
+                Published: Sat 24 October 2026
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="https://jasonwang.us/author/jason-wang.html">Jason Wang</a>
+                </address>
+        <p>In <a href="https://jasonwang.us/category/projects.html">Projects</a>.</p>
+<p>tags: <a href="https://jasonwang.us/tag/project.html">project</a> </p>        
+</footer><!-- /.post-info -->        <hr>
+<h1>Magnetic&nbsp;Hound</h1>
+<p><strong><span class="caps">URL</span>:</strong> https://shipdefense.jasonwang.us<br>
+<strong>Stack:</strong> TypeScript, Three.js, Vite,&nbsp;MediaPipe</p>
+<h2>What It&nbsp;Is</h2>
+<p>Magnetic Hound is a 3D browser game about the <span class="caps">HOUND</span>, a magnetic quadruped robot with a goose-neck sensor and gun mast, sent aboard the hijacked freighter <em>Meridian</em>. Every surface — floor, ceiling, walls — is walkable. There is no global &#8220;up.&#8221; The surface you are standing on defines which way is&nbsp;down.</p>
+<p>This is not a conventional shooter. The ship is hijacked, and the <span class="caps">HOUND</span> is a retrieval unit, not a wrecking crew. A rifle round through the exterior hull opens the <em>Meridian</em> to space and ends the run. So the quiet tools are the real ones: a capture net, a claw, and a magnetic grapple — one stealthy approach at a&nbsp;time.</p>
+<h2>What It&nbsp;Does</h2>
+<ul>
+<li><strong>Walk on any surface</strong> — floor, ceiling, walls. Magnetic feet keep you planted; corners are stepped onto, not&nbsp;climbed</li>
+<li><strong>Jump through zero-G gaps</strong> — launch from one surface, fly through free fall, land and magnetically adhere to&nbsp;another</li>
+<li><strong>Switch cameras</strong> — third person for spatial reasoning, first person for aiming, with a blended transition that preserves your&nbsp;aim</li>
+<li><strong>Fight with quiet tools</strong> — capture net (T), claw strike (F), magnetic grapple (right mouse). The rifle opens the hull and fails the&nbsp;mission</li>
+<li><strong>Optional webcam head tracking</strong> — MediaPipe adds an embodied aim offset on top of the mouse, fully&nbsp;toggleable</li>
+<li><strong>Seven decks</strong> — Test Chamber, Deck 7 Promenade, Junction 12, Jefferies Spine, Shuttle Bay, Reactor Gallery, Outer Hull — plus a map builder and component&nbsp;gallery</li>
+<li><strong>Browser-based</strong> — no install, just open the <span class="caps">URL</span> and&nbsp;play</li>
+</ul>
+<h2>How It&nbsp;Works</h2>
+<p>You open the game in your browser and start in the test chamber. The robot walks with W/A/S/D, looks and aims with the mouse, and jumps/launches with Space. When you step onto a wall or ceiling, your body reorients so that surface becomes &#8220;down.&#8221; Jump and you become a projectile in zero-G, drifting until you magnetically latch onto a new&nbsp;wall.</p>
+<p>In third person you read the geometry — all four feet, the surface you are on, the space ahead. Press V and you are in first person, aiming the centered <span class="caps">AR</span>-style gun. The mouse owns the aim; an optional webcam layer shifts your viewpoint like a window without rotating the&nbsp;shot.</p>
+<p>Drones patrol on different surfaces — floor, wall, ceiling — so you must actually turn to find them. You can net them, claw them, or grapple them. Or you can sneak (Shift) and close the distance&nbsp;silently.</p>
+<p>The game is built entirely in the browser: Three.js for rendering, TypeScript for logic, Vite for building, MediaPipe for the optional head tracking. It is deployed as a static&nbsp;site.</p>
+<h2>Tech&nbsp;Stack</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Renderer</td>
+<td>Three.js <code>0.186.x</code></td>
+</tr>
+<tr>
+<td>Language</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td>Build tool</td>
+<td>Vite</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>Vitest (463+ tests, 96% coverage)</td>
+</tr>
+<tr>
+<td>Head tracking</td>
+<td>MediaPipe <code>@mediapipe/tasks-vision</code> (self-hosted model)</td>
+</tr>
+<tr>
+<td>Physics</td>
+<td>Custom surface controller + raycasts</td>
+</tr>
+<tr>
+<td><span class="caps">UI</span></td>
+<td>Plain <span class="caps">DOM</span>/<span class="caps">CSS</span></td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>Web Audio <span class="caps">API</span> / Three.js positional audio</td>
+</tr>
+<tr>
+<td>License</td>
+<td><span class="caps">MIT</span></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://shipdefense.jasonwang.us">Play Magnetic&nbsp;Hound</a></p>
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+                <section id="extras" class="body">
+                                <div class="blogroll">
+                                        <h2>links</h2>
+                                        <ul>
+                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
+                                                        <li><a href="https://www.python.org/">Python.org</a></li>
+                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                                        </ul>
+                                </div><!-- /.blogroll -->
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+                                                        <li><a href="https://jasonwang.us/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                                                        <li><a href="https://github.com/doku">github</a></li>
+                                                        <li><a href="https://www.linkedin.com/in/chunhaojasonwang/">linkedin</a></li>
+                                                        <li><a href="mailto:mail@jasonwang.us">email</a></li>
+                                                        <li><a href="https://twitter.com/jasonwang">twitter</a></li>
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
+
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>

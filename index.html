@@ -25,7 +25,100 @@
 
                 <aside id="featured" class="body">
                     <article>
-                        <h1 class="entry-title"><a href="https://jasonwang.us/the-future-of-game-development-might-be-a-cooperative.html">The Future of Game Development Might Be a&nbsp;Cooperative</a></h1>
+                        <h1 class="entry-title"><a href="https://jasonwang.us/magnetic-hound.html">Magnetic&nbsp;Hound</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2026-10-24T09:00:00+08:00">
+                Published: Sat 24 October 2026
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="https://jasonwang.us/author/jason-wang.html">Jason Wang</a>
+                </address>
+        <p>In <a href="https://jasonwang.us/category/projects.html">Projects</a>.</p>
+<p>tags: <a href="https://jasonwang.us/tag/project.html">project</a> </p>        
+</footer><!-- /.post-info --><hr>
+<h1>Magnetic&nbsp;Hound</h1>
+<p><strong><span class="caps">URL</span>:</strong> https://shipdefense.jasonwang.us<br>
+<strong>Stack:</strong> TypeScript, Three.js, Vite,&nbsp;MediaPipe</p>
+<h2>What It&nbsp;Is</h2>
+<p>Magnetic Hound is a 3D browser game about the <span class="caps">HOUND</span>, a magnetic quadruped robot with a goose-neck sensor and gun mast, sent aboard the hijacked freighter <em>Meridian</em>. Every surface — floor, ceiling, walls — is walkable. There is no global &#8220;up.&#8221; The surface you are standing on defines which way is&nbsp;down.</p>
+<p>This is not a conventional shooter. The ship is hijacked, and the <span class="caps">HOUND</span> is a retrieval unit, not a wrecking crew. A rifle round through the exterior hull opens the <em>Meridian</em> to space and ends the run. So the quiet tools are the real ones: a capture net, a claw, and a magnetic grapple — one stealthy approach at a&nbsp;time.</p>
+<h2>What It&nbsp;Does</h2>
+<ul>
+<li><strong>Walk on any surface</strong> — floor, ceiling, walls. Magnetic feet keep you planted; corners are stepped onto, not&nbsp;climbed</li>
+<li><strong>Jump through zero-G gaps</strong> — launch from one surface, fly through free fall, land and magnetically adhere to&nbsp;another</li>
+<li><strong>Switch cameras</strong> — third person for spatial reasoning, first person for aiming, with a blended transition that preserves your&nbsp;aim</li>
+<li><strong>Fight with quiet tools</strong> — capture net (T), claw strike (F), magnetic grapple (right mouse). The rifle opens the hull and fails the&nbsp;mission</li>
+<li><strong>Optional webcam head tracking</strong> — MediaPipe adds an embodied aim offset on top of the mouse, fully&nbsp;toggleable</li>
+<li><strong>Seven decks</strong> — Test Chamber, Deck 7 Promenade, Junction 12, Jefferies Spine, Shuttle Bay, Reactor Gallery, Outer Hull — plus a map builder and component&nbsp;gallery</li>
+<li><strong>Browser-based</strong> — no install, just open the <span class="caps">URL</span> and&nbsp;play</li>
+</ul>
+<h2>How It&nbsp;Works</h2>
+<p>You open the game in your browser and start in the test chamber. The robot walks with W/A/S/D, looks and aims with the mouse, and jumps/launches with Space. When you step onto a wall or ceiling, your body reorients so that surface becomes &#8220;down.&#8221; Jump and you become a projectile in zero-G, drifting until you magnetically latch onto a new&nbsp;wall.</p>
+<p>In third person you read the geometry — all four feet, the surface you are on, the space ahead. Press V and you are in first person, aiming the centered <span class="caps">AR</span>-style gun. The mouse owns the aim; an optional webcam layer shifts your viewpoint like a window without rotating the&nbsp;shot.</p>
+<p>Drones patrol on different surfaces — floor, wall, ceiling — so you must actually turn to find them. You can net them, claw them, or grapple them. Or you can sneak (Shift) and close the distance&nbsp;silently.</p>
+<p>The game is built entirely in the browser: Three.js for rendering, TypeScript for logic, Vite for building, MediaPipe for the optional head tracking. It is deployed as a static&nbsp;site.</p>
+<h2>Tech&nbsp;Stack</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Renderer</td>
+<td>Three.js <code>0.186.x</code></td>
+</tr>
+<tr>
+<td>Language</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td>Build tool</td>
+<td>Vite</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>Vitest (463+ tests, 96% coverage)</td>
+</tr>
+<tr>
+<td>Head tracking</td>
+<td>MediaPipe <code>@mediapipe/tasks-vision</code> (self-hosted model)</td>
+</tr>
+<tr>
+<td>Physics</td>
+<td>Custom surface controller + raycasts</td>
+</tr>
+<tr>
+<td><span class="caps">UI</span></td>
+<td>Plain <span class="caps">DOM</span>/<span class="caps">CSS</span></td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>Web Audio <span class="caps">API</span> / Three.js positional audio</td>
+</tr>
+<tr>
+<td>License</td>
+<td><span class="caps">MIT</span></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://shipdefense.jasonwang.us">Play Magnetic&nbsp;Hound</a></p>                    </article>
+                </aside><!-- /#featured -->
+                    <section id="content" class="body">
+                        <h1>Other articles</h1>
+                        <hr />
+                        <ol id="posts-list" class="hfeed">
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="https://jasonwang.us/the-future-of-game-development-might-be-a-cooperative.html" rel="bookmark"
+                               title="Permalink to The Future of Game Development Might Be a Cooperative">The Future of Game Development Might Be a&nbsp;Cooperative</a></h1>
+                    </header>
+
+                    <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2026-10-24T09:00:00+08:00">
                 Published: Sat 24 October 2026
@@ -36,220 +129,10 @@
                 </address>
         <p>In <a href="https://jasonwang.us/category/ideas.html">Ideas</a>.</p>
 <p>tags: <a href="https://jasonwang.us/tag/game-development.html">game-development</a> <a href="https://jasonwang.us/tag/ai.html">ai</a> <a href="https://jasonwang.us/tag/cooperative.html">cooperative</a> <a href="https://jasonwang.us/tag/game-design.html">game-design</a> <a href="https://jasonwang.us/tag/future.html">future</a> </p>        
-</footer><!-- /.post-info --><hr>
-<h1>The Future of Game Development Might Be a&nbsp;Cooperative</h1>
-<p>When <span class="caps">AI</span> makes building games easier, the most valuable resource may no longer be the people who can build them, but the people who know what makes them worth&nbsp;playing.</p>
-<h2>A New Era of Game&nbsp;Development</h2>
-<p>We are approaching a fundamental shift in how video games are&nbsp;created.</p>
-<p>For decades, game development has been constrained by the cost of production. Building a game requires programmers, artists, designers, animators, sound engineers, producers, and countless hours of coordination. Even relatively simple ideas can require substantial resources to turn into something&nbsp;playable.</p>
-<p>This has shaped the entire structure of the gaming industry. Studios organize around specialized labor, publishers provide capital, producers manage development, and players eventually receive the finished&nbsp;product.</p>
-<p>But artificial intelligence is beginning to challenge this&nbsp;model.</p>
-<p><span class="caps">AI</span> can increasingly write code, generate 3D assets, create animations, compose music, produce textures, build levels, and assist with almost every technical aspect of game production. The cost and time required to turn an idea into a working prototype are falling&nbsp;dramatically.</p>
-<p>This raises an interesting&nbsp;question:</p>
-<p>If building a game becomes relatively easy, what becomes&nbsp;valuable?</p>
-<p>I believe the answer is human&nbsp;judgment.</p>
-<p>Not necessarily the ability to write code or produce assets, but the ability to recognize what is fun, what feels right, what is frustrating, what is beautiful, and what makes an experience worth returning&nbsp;to.</p>
-<p>The scarce resource in game development may shift from production capacity to human&nbsp;taste.</p>
-<p>And if that is true, perhaps we should rethink the organizational structure of game development&nbsp;itself.</p>
-<h2>From Game Studios to Game&nbsp;Cooperatives</h2>
-<p>Traditional game studios are designed to coordinate&nbsp;labor.</p>
-<p>A cooperative game studio could instead be designed to coordinate human creativity, judgment, and&nbsp;participation.</p>
-<p>Imagine a game owned by a community of people who collectively participate in its development. These people are not necessarily professional developers. They might be players, designers, critics, artists, storytellers, enthusiasts, or simply people with strong opinions about what makes a game&nbsp;enjoyable.</p>
-<p>They become co-owners of the organization that develops the&nbsp;game.</p>
-<p>Rather than relying on a small group of employees to make every creative decision, the cooperative provides a framework for a much larger community to contribute ideas, evaluate experiments, and influence the direction of the&nbsp;game.</p>
-<p>Members could pay a membership fee to support the organization and participate in its governance. They could propose features, discuss design decisions, vote on experiments, participate in playtests, and contribute to the collective direction of the&nbsp;project.</p>
-<p>The organization would operate as a commons: a shared creative asset that belongs to its members rather than an individual founder or outside&nbsp;investor.</p>
-<p>The goal isn’t simply to make development more&nbsp;democratic.</p>
-<p>It is to create an organization that takes advantage of what <span class="caps">AI</span> makes possible while preserving the human element that gives games their&nbsp;character.</p>
-<h2>The Experiment Becomes the Fundamental Unit of&nbsp;Development</h2>
-<p>One of the biggest changes I envision is replacing the traditional feature-development process with an experiment-driven&nbsp;model.</p>
-<p>In conventional development, an idea goes through planning, design, implementation, testing, and eventually integration into the&nbsp;game.</p>
-<p>This process can be expensive. Teams often spend considerable time debating whether something will work before anyone gets to experience&nbsp;it.</p>
-<p>With <span class="caps">AI</span>-assisted development, we can approach this&nbsp;differently.</p>
-<p>Instead of debating an idea indefinitely, we can build&nbsp;it.</p>
-<p>Every proposed feature becomes an independent experiment. Each experiment gets its own development environment, implementation history, and playable&nbsp;version.</p>
-<p>Consider someone proposing a grappling hook&nbsp;mechanic.</p>
-<p>Rather than submitting a simple feature request, they submit an idea describing the experience they want to&nbsp;create:</p>
-<ul>
-<li>What problem does this mechanic&nbsp;solve?</li>
-<li>What should the player feel when using&nbsp;it?</li>
-<li>What possibilities should it&nbsp;introduce?</li>
-<li>What should it&nbsp;avoid?</li>
-<li>How would we determine whether it is&nbsp;successful?</li>
-</ul>
-<p>The community can then refine the proposal. Members discuss its strengths, identify problems, suggest alternatives, and improve the&nbsp;design.</p>
-<p>Once the proposal reaches sufficient maturity, an <span class="caps">AI</span> agent receives the resulting specification and builds a playable&nbsp;implementation.</p>
-<p>That implementation lives in its own Git&nbsp;worktree.</p>
-<p>It can be launched, tested, modified, and compared with other implementations without affecting the canonical&nbsp;game.</p>
-<p>The experiment becomes a persistent&nbsp;artifact.</p>
-<p>It doesn’t have to succeed. It doesn’t even have to be&nbsp;merged.</p>
-<p>It simply needs to remain available for people to experience and learn&nbsp;from.</p>
-<h2>A Museum of Playable&nbsp;Ideas</h2>
-<p>This introduces another interesting possibility: nothing needs to be thrown&nbsp;away.</p>
-<p>In traditional development, prototypes and abandoned features often disappear into old branches, disconnected repositories, or forgotten project&nbsp;folders.</p>
-<p>In this model, every experiment can remain playable&nbsp;indefinitely.</p>
-<p>Imagine opening the cooperative’s website and browsing hundreds of&nbsp;experiments:</p>
-<ul>
-<li>Different movement&nbsp;systems.</li>
-<li>Alternative combat&nbsp;mechanics.</li>
-<li>Experimental&nbsp;physics.</li>
-<li>New camera&nbsp;perspectives.</li>
-<li>Alternative progression&nbsp;systems.</li>
-<li>Different approaches to level&nbsp;design.</li>
-<li>Competing interpretations of the same&nbsp;feature.</li>
-</ul>
-<p>Each experiment has its own history, contributors, design discussions, prompts, implementation versions, and playtest&nbsp;results.</p>
-<p>You could explore the evolution of an idea from its original proposal to its various&nbsp;implementations.</p>
-<p>Someone might even discover an abandoned experiment from two years ago, revive it, and take it in an entirely new&nbsp;direction.</p>
-<p>The development history becomes a living museum of&nbsp;ideas.</p>
-<p>More importantly, the organization accumulates knowledge rather than repeatedly starting from&nbsp;scratch.</p>
-<h2>GitHub Meets Wikipedia Meets&nbsp;Reddit</h2>
-<p>To make this work, the cooperative needs a different kind of development&nbsp;platform.</p>
-<p>I imagine something combining three familiar&nbsp;systems.</p>
-<p>GitHub provides the technical&nbsp;foundation.</p>
-<p>Every experiment has its own worktree, version history, code, assets, and implementation artifacts. <span class="caps">AI</span> agents can work on isolated versions without destabilizing the main&nbsp;game.</p>
-<p>Wikipedia provides the collaborative knowledge&nbsp;system.</p>
-<p>Feature proposals become living documents. Members can refine specifications, correct assumptions, add constraints, propose alternatives, and maintain&nbsp;documentation.</p>
-<p>The original proposal is not necessarily the final specification. It evolves through community&nbsp;participation.</p>
-<p>Reddit provides the social discovery and voting&nbsp;system.</p>
-<p>Members can discover interesting experiments, discuss them, and express their&nbsp;preferences.</p>
-<p>But voting should be more sophisticated than a simple&nbsp;upvote.</p>
-<p>There is a difference between liking an idea and liking its&nbsp;implementation.</p>
-<p>Members should be able to express whether&nbsp;they:</p>
-<ul>
-<li>Want to see an experiment&nbsp;developed.</li>
-<li>Like the concept but dislike the&nbsp;implementation.</li>
-<li>Believe it improves the&nbsp;game.</li>
-<li>Disagree with its&nbsp;direction.</li>
-<li>Are&nbsp;uncertain.</li>
-</ul>
-<p>This distinction matters because popularity and design quality are not necessarily the same&nbsp;thing.</p>
-<p>The platform should help the community discover promising ideas without reducing every creative decision to a popularity&nbsp;contest.</p>
-<h2>The Most Important Role: Human&nbsp;Taste</h2>
-<p>If <span class="caps">AI</span> becomes increasingly capable of implementing almost any reasonable design specification, then the people who can recognize good design become extraordinarily&nbsp;valuable.</p>
-<p>Consider the difference between two&nbsp;instructions:</p>
-<p>“Create a movement system that allows the player to walk on&nbsp;walls.”</p>
-<p>And:</p>
-<p>“I want the player to feel as though gravity is a suggestion rather than a limitation. Moving between surfaces should feel natural, expressive, and physically satisfying. The player should discover creative ways to navigate the&nbsp;environment.”</p>
-<p>The first describes&nbsp;functionality.</p>
-<p>The second describes an&nbsp;experience.</p>
-<p>The distinction is important because games are not merely collections of technical features. They are experiences designed for&nbsp;humans.</p>
-<p>A mechanic can function perfectly and still feel&nbsp;terrible.</p>
-<p>A movement system can be technically impressive but lack responsiveness. A combat system can be balanced but boring. A level can be visually beautiful but fail to encourage&nbsp;exploration.</p>
-<p><span class="caps">AI</span> can help implement these systems, but determining whether they actually work as experiences requires human&nbsp;evaluation.</p>
-<p>This creates opportunities for people whose primary contribution is not programming or asset production, but their ability to recognize and articulate what makes something&nbsp;enjoyable.</p>
-<p>We might eventually see roles such&nbsp;as:</p>
-<ul>
-<li>Taste&nbsp;curators.</li>
-<li>Playtest&nbsp;coordinators.</li>
-<li>Design&nbsp;stewards.</li>
-<li>Experience&nbsp;evaluators.</li>
-<li>Community&nbsp;designers.</li>
-<li>Experiment&nbsp;coordinators.</li>
-</ul>
-<p>These people help translate subjective human experiences into actionable design&nbsp;direction.</p>
-<p>Their contribution is not necessarily producing the&nbsp;game.</p>
-<p>It is helping the organization discover what the game should&nbsp;become.</p>
-<h2>Let Competing Ideas&nbsp;Compete</h2>
-<p>Another advantage of this model is that disagreements no longer need to be resolved entirely through&nbsp;discussion.</p>
-<p>Suppose the community disagrees about whether a game should have&nbsp;stamina.</p>
-<p>One group believes stamina creates meaningful resource management. Another believes it unnecessarily restricts&nbsp;movement.</p>
-<p>In a traditional studio, this might result in meetings, arguments, and eventually a decision made by a design&nbsp;director.</p>
-<p>In an experiment-driven cooperative, both ideas can be&nbsp;implemented.</p>
-<p>Experiment A introduces&nbsp;stamina.</p>
-<p>Experiment B removes&nbsp;stamina.</p>
-<p>Both become&nbsp;playable.</p>
-<p>Members can experience the difference, compare implementations, and provide&nbsp;feedback.</p>
-<p>The question changes&nbsp;from:</p>
-<p>“I think stamina would make the game&nbsp;better.”</p>
-<p>To:</p>
-<p>“Which implementation actually creates the better&nbsp;experience?”</p>
-<p>This is a powerful&nbsp;shift.</p>
-<p>Instead of trying to predict the outcome of a design decision, we can create competing implementations and let people experience&nbsp;them.</p>
-<p>We can even organize design competitions where multiple groups independently attempt to solve the same&nbsp;problem.</p>
-<p>The best ideas can emerge through experimentation rather than&nbsp;hierarchy.</p>
-<h2>The Organization as a Human Feedback&nbsp;System</h2>
-<p>The cooperative would need a structured process for evaluating&nbsp;experiments.</p>
-<p>After playing a prototype, members could provide feedback on several&nbsp;dimensions:</p>
-<ul>
-<li>Fun.</li>
-<li>Responsiveness.</li>
-<li>Clarity.</li>
-<li>Novelty.</li>
-<li>Satisfaction.</li>
-<li>Replayability.</li>
-<li>Frustration.</li>
-<li>Overall&nbsp;experience.</li>
-</ul>
-<p>But numerical ratings alone are&nbsp;insufficient.</p>
-<p>We should also ask questions such&nbsp;as:</p>
-<p>What was the most interesting&nbsp;moment?</p>
-<p>What felt&nbsp;frustrating?</p>
-<p>What surprised&nbsp;you?</p>
-<p>What would you&nbsp;remove?</p>
-<p>Would you voluntarily play this&nbsp;again?</p>
-<p>Would you want this mechanic in the main&nbsp;game?</p>
-<p>These responses become a valuable knowledge&nbsp;base.</p>
-<p>Over time, the cooperative develops a record of how people respond to different design&nbsp;decisions.</p>
-<p>It can identify patterns, compare competing approaches, and learn which design principles consistently produce better&nbsp;experiences.</p>
-<p>The community isn’t simply voting on&nbsp;features.</p>
-<p>It is collectively building an understanding of game&nbsp;design.</p>
-<h2>The Challenge: Human Attention Becomes the&nbsp;Bottleneck</h2>
-<p>There is one significant problem with this&nbsp;model.</p>
-<p>If <span class="caps">AI</span> makes experimentation cheap, the organization could generate more playable ideas than its members could ever&nbsp;evaluate.</p>
-<p>We might be able to produce hundreds or thousands of experiments, but people only have so much time to play&nbsp;them.</p>
-<p>This means the cooperative needs an effective system for allocating human&nbsp;attention.</p>
-<p>Voting, recommendations, design reviews, and curated experiment collections become&nbsp;essential.</p>
-<p>The organization needs to identify which experiments deserve further development and which are worth asking people to&nbsp;play.</p>
-<p>This is where community participation becomes particularly&nbsp;valuable.</p>
-<p>Members are not just funding production. They are helping determine where the organization’s limited human attention should&nbsp;go.</p>
-<p>The development pipeline might look like&nbsp;this:</p>
-<p>Ideas → Community refinement → Prioritization → <span class="caps">AI</span> implementation → Playtesting → Evaluation → Integration or&nbsp;preservation.</p>
-<p>Not every idea deserves to become part of the canonical&nbsp;game.</p>
-<p>But every sufficiently interesting experiment can contribute to the organization’s collective&nbsp;knowledge.</p>
-<h2>Ownership and&nbsp;Governance</h2>
-<p>For this model to work, the cooperative needs to be more than a community with a membership&nbsp;subscription.</p>
-<p>It needs an actual ownership and governance&nbsp;structure.</p>
-<p>Members should have clearly defined rights and&nbsp;responsibilities.</p>
-<p>I would favor a democratic cooperative model where governance is based on membership rather than financial&nbsp;investment.</p>
-<p>One member, one&nbsp;vote.</p>
-<p>Contributing more money should not automatically mean having more control over the creative&nbsp;direction.</p>
-<p>The cooperative would own the game, its intellectual property, its infrastructure, and the collective assets produced through the organization, subject to clearly defined contributor&nbsp;agreements.</p>
-<p>It could operate with elected representatives, design stewards, financial oversight, and transparent&nbsp;decision-making.</p>
-<p>Revenue from the game could support ongoing development, infrastructure, member compensation, community grants, and&nbsp;reserves.</p>
-<p>There would also need to be clear rules around intellectual property, contributor rights, licensing, and commercial&nbsp;distribution.</p>
-<p>The precise legal structure could take different forms depending on the jurisdiction. A cooperative, nonprofit foundation, or combination of legal entities might be&nbsp;appropriate.</p>
-<p>The important principle is that the organization exists to serve the collective creative project rather than extract value from its&nbsp;contributors.</p>
-<h2>The Canonical Game and the Experimental&nbsp;Universe</h2>
-<p>One final architectural distinction is&nbsp;important.</p>
-<p>The cooperative should maintain two separate&nbsp;environments.</p>
-<p>The first is the canonical game: the official, integrated experience that players can rely&nbsp;on.</p>
-<p>The second is the experimental universe: the collection of independent ideas, prototypes, alternative implementations, and abandoned&nbsp;directions.</p>
-<p>The canonical game should be relatively&nbsp;stable.</p>
-<p>The experimental universe should be&nbsp;unrestricted.</p>
-<p>Experiments that demonstrate their value can be proposed for integration into the main game. That integration should follow a documented review process, with clear technical and design&nbsp;requirements.</p>
-<p>This separation allows the organization to encourage experimentation without making the main game&nbsp;unstable.</p>
-<p>It also means that the community doesn’t have to agree on every design&nbsp;decision.</p>
-<p>Different interpretations can&nbsp;coexist.</p>
-<h2>A Different Kind of Game&nbsp;Studio</h2>
-<p>Ultimately, I think <span class="caps">AI</span> presents us with an opportunity to rethink the entire structure of creative&nbsp;production.</p>
-<p>If the cost of implementation continues to fall, then the traditional model of organizing large groups of specialized labor may no longer be the only effective way to create&nbsp;games.</p>
-<p>We could instead organize around communities of people who collectively own, explore, evaluate, and evolve creative&nbsp;projects.</p>
-<p><span class="caps">AI</span> agents provide the implementation&nbsp;capacity.</p>
-<p>The cooperative provides the organizational&nbsp;structure.</p>
-<p>The community provides the ideas, judgment, and&nbsp;feedback.</p>
-<p>The game becomes the product of an ongoing collective process rather than the output of a fixed production&nbsp;team.</p>
-<p>And perhaps the most interesting consequence is that the value of participation&nbsp;changes.</p>
-<p>You don’t need to be a programmer to meaningfully contribute to a&nbsp;game.</p>
-<p>You don’t need to be an artist to influence its visual&nbsp;direction.</p>
-<p>You don’t need to be a professional designer to recognize that a mechanic feels&nbsp;wrong.</p>
-<p>You just need to be someone who cares about the experience and can help make it&nbsp;better.</p>
-<p>Perhaps the next generation of game studios won’t be organized around people who build games, but around communities of people who collectively decide what those games should&nbsp;be.</p>                    </article>
-                </aside><!-- /#featured -->
-                    <section id="content" class="body">
-                        <h1>Other articles</h1>
-                        <hr />
-                        <ol id="posts-list" class="hfeed">
+</footer><!-- /.post-info -->                        <p>If <span class="caps">AI</span> makes building games easier, the most valuable resource may shift from production capacity to human taste — and that could mean rethinking game studios as cooperatives owned by the people who care about what games should&nbsp;be.</p>
+                        <a class="readmore" href="https://jasonwang.us/the-future-of-game-development-might-be-a-cooperative.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
 
                 <li><article class="hentry">
                     <header>
@@ -424,29 +307,6 @@
 <p>tags: <a href="https://jasonwang.us/tag/project.html">project</a> </p>        
 </footer><!-- /.post-info -->                        <p>Fly a <span class="caps">VTOL</span> drone in real time and watch every control decision play out before your eyes. No black boxes, no mystery — just you, the sticks, and the&nbsp;physics.</p>
                         <a class="readmore" href="https://jasonwang.us/vtol-drone-simulator.html">read more</a>
-                    </div><!-- /.entry-content -->
-                </article></li>
-
-                <li><article class="hentry">
-                    <header>
-                        <h1><a href="https://jasonwang.us/the-entropy-weighted-mirror-building-a-mimetic-digital-twin-in-openclaw.html" rel="bookmark"
-                               title="Permalink to The Entropy-Weighted Mirror: Building a Mimetic Digital Twin in OpenClaw">The Entropy-Weighted Mirror: Building a Mimetic Digital Twin in&nbsp;OpenClaw</a></h1>
-                    </header>
-
-                    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2026-02-06T00:00:00+08:00">
-                Published: Fri 06 February 2026
-        </abbr>
-
-                <address class="vcard author">
-                        By                                 <a class="url fn" href="https://jasonwang.us/author/jason-wang.html">Jason Wang</a>
-                </address>
-        <p>In <a href="https://jasonwang.us/category/ai.html">AI</a>.</p>
-<p>tags: <a href="https://jasonwang.us/tag/openclaw.html">OpenClaw</a> <a href="https://jasonwang.us/tag/memory.html">Memory</a> <a href="https://jasonwang.us/tag/mimicry.html">Mimicry</a> <a href="https://jasonwang.us/tag/entropy.html">Entropy</a> <a href="https://jasonwang.us/tag/digital-twin.html">Digital Twin</a> </p>        
-</footer><!-- /.post-info -->                        <p>In the quest for a true &#8220;Digital Twin,&#8221; the bottleneck is not data storage—it is <strong>resonance</strong>. </p>
-<p>Large Language Models (LLMs) are fundamentally trained on a single objective: to <strong>minimize surprisal</strong> (or cross-entropy loss) across a massive corpus of human text. By learning to predict the most likely next token …</p>
-                        <a class="readmore" href="https://jasonwang.us/the-entropy-weighted-mirror-building-a-mimetic-digital-twin-in-openclaw.html">read more</a>
                     </div><!-- /.entry-content -->
                 </article></li>
                     </ol><!-- /#posts-list -->
