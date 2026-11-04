@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>A Tour of My Home Server: The jasonwang.us Subdomains</title>
+                        <link rel="stylesheet" href="https://jasonwang.us/theme/css/main.css" />
+                                <link href="https://jasonwang.us/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Egresspathy Atom Feed" />
+    <meta name="description" content="A guided tour of every subdomain running on my Raspberry Pi home server, from AI health coaching to map exploration, and what each one does." />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="https://jasonwang.us/">Egresspathy <strong>A digital sanctuary for personal insights and technical experiments.</strong></a></h1>
+                        <nav><ul>
+                                                <li><a href="https://jasonwang.us/pages/about-me.html">About&nbsp;Me</a></li>
+                                                <li><a href="https://jasonwang.us/category/ai.html">AI</a></li>
+                                                <li><a href="https://jasonwang.us/category/blog.html">Blog</a></li>
+                                                <li><a href="https://jasonwang.us/category/curiosity.html">Curiosity</a></li>
+                                                <li><a href="https://jasonwang.us/category/projects.html">Projects</a></li>
+                                                <li><a href="https://jasonwang.us/category/review.html">Review</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+  <section id="content" class="body">
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="https://jasonwang.us/drafts/a-tour-of-my-home-server-the-jasonwangus-subdomains.html" rel="bookmark"
+             title="Permalink to A Tour of My Home Server: The jasonwang.us Subdomains">A Tour of My Home Server: The jasonwang.us&nbsp;Subdomains</a></h1>
+    <a rel="nofollow" href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="jasonwang">Tweet</a><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+      </header>
+
+      <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2026-10-24T08:00:00+08:00">
+                Published: Sat 24 October 2026
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="https://jasonwang.us/author/jason-wang.html">Jason Wang</a>
+                </address>
+        <p>In <a href="https://jasonwang.us/category/infrastructure.html">Infrastructure</a>.</p>
+<p>tags: <a href="https://jasonwang.us/tag/nginx.html">nginx</a> <a href="https://jasonwang.us/tag/homelab.html">homelab</a> <a href="https://jasonwang.us/tag/raspberry-pi.html">raspberry-pi</a> <a href="https://jasonwang.us/tag/debian.html">debian</a> <a href="https://jasonwang.us/tag/services.html">services</a> </p>        
+</footer><!-- /.post-info -->        <hr>
+<h1>A Tour of My Home Server: The jasonwang.us&nbsp;Subdomains</h1>
+<p>Over the past few years, I&#8217;ve been running a Raspberry Pi 4 at home that hosts a growing collection of web services. Each one lives under its own subdomain&nbsp;of <code>jasonwang.us</code>, proxied through nginx with <span class="caps">SSL</span> via Let&#8217;s Encrypt. Here&#8217;s a guided tour of what&#8217;s running, what each service does, and how they fit&nbsp;together.</p>
+<h2>The Infrastructure&nbsp;Layer</h2>
+<p>Before diving into individual services, here&#8217;s the&nbsp;stack:</p>
+<ul>
+<li><strong>Hardware:</strong> Raspberry Pi 4 (aarch64), Debian 13&nbsp;(trixie)</li>
+<li><strong>Reverse proxy:</strong> nginx (ports&nbsp;80/443)</li>
+<li><strong><span class="caps">SSL</span>:</strong> Let&#8217;s Encrypt certificates via&nbsp;Certbot</li>
+<li><strong>Process management:</strong> <span class="caps">PM2</span> (for most Node.js and Python&nbsp;backends)</li>
+<li><strong>Systemd:</strong> <code>pm2-pi.service</code> resurrects <span class="caps">PM2</span> on boot; user services handle Hermes gateway, mpris-proxy, and&nbsp;OpenClaw</li>
+</ul>
+<hr>
+<h2>1. drone.jasonwang.us — <span class="caps">VTOL</span> Drone&nbsp;Simulator</h2>
+<p><strong>Service:</strong> React + Vite + Three.js + Rapier physics<br>
+<strong>Port:</strong> 5173 (dev server),&nbsp;static <code>dist/</code> for production<br>
+<strong>Purpose:</strong> A <span class="caps">VTOL</span> drone flight simulation with real-time physics, <span class="caps">PID</span>/<span class="caps">LQR</span>/<span class="caps">MPC</span>/<span class="caps">SMC</span>/Adaptive controllers, <span class="caps">HUD</span> visualization, and state management via&nbsp;Zustand.</p>
+<p>This is an interactive 3D simulation for testing drone control algorithms. It runs a Vite dev server for development and serves a static production build. The project includes a modular controller system with&nbsp;abstract <code>ControllerBase</code> + Factory + Manager&nbsp;pattern.</p>
+<p><a href="https://drone.jasonwang.us">Visit&nbsp;drone.jasonwang.us</a></p>
+<hr>
+<h2>2. aura.jasonwang.us — HealthCoach <span class="caps">AI</span></h2>
+<p><strong>Service:</strong> Node.js HealthCoach server<br>
+<strong>Port:</strong> 3047<br>
+<strong>Purpose:</strong> <span class="caps">AI</span>-powered health coaching with exercise tracking, chat, and goal management. Uses OpenRouter for free-tier <span class="caps">LLM</span> access (falling back&nbsp;to <code>nvidia/nemotron-3.5-super-vl:free</code> and <code>google/gemma-4-26b-a4b-it:free</code>).</p>
+<p>The frontend is a React app served as static files, with <span class="caps">API</span> calls proxied to the Node.js backend&nbsp;at <code>/api/</code>. It includes authentication, push notifications, exercise logging, and <span class="caps">AI</span>-generated workout&nbsp;summaries.</p>
+<p><a href="https://aura.jasonwang.us">Visit&nbsp;aura.jasonwang.us</a></p>
+<hr>
+<h2>3. apiaura.jasonwang.us — HealthCoach <span class="caps">API</span></h2>
+<p><strong>Service:</strong> Node.js HealthCoach server<br>
+<strong>Port:</strong> 3047<br>
+<strong>Purpose:</strong> Dedicated <span class="caps">API</span> subdomain for the HealthCoach backend, proxying to the same Node.js server&nbsp;as <code>aura.jasonwang.us</code>.</p>
+<p>This provides a clean <span class="caps">API</span> endpoint for programmatic access to the HealthCoach service, separate from the&nbsp;frontend-facing <code>aura.jasonwang.us</code>.</p>
+<p><a href="https://apiaura.jasonwang.us">Visit&nbsp;apiaura.jasonwang.us</a></p>
+<hr>
+<h2>4. zhuyin.jasonwang.us — Zhuyin&nbsp;Trainer</h2>
+<p><strong>Service:</strong> Node.js server<br>
+<strong>Port:</strong> 3001<br>
+<strong>Purpose:</strong> A Zhuyin (Bopomofo) phonetic symbol trainer for learning Mandarin Chinese pronunciation. Includes a&nbsp;Next.js <code>/reader</code> proxy on port&nbsp;3789.</p>
+<p>This project helps with learning Zhuyin, the phonetic system used in Taiwan for Mandarin. The <span class="caps">API</span> backend handles data and user&nbsp;progress.</p>
+<p><a href="https://zhuyin.jasonwang.us">Visit&nbsp;zhuyin.jasonwang.us</a></p>
+<hr>
+<h2>5. mapscout.jasonwang.us — Map Scout <span class="caps">AI</span> Tour&nbsp;Guide</h2>
+<p><strong>Service:</strong> Python FastAPI + React frontend<br>
+<strong>Port:</strong> 9813<br>
+<strong>Purpose:</strong> An <span class="caps">AI</span>-powered tour guide that explores maps and landmarks using <span class="caps">LLM</span>-powered narrative&nbsp;generation.</p>
+<p>Map Scout combines map data with <span class="caps">AI</span> to create immersive walking tours. It suggests points of interest, weaves local history into narratives, and provides multi-sensory interaction&nbsp;guidance.</p>
+<p><a href="https://mapscout.jasonwang.us">Visit&nbsp;mapscout.jasonwang.us</a></p>
+<hr>
+<h2>6. niche.jasonwang.us — NicheApp (Research Paper&nbsp;Tracker)</h2>
+<p><strong>Service:</strong> Python FastAPI backend + wiki_stream frontend<br>
+<strong>Port:</strong> 8000<br>
+<strong>Purpose:</strong> Tracks research papers from arXiv and bioRxiv, with a MediaWiki-style interface for organizing and annotating academic&nbsp;literature.</p>
+<p>This is a personal research database that ingests new papers, extracts key information, and lets you build causal graphs and evidence maps around research&nbsp;topics.</p>
+<p><a href="https://niche.jasonwang.us">Visit&nbsp;niche.jasonwang.us</a></p>
+<hr>
+<h2>7. future.jasonwang.us — Possible&nbsp;Nodes</h2>
+<p><strong>Service:</strong> Python FastAPI backend<br>
+<strong>Port:</strong> 8080<br>
+<strong>Purpose:</strong> A <span class="caps">DAG</span>-based causal reasoning system for exploring possible futures and decision&nbsp;trees.</p>
+<p>Possible Nodes is a project for modeling causal relationships and exploring &#8220;what if&#8221; scenarios. It uses a directed acyclic graph structure to represent causal links between events and&nbsp;decisions.</p>
+<p><a href="https://future.jasonwang.us">Visit&nbsp;future.jasonwang.us</a></p>
+<hr>
+<h2>8. playlist.jasonwang.us —&nbsp;ActivityPlaylist</h2>
+<p><strong>Service:</strong> Python FastAPI backend + React frontend<br>
+<strong>Port:</strong> 9427<br>
+<strong>Purpose:</strong> Activity tracking and playlist management for exercise and personal data&nbsp;logging.</p>
+<p>This service tracks physical activities and creates playlists based on your data. It&#8217;s part of a broader personal data&nbsp;ecosystem.</p>
+<p><a href="https://playlist.jasonwang.us">Visit&nbsp;playlist.jasonwang.us</a></p>
+<hr>
+<h2>9. blogger.jasonwang.us — Egresspathy Blog&nbsp;Admin</h2>
+<p><strong>Service:</strong> FastAPI admin interface<br>
+<strong>Port:</strong> 8001<br>
+<strong>Purpose:</strong> The admin interface for this very blog. It manages Pelican blog content (Markdown files), handles authentication, and triggers builds and pushes to&nbsp;GitHub.</p>
+<p>This is where I write, edit, and publish blog posts. It&#8217;s a password-protected admin <span class="caps">UI</span> that talks to the Pelican static site generator and GitHub for&nbsp;deployment.</p>
+<p><a href="https://blogger.jasonwang.us">Visit&nbsp;blogger.jasonwang.us</a></p>
+<hr>
+<h2>10. hypescore.jasonwang.us —&nbsp;HypeScore</h2>
+<p><strong>Service:</strong> Static React app (Vite)<br>
+<strong>Purpose:</strong> A static web application served as pre-built <span class="caps">HTML</span>/<span class="caps">JS</span>/<span class="caps">WASM</span>&nbsp;files.</p>
+<p>HypeScore is a client-side application with broad <span class="caps">MIME</span> type support including WebAssembly. No backend — just static assets served efficiently by&nbsp;nginx.</p>
+<p><a href="https://hypescore.jasonwang.us">Visit&nbsp;hypescore.jasonwang.us</a></p>
+<hr>
+<h2>Summary&nbsp;Table</h2>
+<table>
+<thead>
+<tr>
+<th>Subdomain</th>
+<th>Service</th>
+<th>Port</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>drone.jasonwang.us</td>
+<td><span class="caps">VTOL</span> Drone Sim</td>
+<td>5173</td>
+<td>React + Three.js</td>
+</tr>
+<tr>
+<td>aura.jasonwang.us</td>
+<td>HealthCoach</td>
+<td>3047</td>
+<td>Node.js + React</td>
+</tr>
+<tr>
+<td>apiaura.jasonwang.us</td>
+<td>HealthCoach <span class="caps">API</span></td>
+<td>3047</td>
+<td>Node.js <span class="caps">API</span></td>
+</tr>
+<tr>
+<td>zhuyin.jasonwang.us</td>
+<td>Zhuyin Trainer</td>
+<td>3001</td>
+<td>Node.js + Next.js</td>
+</tr>
+<tr>
+<td>mapscout.jasonwang.us</td>
+<td>Map Scout <span class="caps">AI</span></td>
+<td>9813</td>
+<td>Python FastAPI</td>
+</tr>
+<tr>
+<td>niche.jasonwang.us</td>
+<td>NicheApp</td>
+<td>8000</td>
+<td>Python FastAPI</td>
+</tr>
+<tr>
+<td>future.jasonwang.us</td>
+<td>Possible Nodes</td>
+<td>8080</td>
+<td>Python FastAPI</td>
+</tr>
+<tr>
+<td>playlist.jasonwang.us</td>
+<td>ActivityPlaylist</td>
+<td>9427</td>
+<td>Python FastAPI</td>
+</tr>
+<tr>
+<td>blogger.jasonwang.us</td>
+<td>Blog Admin</td>
+<td>8001</td>
+<td>FastAPI</td>
+</tr>
+<tr>
+<td>hypescore.jasonwang.us</td>
+<td>HypeScore</td>
+<td>—</td>
+<td>Static</td>
+</tr>
+</tbody>
+</table>
+<p>All of these run on a single Raspberry Pi 4 behind nginx, with <span class="caps">SSL</span> certificates managed by Certbot. It&#8217;s a small but capable home lab that serves as both a personal utility suite and a playground for experimenting with <span class="caps">AI</span>, data, and web&nbsp;technologies.</p>
+<hr>
+<p><em>This post documents the server infrastructure as of October 2026. Some services may have evolved since&nbsp;then.</em></p>
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+                <section id="extras" class="body">
+                                <div class="blogroll">
+                                        <h2>links</h2>
+                                        <ul>
+                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
+                                                        <li><a href="https://www.python.org/">Python.org</a></li>
+                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                                        </ul>
+                                </div><!-- /.blogroll -->
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+                                                        <li><a href="https://jasonwang.us/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                                                        <li><a href="https://github.com/doku">github</a></li>
+                                                        <li><a href="https://www.linkedin.com/in/chunhaojasonwang/">linkedin</a></li>
+                                                        <li><a href="mailto:mail@jasonwang.us">email</a></li>
+                                                        <li><a href="https://twitter.com/jasonwang">twitter</a></li>
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
+
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>
